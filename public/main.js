@@ -1,5 +1,6 @@
 // main.js
 
+
 // Function to load content into a container
 async function loadComponent(id, filePath) {
     try {
@@ -14,8 +15,26 @@ async function loadComponent(id, filePath) {
     }
 }
 
-// Load Header and Footer
-document.addEventListener('DOMContentLoaded', () => {
-    loadComponent('header', '/includes/header.html');
-    loadComponent('footer', '/includes/footer.html');
+// Display Current Date in Header
+function displayCurrentDate() {
+    const dateElement = document.getElementById('current-date');
+    if (dateElement) {
+        const date = new Date();
+        const formattedDate = date.toLocaleDateString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            timeZone: 'America/New_York'
+        });
+        dateElement.innerText = `Today is: ${formattedDate}`;
+    }
+}
+
+// Load Header and Footer, then display the current date
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadComponent('header', '/includes/header.html');
+    await loadComponent('footer', '/includes/footer.html');
+    displayCurrentDate(); // Ensure the date function runs after header loads
 });
+
