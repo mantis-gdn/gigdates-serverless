@@ -16,9 +16,18 @@ function safeSetInnerHTML(id, html) {
     }
 }
 
+// Function to get today's date in YYYY-MM-DD format in Eastern Time
+function getTodayDateEastern() {
+    const date = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`; // Return 'YYYY-MM-DD'
+}
+
 // Fetch Venue Data from API
 async function fetchVenueData() {
-    const venueId = new URLSearchParams(window.location.search).get('id');
+    const venueId = getVenueId();
 
     if (!venueId) {
         document.getElementById('venue-name').innerText = 'Venue ID is missing in the URL.';
@@ -58,17 +67,26 @@ async function fetchVenueData() {
         // Render Events
         const eventsContainer = document.getElementById('venue-events');
         if (eventsContainer && data.events && data.events.length > 0) {
-            eventsContainer.innerHTML = data.events.map(event => `
-                <div class="event-card">
-                    <h3>
-                        <a href="/event.html?id=${event.id}" style="color: #4a90e2;">
-                            ${event.title || 'Unnamed Event'}
-                        </a>
-                    </h3>
-                    <p><strong>Date:</strong> ${event.date || 'No Date Provided'}</p>
-                    <p><strong>Time:</strong> ${event.time || 'No Time Provided'}</p>
-                </div>
-            `).join('');
+            const today = getTodayDateEastern();
+
+            eventsContainer.innerHTML = data.events.map(event => {
+                const isToday = event.date === today; // Compare event date with today's date
+                return `
+                    <div class="event-card">
+                        <h3>
+                            <a href="/event.html?id=${event.id}" style="color: #4a90e2;">
+                                ${event.title || 'Unnamed Event'}
+                            </a>
+                        </h3>
+                        <p>
+                            <strong>Date:</strong> 
+                            ${isToday ? '<span class="today-badge">TODAY</span>' : ''} 
+                            ${event.date || 'No Date Provided'}
+                        </p>
+                        <p><strong>Time:</strong> ${event.time || 'No Time Provided'}</p>
+                    </div>
+                `;
+            }).join('');
         } else if (eventsContainer) {
             eventsContainer.innerHTML = '<p>No events available for this venue.</p>';
         }
