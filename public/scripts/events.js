@@ -1,4 +1,4 @@
-// Fetch and Display All Events
+// Fetch and Display Upcoming Events Only
 async function fetchAllEvents() {
     const eventsContainer = document.getElementById('events-container');
 
@@ -32,30 +32,37 @@ async function fetchAllEvents() {
         const today = getTodayDateEastern();
 
         if (data.events && data.events.length > 0) {
-            eventsContainer.innerHTML = data.events.map(event => {
-                const isToday = event.date === today; // Compare event date with today's date
+            // Filter only events from today forward
+            const upcomingEvents = data.events.filter(event => event.date >= today);
 
-                return `
-                    <div class="event-card">
-                        <h3>
-                            <a href="/event.html?id=${event.id}">
-                                ${event.title || 'Unnamed Event'}
-                            </a>
-                        </h3>
-                        <p>
-                            <strong>Date:</strong> 
-                            ${isToday ? '<span class="today-badge">TODAY</span>' : ''} 
-                            ${formatDate(event.date) || 'No Date Provided'}
-                        </p>
-                        <p><strong>Time:</strong> ${event.time || 'No Time Provided'}</p>
-                        <p><strong>Venue:</strong> 
-                            <a href="/venue.html?id=${event.venueId}">
-                                ${event.venueName || 'Unknown Venue'}
-                            </a>
-                        </p>
-                    </div>
-                `;
-            }).join('');
+            if (upcomingEvents.length > 0) {
+                eventsContainer.innerHTML = upcomingEvents.map(event => {
+                    const isToday = event.date === today; // Compare event date with today's date
+
+                    return `
+                        <div class="event-card">
+                            <h3>
+                                <a href="/event.html?id=${event.id}">
+                                    ${event.title || 'Unnamed Event'}
+                                </a>
+                            </h3>
+                            <p>
+                                <strong>Date:</strong> 
+                                ${isToday ? '<span class="today-badge">TODAY</span>' : ''} 
+                                ${formatDate(event.date) || 'No Date Provided'}
+                            </p>
+                            <p><strong>Time:</strong> ${event.time || 'No Time Provided'}</p>
+                            <p><strong>Venue:</strong> 
+                                <a href="/venue.html?id=${event.venueId}">
+                                    ${event.venueName || 'Unknown Venue'}
+                                </a>
+                            </p>
+                        </div>
+                    `;
+                }).join('');
+            } else {
+                eventsContainer.innerHTML = '<p>No upcoming events available.</p>';
+            }
         } else {
             eventsContainer.innerHTML = '<p>No events are currently available.</p>';
         }
