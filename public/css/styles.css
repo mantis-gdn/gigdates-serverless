@@ -181,6 +181,18 @@ body {
     font-style: italic;
 }
 
+.today-badge {
+    display: inline-block;
+    background-color: #ff4757; /* Bright red background */
+    color: #ffffff; /* White text */
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 8px;
+    text-transform: uppercase;
+}
+
 /* === Footer === */
 .footer {
     text-align: center;
