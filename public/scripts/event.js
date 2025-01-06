@@ -24,6 +24,28 @@ document.addEventListener('DOMContentLoaded', async () => {
         return `${year}-${month}-${day}`; // Return 'YYYY-MM-DD'
     }
 
+    // Function to get the day of the week from a date
+    function getDayOfWeek(dateString) {
+        const date = new Date(`${dateString}T00:00:00-05:00`);
+        return date.toLocaleDateString('en-US', { timeZone: 'America/New_York', weekday: 'long' });
+    }
+
+    // Function to assign colors to each day of the week
+    function getDayBadge(day) {
+        const dayColors = {
+            'Sunday': '#FF6347',    // Tomato Red
+            'Monday': '#FFB347',    // Orange
+            'Tuesday': '#FFD700',   // Gold
+            'Wednesday': '#9ACD32', // Yellow-Green
+            'Thursday': '#6495ED',  // Cornflower Blue
+            'Friday': '#DA70D6',    // Orchid
+            'Saturday': '#8A2BE2'   // Blue Violet
+        };
+
+        const color = dayColors[day] || '#FFFFFF'; // Fallback to white
+        return `<span class="day-badge" style="background-color: ${color};">${day}</span>`;
+    }
+
     async function fetchEventDetails() {
         if (!eventId) {
             eventContainer.innerHTML = `<p>Event ID is missing in the URL.</p>`;
@@ -42,6 +64,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             // Direct string comparison for date in 'YYYY-MM-DD' format
             const eventDate = event.date; // Ensure this is 'YYYY-MM-DD'
             const isToday = eventDate === today;
+            const dayOfWeek = getDayOfWeek(event.date); // Get day of the week
+            const dayBadge = getDayBadge(dayOfWeek); // Get day badge
 
             eventContainer.innerHTML = `
                 <div class="event-details">
@@ -52,6 +76,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <p>
                         <strong>Date:</strong> 
                         ${isToday ? '<span class="today-badge">TODAY</span>' : ''} 
+                        ${dayBadge}
                         ${formatDate(event.date)}
                     </p>
                     <p><strong>Doors Open:</strong> ${event.doors}</p>

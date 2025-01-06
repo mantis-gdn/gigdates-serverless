@@ -34,6 +34,28 @@ function formatDate(dateString) {
     });
 }
 
+// Function to get the day of the week from a date
+function getDayOfWeek(dateString) {
+    const date = new Date(dateString + 'T00:00:00');
+    return date.toLocaleDateString('en-US', { timeZone: 'America/New_York', weekday: 'long' });
+}
+
+// Function to assign colors to each day of the week
+function getDayBadge(day) {
+    const dayColors = {
+        'Sunday': '#FF6347',    // Tomato Red
+        'Monday': '#FFB347',    // Orange
+        'Tuesday': '#FFD700',   // Gold
+        'Wednesday': '#9ACD32', // Yellow-Green
+        'Thursday': '#6495ED',  // Cornflower Blue
+        'Friday': '#DA70D6',    // Orchid
+        'Saturday': '#8A2BE2'   // Blue Violet
+    };
+
+    const color = dayColors[day] || '#FFFFFF'; // Fallback to white
+    return `<span class="day-badge" style="background-color: ${color};">${day}</span>`;
+}
+
 // Fetch Venue Data from API
 async function fetchVenueData() {
     const venueId = getVenueId();
@@ -84,6 +106,9 @@ async function fetchVenueData() {
             if (upcomingEvents.length > 0) {
                 eventsContainer.innerHTML = upcomingEvents.map(event => {
                     const isToday = event.date === today; // Compare event date with today's date
+                    const dayOfWeek = getDayOfWeek(event.date); // Get the day of the week
+                    const dayBadge = getDayBadge(dayOfWeek); // Get the day badge
+
                     return `
                         <div class="event-card">
                             <h3>
@@ -94,6 +119,7 @@ async function fetchVenueData() {
                             <p>
                                 <strong>Date:</strong> 
                                 ${isToday ? '<span class="today-badge">TODAY</span>' : ''} 
+                                ${dayBadge}
                                 ${formatDate(event.date)}
                             </p>
                             <p><strong>Time:</strong> ${event.time || 'No Time Provided'}</p>
