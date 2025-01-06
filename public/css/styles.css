@@ -180,11 +180,21 @@ body {
     color: #58a6ff;
     font-style: italic;
 }
-
 .today-badge {
     display: inline-block;
-    background-color: #ff4757; /* Bright red background */
-    color: #ffffff; /* White text */
+    background-color: #FF4757; /* Bright Red */
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 8px;
+    text-transform: uppercase;
+}
+
+.day-badge {
+    display: inline-block;
+    color: #FFFFFF;
     font-weight: bold;
     font-size: 0.9em;
     padding: 2px 6px;
