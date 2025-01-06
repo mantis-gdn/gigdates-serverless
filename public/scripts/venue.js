@@ -1,5 +1,3 @@
-// venue.js
-
 // Extract Venue ID from URL Query String
 function getVenueId() {
     const params = new URLSearchParams(window.location.search);
@@ -23,6 +21,17 @@ function getTodayDateEastern() {
     const month = String(date.getMonth() + 1).padStart(2, '0');
     const day = String(date.getDate()).padStart(2, '0');
     return `${year}-${month}-${day}`; // Return 'YYYY-MM-DD'
+}
+
+// Function to format a date into a readable format
+function formatDate(dateString) {
+    const date = new Date(dateString + 'T00:00:00');
+    return date.toLocaleDateString('en-US', {
+        timeZone: 'America/New_York',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
 }
 
 // Fetch Venue Data from API
@@ -74,14 +83,14 @@ async function fetchVenueData() {
                 return `
                     <div class="event-card">
                         <h3>
-                            <a href="/event.html?id=${event.id}" style="color: #4a90e2;">
+                            <a href="/event.html?id=${event.id}">
                                 ${event.title || 'Unnamed Event'}
                             </a>
                         </h3>
                         <p>
                             <strong>Date:</strong> 
                             ${isToday ? '<span class="today-badge">TODAY</span>' : ''} 
-                            ${event.date || 'No Date Provided'}
+                            ${formatDate(event.date)}
                         </p>
                         <p><strong>Time:</strong> ${event.time || 'No Time Provided'}</p>
                     </div>

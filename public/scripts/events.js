@@ -11,6 +11,17 @@ async function fetchAllEvents() {
         return `${year}-${month}-${day}`; // Return 'YYYY-MM-DD'
     }
 
+    // Function to format a date into a readable format
+    function formatDate(dateString) {
+        const date = new Date(dateString + 'T00:00:00');
+        return date.toLocaleDateString('en-US', {
+            timeZone: 'America/New_York',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    }
+
     try {
         const response = await fetch('/.netlify/functions/events');
         if (!response.ok) {
@@ -34,7 +45,7 @@ async function fetchAllEvents() {
                         <p>
                             <strong>Date:</strong> 
                             ${isToday ? '<span class="today-badge">TODAY</span>' : ''} 
-                            ${event.date || 'No Date Provided'}
+                            ${formatDate(event.date) || 'No Date Provided'}
                         </p>
                         <p><strong>Time:</strong> ${event.time || 'No Time Provided'}</p>
                         <p><strong>Venue:</strong> 
