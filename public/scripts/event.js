@@ -21,12 +21,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             eventContainer.innerHTML = `
                 <div class="event-details">
                     <h1>${event.title}</h1>
+                    <h2><a href="/venue.html?id=${event.venueId}">${event.venue}</a></h2>
                     <p><strong>Date:</strong> ${event.date}</p>
                     <p><strong>Doors Open:</strong> ${event.doors}</p>
                     <p><strong>Show Starts:</strong> ${event.show}</p>
-                    <p><strong>Venue:</strong> 
-                        <a href="/venue.html?id=${event.venueId}">${event.venue}</a>
-                    </p>
                 </div>
             `;
         } catch (error) {
