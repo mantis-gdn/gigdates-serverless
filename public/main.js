@@ -27,7 +27,7 @@ function displayCurrentDate() {
             day: 'numeric',
             timeZone: 'America/New_York'
         });
-        dateElement.innerText = `Today is: ${formattedDate}`;
+        dateElement.innerText = `${formattedDate}`;
     }
 }
 
