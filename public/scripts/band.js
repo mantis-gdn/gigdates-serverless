@@ -5,7 +5,6 @@ async function fetchBandData() {
 
     if (!bandId) {
         document.getElementById('band-name').innerText = 'Band ID is missing.';
-        document.title = 'Unknown Band - Gigdates.net';
         return;
     }
 
@@ -19,28 +18,29 @@ async function fetchBandData() {
         const band = data.band;
         const events = data.events;
 
-        // Update Page Title Dynamically
-        document.title = `${band.name || 'Unknown Band'} - Gigdates.net`;
-
-        // Populate Band Details
+        // ✅ Populate Band Details
         document.getElementById('band-name').innerText = band.name || 'No Name Provided';
         document.getElementById('band-genre').innerText = band.genre || 'No Genre Provided';
         document.getElementById('band-description').innerText = band.description || 'No Description Provided';
 
-        // Populate Band Members
+        // ✅ Populate Band Members
         const membersList = document.getElementById('band-members-list');
-        if (band.members && band.members.length > 0) {
-            membersList.innerHTML = band.members.map(member => `<li>${member.name} - ${member.role}</li>`).join('');
+        if (band.members && Array.isArray(band.members) && band.members.length > 0) {
+            membersList.innerHTML = band.members.map(member => `
+                <li>
+                    <strong>${member.name}</strong> - ${member.role}
+                </li>
+            `).join('');
         } else {
             membersList.innerHTML = '<li>No members listed.</li>';
         }
 
-        // Populate Social Media Links
+        // ✅ Populate Social Media Links
         document.getElementById('band-facebook').href = band.socialMedia?.facebook || '#';
         document.getElementById('band-instagram').href = band.socialMedia?.instagram || '#';
         document.getElementById('band-website').href = band.socialMedia?.website || '#';
 
-        // Populate Upcoming Events
+        // ✅ Populate Upcoming Events
         const eventsContainer = document.getElementById('band-events');
         if (events && events.length > 0) {
             eventsContainer.innerHTML = events.map(event => `
@@ -60,7 +60,6 @@ async function fetchBandData() {
     } catch (error) {
         console.error('Error fetching band data:', error);
         document.getElementById('band-name').innerText = 'Error loading band details.';
-        document.title = 'Error Loading Band - Gigdates.net';
     }
 }
 
