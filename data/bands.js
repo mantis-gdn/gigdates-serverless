@@ -68,6 +68,18 @@ const bands = [
             { name: "Carter Tribute", role: "Drums" },
             { name: "Tim Tribute", role: "Lead Guitar" }
         ]
+    },
+    {
+        id: "wolfman_jack",
+        name: "Wolfman Jack",
+        genre: "Psychedelic Rock Tribute",
+        description: "A live music project featuring veteran musicians from the New England area, dedicated to performing the psychedelic and electrifying 'Live Dead' era of The Grateful Dead.",
+        website: "https://www.wolfmanjackprimaldead.net",
+        socialMedia: {
+            facebook: "https://www.facebook.com/WolfmanJackPrimalDead",
+            instagram: "https://www.instagram.com/wolfmanjackband"
+        },
+        members: null
     }
 ];
 
