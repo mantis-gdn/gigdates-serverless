@@ -49,6 +49,25 @@ const bands = [
             { name: "Ad-Rock Ballz", role: "Vocals" },
             { name: "Mike D Ballz", role: "Vocals" }
         ]
+    },
+    {
+        id: "dmb_project",
+        name: "The DMB Project - Dave Matthews Tribute",
+        genre: "Tribute Band",
+        description: "A heartfelt tribute to Dave Matthews Band, bringing their iconic sound and timeless songs to life on stage.",
+        website: "https://www.thedmbproject.com",
+        socialMedia: {
+            facebook: "https://www.facebook.com/thedmbproject",
+            instagram: "https://www.instagram.com/thedmbproject",
+            website: "https://www.thedmbproject.com",
+        },
+        members: [
+            { name: "Dave Tribute", role: "Lead Vocals & Guitar" },
+            { name: "Boyd Tribute", role: "Violin" },
+            { name: "Stefan Tribute", role: "Bass" },
+            { name: "Carter Tribute", role: "Drums" },
+            { name: "Tim Tribute", role: "Lead Guitar" }
+        ]
     }
 ];
 

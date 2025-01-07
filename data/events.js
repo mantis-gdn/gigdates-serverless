@@ -25,7 +25,8 @@ const events = [
         title: "The DMB Project – Dave Matthews Tribute – Dave’s Birthday Bash",
         schedule: { date: "2025-01-11", doors: "8:00 PM", show: "9:00 PM" },
         venueId: "met_ri",
-        venue: "The Met RI"
+        venue: "The Met RI",
+        bandIds: ["dmb_project"]
     },
     {
         id: 5,
