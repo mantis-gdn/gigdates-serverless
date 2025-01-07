@@ -77,7 +77,8 @@ const bands = [
         website: "https://www.wolfmanjackprimaldead.net",
         socialMedia: {
             facebook: "https://www.facebook.com/WolfmanJackPrimalDead",
-            instagram: "https://www.instagram.com/wolfmanjackband"
+            instagram: "https://www.instagram.com/wolfmanjackband",
+            website: "https://www.wolfmanjackprimaldead.net"
         },
         members: null
     }

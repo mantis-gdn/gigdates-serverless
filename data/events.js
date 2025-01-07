@@ -141,6 +141,30 @@ const events = [
         schedule: { date: "2025-03-28", doors: "7:00 PM", show: "8:00 PM" },
         venueId: "met_ri",
         venue: "The Met RI"
+    },
+    {
+        id: 21,
+        title: "Wolfman Jack: Rock & Blues Night",
+        schedule: { date: "2025-02-14", doors: "7:30 PM", show: "8:30 PM" },
+        venueId: "met_ri",
+        venue: "The Met RI",
+        bandIds: ["wolfman_jack"]
+    },
+    {
+        id: 22,
+        title: "Wolfman Jack: Live at The Grove",
+        schedule: { date: "2025-03-07", doors: "7:00 PM", show: "8:00 PM" },
+        venueId: "grove_ct",
+        venue: "The Grove CT",
+        bandIds: ["wolfman_jack"]
+    },
+    {
+        id: 23,
+        title: "Wolfman Jack: Rock Revival Tour",
+        schedule: { date: "2025-04-05", doors: "6:30 PM", show: "7:30 PM" },
+        venueId: "oceanview_ri",
+        venue: "Oceanview Pavilion RI",
+        bandIds: ["wolfman_jack"]
     }
 ];
 
