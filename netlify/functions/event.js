@@ -2,10 +2,10 @@ const { events } = require('../../data/events');
 
 exports.handler = async (event) => {
     try {
-        // Extract the event ID from query parameters
         const eventId = event.queryStringParameters?.id;
 
         if (!eventId) {
+            console.error('Event ID missing from query parameters');
             return {
                 statusCode: 400,
                 headers: { "Content-Type": "application/json" },
@@ -13,10 +13,10 @@ exports.handler = async (event) => {
             };
         }
 
-        // Find the event by ID
-        const eventDetails = events.find(e => String(e.id) === eventId);
+        const eventData = events.find(e => e.id == eventId);
 
-        if (!eventDetails) {
+        if (!eventData) {
+            console.error(`Event not found for ID: ${eventId}`);
             return {
                 statusCode: 404,
                 headers: { "Content-Type": "application/json" },
@@ -24,21 +24,22 @@ exports.handler = async (event) => {
             };
         }
 
-        // Return event details
         return {
             statusCode: 200,
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-                title: eventDetails.title,
-                date: eventDetails.schedule?.date || 'No Date Provided',
-                doors: eventDetails.schedule?.doors || 'No Time Provided',
-                show: eventDetails.schedule?.show || 'No Time Provided',
-                venue: eventDetails.venue || 'Unknown Venue',
-                venueId: eventDetails.venueId || 'Unknown Venue ID'
+                id: eventData.id,
+                title: eventData.title,
+                date: eventData.schedule?.date || 'No Date Provided',
+                doors: eventData.schedule?.doors || 'No Time Provided',
+                show: eventData.schedule?.show || 'No Time Provided',
+                venue: eventData.venue || 'Unknown Venue',
+                venueId: eventData.venueId || 'Unknown Venue ID',
+                bandIds: eventData.bandIds || [] // Include bandIds explicitly
             }),
         };
     } catch (error) {
-        console.error('Error fetching event data:', error);
+        console.error('Server Error:', error);
         return {
             statusCode: 500,
             headers: { "Content-Type": "application/json" },
