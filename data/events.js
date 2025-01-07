@@ -53,7 +53,8 @@ const events = [
         title: "Ballznight Live: Korn Ballz, Limp Ballz, Beastie Ballz",
         schedule: { date: "2025-01-18", doors: "7:30 PM", show: "8:30 PM" },
         venueId: "met_ri",
-        venue: "The Met RI"
+        venue: "The Met RI",
+        bandIds: ["korn_ballz", "limp_ballz", "beastie_ballz"]
     },
     {
         id: 9,

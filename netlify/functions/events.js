@@ -1,25 +1,21 @@
-const { venues } = require('../../data/venues');
 const { events } = require('../../data/events');
 
 exports.handler = async () => {
     try {
-        // Map events and attach their respective venue names
-        const enrichedEvents = events.map(event => {
-            const venue = venues.find(v => v.id === event.venueId);
-            return {
-                id: event.id,
-                title: event.title || 'Unnamed Event',
-                date: event.schedule?.date || 'No Date Provided',
-                time: event.schedule?.show || 'No Time Provided',
-                venueName: venue?.name || 'Unknown Venue',
-                venueId: event.venueId || 'Unknown Venue ID'
-            };
-        });
-
         return {
             statusCode: 200,
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ events: enrichedEvents }),
+            body: JSON.stringify({
+                events: events.map(event => ({
+                    id: event.id,
+                    title: event.title,
+                    date: event.schedule?.date || 'No Date Provided',
+                    time: event.schedule?.show || 'No Time Provided',
+                    venueName: event.venue,
+                    venueId: event.venueId,
+                    bandIds: event.bandIds || [] // Ensure bandIds are included, defaulting to an empty array
+                }))
+            }),
         };
     } catch (error) {
         console.error('Error fetching events:', error);
