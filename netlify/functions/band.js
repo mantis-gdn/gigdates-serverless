@@ -56,7 +56,8 @@ exports.handler = async (event) => {
                         facebook: band.socialMedia?.facebook || '#',
                         instagram: band.socialMedia?.instagram || '#',
                         website: band.socialMedia?.website || '#',
-                    }
+                    },
+                    members: band.members || [] // Ensure members are included in the response
                 },
                 events: bandEvents
             }),
