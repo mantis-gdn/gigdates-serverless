@@ -35,6 +35,7 @@ async function fetchEventDetails() {
 
     if (!eventId) {
         eventContainer.innerHTML = `<p>Error: Event ID is missing in the URL.</p>`;
+        document.title = 'Unknown Event - Gigdates.net';
         return;
     }
 
@@ -46,6 +47,9 @@ async function fetchEventDetails() {
 
         const event = await response.json();
         console.log('Fetched Event:', event);
+
+        // Set Dynamic Page Title
+        document.title = `${event.title || 'Unnamed Event'} - Gigdates.net`;
 
         // Fetch and display bands
         let bandListHTML = '';
@@ -80,6 +84,7 @@ async function fetchEventDetails() {
     } catch (error) {
         console.error('Error fetching event details:', error);
         eventContainer.innerHTML = `<p>Failed to load event details. Error: ${error.message}</p>`;
+        document.title = 'Error Loading Event - Gigdates.net';
     }
 }
 

@@ -5,6 +5,7 @@ async function fetchBandData() {
 
     if (!bandId) {
         document.getElementById('band-name').innerText = 'Band ID is missing.';
+        document.title = 'Unknown Band - Gigdates.net';
         return;
     }
 
@@ -17,6 +18,9 @@ async function fetchBandData() {
         const data = await response.json();
         const band = data.band;
         const events = data.events;
+
+        // Update Page Title Dynamically
+        document.title = `${band.name || 'Unknown Band'} - Gigdates.net`;
 
         // Populate Band Details
         document.getElementById('band-name').innerText = band.name || 'No Name Provided';
@@ -56,6 +60,7 @@ async function fetchBandData() {
     } catch (error) {
         console.error('Error fetching band data:', error);
         document.getElementById('band-name').innerText = 'Error loading band details.';
+        document.title = 'Error Loading Band - Gigdates.net';
     }
 }
 
