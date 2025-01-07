@@ -92,7 +92,8 @@ async function fetchVenueData() {
 
         document.getElementById('venue-social').innerHTML = `
             <a href="${data.venue.socialMedia?.facebook || '#'}" target="_blank">Facebook</a> | 
-            <a href="${data.venue.socialMedia?.instagram || '#'}" target="_blank">Instagram</a>
+            <a href="${data.venue.socialMedia?.instagram || '#'}" target="_blank">Instagram</a> | 
+            <a href="${data.venue.socialMedia?.website || '#'}" target="_blank">Website</a>
         `;
 
         // Render Upcoming Events

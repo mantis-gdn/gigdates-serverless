@@ -54,6 +54,7 @@ exports.handler = async (event) => {
                     socialMedia: {
                         facebook: venue.socialMedia?.facebook || '#',
                         instagram: venue.socialMedia?.instagram || '#',
+                        website: venue.socialMedia?.website || '#',
                     }
                 },
                 events: venueEvents

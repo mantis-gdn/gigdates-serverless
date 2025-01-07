@@ -11,7 +11,8 @@ const venues = [
         description: "A versatile music and entertainment venue booking rock, folk, punk, blues, comedians, and more.",
         socialMedia: {
             facebook: "https://www.facebook.com/TheMetRI",
-            instagram: "https://www.instagram.com/TheMetRI"
+            instagram: "https://www.instagram.com/TheMetRI",
+            website: "https://themetri.com"
         }
     }
 ];
