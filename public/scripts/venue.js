@@ -20,7 +20,7 @@ function getTodayDateEastern() {
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, '0');
     const day = String(date.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`; // Return 'YYYY-MM-DD'
+    return `${year}-${month}-${day}`;
 }
 
 // Function to format a date into a readable format
@@ -43,16 +43,16 @@ function getDayOfWeek(dateString) {
 // Function to assign colors to each day of the week
 function getDayBadge(day) {
     const dayColors = {
-        'Sunday': '#FF6347',    // Tomato Red
-        'Monday': '#FFB347',    // Orange
-        'Tuesday': '#FFD700',   // Gold
-        'Wednesday': '#9ACD32', // Yellow-Green
-        'Thursday': '#6495ED',  // Cornflower Blue
-        'Friday': '#DA70D6',    // Orchid
-        'Saturday': '#8A2BE2'   // Blue Violet
+        'Sunday': '#FF6347',
+        'Monday': '#FFB347',
+        'Tuesday': '#FFD700',
+        'Wednesday': '#9ACD32',
+        'Thursday': '#6495ED',
+        'Friday': '#DA70D6',
+        'Saturday': '#8A2BE2'
     };
 
-    const color = dayColors[day] || '#FFFFFF'; // Fallback to white
+    const color = dayColors[day] || '#FFFFFF';
     return `<span class="day-badge" style="background-color: ${color};">${day}</span>`;
 }
 
@@ -82,7 +82,10 @@ async function fetchVenueData() {
             throw new Error('Venue data is missing in the response.');
         }
 
-        // Update Venue Details
+        // Update Page Title Dynamically
+        document.title = `${data.venue.name} - Gigdates.net`;
+
+        // Update Venue Details on the Page
         document.getElementById('venue-name').innerText = data.venue.name || 'Unknown Venue';
         document.getElementById('venue-address').innerText = data.venue.address || 'No Address Provided';
         document.getElementById('venue-phone').innerText = data.venue.phone || 'No Phone Provided';
@@ -101,14 +104,20 @@ async function fetchVenueData() {
         if (eventsContainer && data.events && data.events.length > 0) {
             const today = getTodayDateEastern();
 
-            // Filter only today's and future events
             const upcomingEvents = data.events.filter(event => event.date >= today);
 
             if (upcomingEvents.length > 0) {
                 eventsContainer.innerHTML = upcomingEvents.map(event => {
-                    const isToday = event.date === today; // Compare event date with today's date
-                    const dayOfWeek = getDayOfWeek(event.date); // Get the day of the week
-                    const dayBadge = getDayBadge(dayOfWeek); // Get the day badge
+                    const isToday = event.date === today;
+                    const dayOfWeek = getDayOfWeek(event.date);
+                    const dayBadge = getDayBadge(dayOfWeek);
+
+                    // Add Band Details if Available
+                    let bandListHTML = '';
+                    if (event.bandIds && event.bandIds.length > 0) {
+                        const bands = event.bandIds.map(bandId => `<a href="/band.html?id=${bandId}">${bandId}</a>`).join(', ');
+                        bandListHTML = `<p><strong>Bands:</strong> ${bands}</p>`;
+                    }
 
                     return `
                         <div class="event-card">
@@ -124,6 +133,7 @@ async function fetchVenueData() {
                                 ${formatDate(event.date)}
                             </p>
                             <p><strong>Time:</strong> ${event.time || 'No Time Provided'}</p>
+                            ${bandListHTML}
                         </div>
                     `;
                 }).join('');
