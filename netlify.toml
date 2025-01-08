@@ -8,6 +8,11 @@
   node_bundler = "esbuild"
 
 [[redirects]]
+  from = "/themetri"
+  to = "/venue/met_ri"
+  status = 301
+
+[[redirects]]
   from = "/venue/:id"
   to = "/venue.html"
   status = 200
