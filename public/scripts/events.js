@@ -111,7 +111,7 @@ async function fetchBandDetails(bandIds) {
                     return `
                         <div class="event-card">
                             <h3>
-                                <a href="/event/?id=${event.id}">
+                                <a href="/event/${event.id}">
                                     ${event.title || 'Unnamed Event'}
                                 </a>
                             </h3>
@@ -123,7 +123,7 @@ async function fetchBandDetails(bandIds) {
                             </p>
                             <p><strong>Time:</strong> ${event.time || 'No Time Provided'}</p>
                             <p><strong>Venue:</strong> 
-                                <a href="/venue/?id=${event.venueId}">
+                                <a href="/venue/${event.venueId}">
                                     ${event.venueName || 'Unknown Venue'}
                                 </a>
                             </p>

@@ -1,15 +1,24 @@
+// Extract Band ID from URL Path
+function getBandId() {
+    const pathParts = window.location.pathname.split('/');
+    return pathParts[pathParts.length - 1]; // Get the last part of the path (band ID)
+}
+
 // Fetch Band Details and Events
 async function fetchBandData() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const bandId = urlParams.get('id');
+    const bandId = getBandId();
 
     if (!bandId) {
         document.getElementById('band-name').innerText = 'Band ID is missing.';
+        document.title = 'Unknown Band - Gigdates.net';
+        console.error('Error: Band ID is missing in the URL');
         return;
     }
 
     try {
+        console.log('Fetching band details for ID:', bandId);
         const response = await fetch(`/.netlify/functions/band?id=${bandId}`);
+        
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -17,6 +26,12 @@ async function fetchBandData() {
         const data = await response.json();
         const band = data.band;
         const events = data.events;
+
+        console.log('Fetched Band Data:', band);
+        console.log('Fetched Band Events:', events);
+
+        // ✅ Set Dynamic Page Title
+        document.title = `${band.name || 'Unnamed Band'} - Gigdates.net`;
 
         // ✅ Populate Band Details
         document.getElementById('band-name').innerText = band.name || 'No Name Provided';
@@ -46,11 +61,11 @@ async function fetchBandData() {
             eventsContainer.innerHTML = events.map(event => `
                 <div class="event-card">
                     <h3>
-                        <a href="/event/?id=${event.id}">${event.title}</a>
+                        <a href="/event/${event.id}">${event.title}</a>
                     </h3>
                     <p><strong>Date:</strong> ${event.date}</p>
                     <p><strong>Time:</strong> ${event.time}</p>
-                    <p><strong>Venue:</strong> <a href="/venue/?id=${event.venueId}">${event.venue}</a></p>
+                    <p><strong>Venue:</strong> <a href="/venue/${event.venueId}">${event.venue}</a></p>
                 </div>
             `).join('');
         } else {
@@ -60,6 +75,7 @@ async function fetchBandData() {
     } catch (error) {
         console.error('Error fetching band data:', error);
         document.getElementById('band-name').innerText = 'Error loading band details.';
+        document.title = 'Error Loading Band - Gigdates.net';
     }
 }
 

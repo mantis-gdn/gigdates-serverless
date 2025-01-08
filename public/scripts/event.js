@@ -27,20 +27,28 @@ async function fetchBandDetails(bandIds) {
     return bandDetails.filter(Boolean); // Remove nulls or undefined entries
 }
 
+// Extract Event ID from URL Path
+function getEventId() {
+    const pathParts = window.location.pathname.split('/');
+    return pathParts[pathParts.length - 1]; // Get the last part of the path (event ID)
+}
+
 // Function to fetch and display event details
 async function fetchEventDetails() {
     const eventContainer = document.getElementById('event-container');
-    const urlParams = new URLSearchParams(window.location.search);
-    const eventId = urlParams.get('id');
+    const eventId = getEventId();
 
     if (!eventId) {
         eventContainer.innerHTML = `<p>Error: Event ID is missing in the URL.</p>`;
         document.title = 'Unknown Event - Gigdates.net';
+        console.error('Error: Event ID is missing in the URL');
         return;
     }
 
     try {
+        console.log('Fetching event details for ID:', eventId);
         const response = await fetch(`/.netlify/functions/event?id=${eventId}`);
+
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -60,7 +68,7 @@ async function fetchEventDetails() {
                 <ul>
                     ${bands.map(band => `
                         <li>
-                            <a href="/band/?id=${band.id}" style="color: #4a90e2;">${band.name}</a>
+                            <a href="/band/${band.id}" style="color: #4a90e2;">${band.name}</a>
                         </li>
                     `).join('')}
                 </ul>
@@ -71,7 +79,7 @@ async function fetchEventDetails() {
         eventContainer.innerHTML = `
             <h1>${event.title || 'Unnamed Event'}</h1>
             <h2>
-                <a href="/venue/?id=${event.venueId}" style="color: #4a90e2;">
+                <a href="/venue/${event.venueId}" style="color: #4a90e2;">
                     ${event.venue || 'Unknown Venue'}
                 </a>
             </h2>
