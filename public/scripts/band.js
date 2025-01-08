@@ -4,6 +4,48 @@ function getBandId() {
     return pathParts[pathParts.length - 1]; // Get the last part of the path (band ID)
 }
 
+// Utility function to format date
+function formatDate(dateString) {
+    const date = new Date(dateString + 'T00:00:00');
+    return date.toLocaleDateString('en-US', {
+        timeZone: 'America/New_York',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+}
+
+// Function to get the day of the week
+function getDayOfWeek(dateString) {
+    const date = new Date(dateString + 'T00:00:00');
+    return date.toLocaleDateString('en-US', { timeZone: 'America/New_York', weekday: 'long' });
+}
+
+// Function to assign colors to each day of the week
+function getDayBadge(day) {
+    const dayColors = {
+        'Sunday': '#FF6347',
+        'Monday': '#FFB347',
+        'Tuesday': '#FFD700',
+        'Wednesday': '#9ACD32',
+        'Thursday': '#6495ED',
+        'Friday': '#DA70D6',
+        'Saturday': '#8A2BE2'
+    };
+
+    const color = dayColors[day] || '#FFFFFF';
+    return `<span class="day-badge" style="background-color: ${color};">${day}</span>`;
+}
+
+// Function to get today's date in YYYY-MM-DD format
+function getTodayDateEastern() {
+    const date = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
 // Fetch Band Details and Events
 async function fetchBandData() {
     const bandId = getBandId();
@@ -58,16 +100,29 @@ async function fetchBandData() {
         // ✅ Populate Upcoming Events
         const eventsContainer = document.getElementById('band-events');
         if (events && events.length > 0) {
-            eventsContainer.innerHTML = events.map(event => `
-                <div class="event-card">
-                    <h3>
-                        <a href="/event/${event.id}">${event.title}</a>
-                    </h3>
-                    <p><strong>Date:</strong> ${event.date}</p>
-                    <p><strong>Time:</strong> ${event.time}</p>
-                    <p><strong>Venue:</strong> <a href="/venue/${event.venueId}">${event.venue}</a></p>
-                </div>
-            `).join('');
+            const today = getTodayDateEastern();
+
+            eventsContainer.innerHTML = events.map(event => {
+                const isToday = event.date === today;
+                const dayOfWeek = getDayOfWeek(event.date);
+                const dayBadge = getDayBadge(dayOfWeek);
+
+                return `
+                    <div class="event-card">
+                        <h3>
+                            <a href="/event/${event.id}">${event.title}</a>
+                        </h3>
+                        <p>
+                            <strong>Date:</strong> 
+                            ${isToday ? '<span class="today-badge">TODAY</span>' : ''} 
+                            ${dayBadge}
+                            ${formatDate(event.date)}
+                        </p>
+                        <p><strong>Time:</strong> ${event.time || 'No Time Provided'}</p>
+                        <p><strong>Venue:</strong> <a href="/venue/${event.venueId}">${event.venue}</a></p>
+                    </div>
+                `;
+            }).join('');
         } else {
             eventsContainer.innerHTML = '<p>No upcoming events available for this band.</p>';
         }
