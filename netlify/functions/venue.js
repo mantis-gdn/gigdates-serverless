@@ -1,6 +1,15 @@
 const { venues } = require('../../data/venues');
 const { events } = require('../../data/events');
 
+// Utility function to get today's date in YYYY-MM-DD format
+function getTodayDateEastern() {
+    const date = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
 exports.handler = async (event) => {
     try {
         const venueId = event.queryStringParameters?.id;
@@ -25,13 +34,19 @@ exports.handler = async (event) => {
             };
         }
 
+        const today = getTodayDateEastern();
+
         const venueEvents = events
-            .filter(event => event.venueId === venueId)
+            .filter(event => event.venueId === venueId && event.schedule?.date >= today) // Filter future events
+            .sort((a, b) => new Date(a.schedule?.date) - new Date(b.schedule?.date)) // Sort by date ascending
             .map(event => ({
                 id: event.id,
                 title: event.title || 'Unnamed Event',
                 date: event.schedule?.date || 'No Date Provided',
                 time: event.schedule?.show || 'No Time Provided',
+                venueName: event.venue || 'Unknown Venue',
+                venueId: event.venueId || null,
+                bandIds: event.bandIds || [] // Include bandIds in the response
             }));
 
         console.log('Venue Data:', venue);

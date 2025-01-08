@@ -46,6 +46,34 @@ function getTodayDateEastern() {
     return `${year}-${month}-${day}`;
 }
 
+// Fetch Band Details for Event Cards
+async function fetchBandDetails(bandIds) {
+    if (!bandIds || bandIds.length === 0) return [];
+
+    console.log('Fetching bands:', bandIds);
+
+    const bandDetails = await Promise.all(bandIds.map(async (bandId) => {
+        try {
+            const response = await fetch(`/.netlify/functions/band?id=${bandId}`);
+            if (!response.ok) {
+                console.warn(`Failed to fetch details for band ID: ${bandId}, Status: ${response.status}`);
+                return { id: bandId, name: `Unknown Band (${bandId})` };
+            }
+
+            const data = await response.json();
+            return {
+                id: bandId,
+                name: data?.band?.name || `Unnamed Band (${bandId})`
+            };
+        } catch (error) {
+            console.warn(`Error fetching band details for ${bandId}: ${error.message}`);
+            return { id: bandId, name: `Error Loading Band (${bandId})` };
+        }
+    }));
+
+    return bandDetails.filter(Boolean);
+}
+
 // Fetch Band Details and Events
 async function fetchBandData() {
     const bandId = getBandId();
@@ -102,10 +130,21 @@ async function fetchBandData() {
         if (events && events.length > 0) {
             const today = getTodayDateEastern();
 
-            eventsContainer.innerHTML = events.map(event => {
+            eventsContainer.innerHTML = await Promise.all(events.map(async (event) => {
                 const isToday = event.date === today;
                 const dayOfWeek = getDayOfWeek(event.date);
                 const dayBadge = getDayBadge(dayOfWeek);
+
+                // Fetch band details if bandIds exist
+                let bandListHTML = '';
+                if (event.bandIds && event.bandIds.length > 0) {
+                    const bands = await fetchBandDetails(event.bandIds);
+                    bandListHTML = `
+                        <p><strong>Bands:</strong> 
+                            ${bands.map(band => `<a href="/band/${band.id}" style="color: #4a90e2;">${band.name}</a>`).join(', ')}
+                        </p>
+                    `;
+                }
 
                 return `
                     <div class="event-card">
@@ -119,10 +158,15 @@ async function fetchBandData() {
                             ${formatDate(event.date)}
                         </p>
                         <p><strong>Time:</strong> ${event.time || 'No Time Provided'}</p>
-                        <p><strong>Venue:</strong> <a href="/venue/${event.venueId}">${event.venue}</a></p>
+                           <p><strong>Venue:</strong> 
+                                <a href="/venue/${event.venueId}">
+                                    ${event.venue || 'Unknown Venue'}
+                                </a>
+                            </p>
+                        ${bandListHTML}
                     </div>
                 `;
-            }).join('');
+            })).then(eventCards => eventCards.join(''));
         } else {
             eventsContainer.innerHTML = '<p>No upcoming events available for this band.</p>';
         }

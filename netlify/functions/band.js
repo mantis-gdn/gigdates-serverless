@@ -1,9 +1,9 @@
 const { bands } = require('../../data/bands');
 const { events } = require('../../data/events');
 
+// Fetch band details and associated events
 exports.handler = async (event) => {
     try {
-        // Extract Band ID from query parameters
         const bandId = event.queryStringParameters?.id;
 
         if (!bandId) {
@@ -15,7 +15,6 @@ exports.handler = async (event) => {
             };
         }
 
-        // Find Band by ID
         const band = bands.find(b => b.id === bandId);
 
         if (!band) {
@@ -27,7 +26,6 @@ exports.handler = async (event) => {
             };
         }
 
-        // Find Events associated with the Band
         const bandEvents = events
             .filter(event => event.bandIds && event.bandIds.includes(bandId))
             .map(event => ({
@@ -37,12 +35,18 @@ exports.handler = async (event) => {
                 time: event.schedule?.show || 'No Time Provided',
                 venue: event.venue || 'Unknown Venue',
                 venueId: event.venueId || null,
+                bandIds: event.bandIds || []
             }));
 
-        console.log('Band Data:', band);
-        console.log('Band Events:', bandEvents);
+        // Fetch band names for each event
+        const eventsWithBands = bandEvents.map(event => {
+            const eventBands = event.bandIds.map(bandId => {
+                const foundBand = bands.find(b => b.id === bandId);
+                return foundBand ? foundBand.name : `Unknown Band (${bandId})`;
+            });
+            return { ...event, bands: eventBands };
+        });
 
-        // Return Band Details and Events
         return {
             statusCode: 200,
             headers: { "Content-Type": "application/json" },
@@ -57,12 +61,11 @@ exports.handler = async (event) => {
                         instagram: band.socialMedia?.instagram || '#',
                         website: band.socialMedia?.website || '#',
                     },
-                    members: band.members || [] // Ensure members are included in the response
+                    members: band.members || []
                 },
-                events: bandEvents
+                events: eventsWithBands
             }),
         };
-
     } catch (error) {
         console.error('Server Error:', error);
         return {

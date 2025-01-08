@@ -56,6 +56,34 @@ function getDayBadge(day) {
     return `<span class="day-badge" style="background-color: ${color};">${day}</span>`;
 }
 
+// Fetch Band Details for Event Cards
+async function fetchBandDetails(bandIds) {
+    if (!bandIds || bandIds.length === 0) return [];
+
+    console.log('Fetching bands:', bandIds);
+
+    const bandDetails = await Promise.all(bandIds.map(async (bandId) => {
+        try {
+            const response = await fetch(`/.netlify/functions/band?id=${bandId}`);
+            if (!response.ok) {
+                console.warn(`Failed to fetch details for band ID: ${bandId}, Status: ${response.status}`);
+                return { id: bandId, name: `Unknown Band (${bandId})` };
+            }
+
+            const data = await response.json();
+            return {
+                id: bandId,
+                name: data?.band?.name || `Unnamed Band (${bandId})`
+            };
+        } catch (error) {
+            console.warn(`Error fetching band details for ${bandId}: ${error.message}`);
+            return { id: bandId, name: `Error Loading Band (${bandId})` };
+        }
+    }));
+
+    return bandDetails.filter(Boolean);
+}
+
 // Fetch Venue Data from API
 async function fetchVenueData() {
     const venueId = getVenueId();
@@ -106,16 +134,20 @@ async function fetchVenueData() {
             const upcomingEvents = data.events.filter(event => event.date >= today);
 
             if (upcomingEvents.length > 0) {
-                eventsContainer.innerHTML = upcomingEvents.map(event => {
+                eventsContainer.innerHTML = await Promise.all(upcomingEvents.map(async (event) => {
                     const isToday = event.date === today;
                     const dayOfWeek = getDayOfWeek(event.date);
                     const dayBadge = getDayBadge(dayOfWeek);
 
-                    // Add Band Details if Available
+                    // Fetch band details if bandIds exist
                     let bandListHTML = '';
                     if (event.bandIds && event.bandIds.length > 0) {
-                        const bands = event.bandIds.map(bandId => `<a href="/band/${bandId}">${bandId}</a>`).join(', ');
-                        bandListHTML = `<p><strong>Bands:</strong> ${bands}</p>`;
+                        const bands = await fetchBandDetails(event.bandIds);
+                        bandListHTML = `
+                            <p><strong>Bands:</strong> 
+                                ${bands.map(band => `<a href="/band/${band.id}" style="color: #4a90e2;">${band.name}</a>`).join(', ')}
+                            </p>
+                        `;
                     }
 
                     return `
@@ -128,21 +160,23 @@ async function fetchVenueData() {
                             <p>
                                 <strong>Date:</strong> 
                                 ${isToday ? '<span class="today-badge">TODAY</span>' : ''} 
-                                ${dayBadge}
+                                ${dayBadge} 
                                 ${formatDate(event.date)}
                             </p>
                             <p><strong>Time:</strong> ${event.time || 'No Time Provided'}</p>
+                           <p><strong>Venue:</strong> 
+                                <a href="/venue/${event.venueId}">
+                                    ${event.venueName || 'Unknown Venue'}
+                                </a>
+                            </p>
                             ${bandListHTML}
                         </div>
                     `;
-                }).join('');
+                })).then(eventCards => eventCards.join(''));
             } else {
                 eventsContainer.innerHTML = '<p>No upcoming events available for this venue.</p>';
             }
-        } else if (eventsContainer) {
-            eventsContainer.innerHTML = '<p>No events available for this venue.</p>';
         }
-
     } catch (error) {
         console.error('Error fetching venue data:', error.message);
         document.getElementById('venue-name').innerText = 'Error fetching venue details.';
