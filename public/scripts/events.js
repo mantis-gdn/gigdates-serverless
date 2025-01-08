@@ -103,7 +103,7 @@ async function fetchBandDetails(bandIds) {
                         const bands = await fetchBandDetails(event.bandIds);
                         bandListHTML = `
                         <p><strong>Bands:</strong> 
-                            ${bands.map(band => `<a href="/band/?id=${band.id}" style="color: #4a90e2;">${band.name}</a>`).join(', ')}
+                            ${bands.map(band => `<a href="/band/${band.id}" style="color: #4a90e2;">${band.name}</a>`).join(', ')}
                         </p>
                     `;
                     }
