@@ -75,8 +75,8 @@ body {
     background: url('/path-to-hero-image.jpg') no-repeat center center/cover;
     text-align: center;
     color: #e6edf3;
-    padding: 60px 20px;
-    margin: 20px 0;
+    padding: 0px 20px;
+    margin: 0px 0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -108,6 +108,14 @@ body {
 
 .hero-section button:hover {
     background-color: #1f6feb;
+}
+
+/* === Current Date === */
+.current-date {
+    text-align: center;
+    color: #ffffff; /* White text */
+    font-size: 1em;
+    margin: 10px 0;
 }
 
 /* === Event Grid (Unified Across Venue & Band Pages) === */
