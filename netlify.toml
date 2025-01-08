@@ -8,10 +8,9 @@
   node_bundler = "esbuild"
 
 [[redirects]]
-  from = "/.netlify/functions/venue/:id"
-  to = "/.netlify/functions/venue"
+  from = "/venue/:id"
+  to = "/venue.html"
   status = 200
-  force = true
 
 [functions]
   directory = "netlify/functions"

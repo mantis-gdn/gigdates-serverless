@@ -1,7 +1,7 @@
-// Extract Venue ID from URL Query String
+// Extract Venue ID from URL Path
 function getVenueId() {
-    const params = new URLSearchParams(window.location.search);
-    return params.get('id');
+    const pathParts = window.location.pathname.split('/');
+    return pathParts[pathParts.length - 1]; // Get the last part of the path (venue ID)
 }
 
 // Utility function to safely set innerHTML
@@ -70,7 +70,6 @@ async function fetchVenueData() {
         console.log('Fetching venue details for ID:', venueId);
         const response = await fetch(`/.netlify/functions/venue?id=${venueId}`);
 
-        console.log('Response Status:', response.status);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -115,14 +114,14 @@ async function fetchVenueData() {
                     // Add Band Details if Available
                     let bandListHTML = '';
                     if (event.bandIds && event.bandIds.length > 0) {
-                        const bands = event.bandIds.map(bandId => `<a href="/band/?id=${bandId}">${bandId}</a>`).join(', ');
+                        const bands = event.bandIds.map(bandId => `<a href="/band/${bandId}">${bandId}</a>`).join(', ');
                         bandListHTML = `<p><strong>Bands:</strong> ${bands}</p>`;
                     }
 
                     return `
                         <div class="event-card">
                             <h3>
-                                <a href="/event/?id=${event.id}">
+                                <a href="/event/${event.id}">
                                     ${event.title || 'Unnamed Event'}
                                 </a>
                             </h3>
