@@ -115,14 +115,14 @@ async function fetchVenueData() {
                     // Add Band Details if Available
                     let bandListHTML = '';
                     if (event.bandIds && event.bandIds.length > 0) {
-                        const bands = event.bandIds.map(bandId => `<a href="/band.html?id=${bandId}">${bandId}</a>`).join(', ');
+                        const bands = event.bandIds.map(bandId => `<a href="/band/?id=${bandId}">${bandId}</a>`).join(', ');
                         bandListHTML = `<p><strong>Bands:</strong> ${bands}</p>`;
                     }
 
                     return `
                         <div class="event-card">
                             <h3>
-                                <a href="/event.html?id=${event.id}">
+                                <a href="/event/?id=${event.id}">
                                     ${event.title || 'Unnamed Event'}
                                 </a>
                             </h3>

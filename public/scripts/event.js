@@ -60,7 +60,7 @@ async function fetchEventDetails() {
                 <ul>
                     ${bands.map(band => `
                         <li>
-                            <a href="/band.html?id=${band.id}" style="color: #4a90e2;">${band.name}</a>
+                            <a href="/band/?id=${band.id}" style="color: #4a90e2;">${band.name}</a>
                         </li>
                     `).join('')}
                 </ul>
@@ -71,7 +71,7 @@ async function fetchEventDetails() {
         eventContainer.innerHTML = `
             <h1>${event.title || 'Unnamed Event'}</h1>
             <h2>
-                <a href="/venue.html?id=${event.venueId}" style="color: #4a90e2;">
+                <a href="/venue/?id=${event.venueId}" style="color: #4a90e2;">
                     ${event.venue || 'Unknown Venue'}
                 </a>
             </h2>
