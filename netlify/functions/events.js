@@ -1,12 +1,28 @@
 const { events } = require('../../data/events');
 
+// Utility function to get today's date in YYYY-MM-DD format
+function getTodayDateEastern() {
+    const date = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
 exports.handler = async () => {
     try {
+        const today = getTodayDateEastern();
+
+        // Filter out past events and sort by date
+        const filteredAndSortedEvents = events
+            .filter(event => event.schedule?.date >= today) // Only future or today's events
+            .sort((a, b) => new Date(a.schedule?.date) - new Date(b.schedule?.date)); // Sort by date ascending
+
         return {
             statusCode: 200,
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-                events: events.map(event => ({
+                events: filteredAndSortedEvents.map(event => ({
                     id: event.id,
                     title: event.title,
                     date: event.schedule?.date || 'No Date Provided',
