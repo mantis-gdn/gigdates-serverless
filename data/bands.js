@@ -6,8 +6,9 @@ const bands = [
         description: "A tribute band delivering the powerful and aggressive music of Korn with an extra helping of energy.",
         website: "https://www.gotballzbands.com/kornballz",
         socialMedia: {
-            facebook: null,
-            instagram: null
+            facebook: "https://www.facebook.com/KornBallzOfficial",
+            instagram: "https://www.instagram.com/KornBallzOfficial",
+            website: "https://www.gotballzbands.com/kornballz"
         },
         members: [
             { name: "Jonathan Ballz", role: "Lead Vocals" },
@@ -22,10 +23,11 @@ const bands = [
         name: "Limp Ballz",
         genre: "Nu Metal Tribute",
         description: "A tribute band capturing the essence and high-energy performances of Limp Bizkit.",
-        website: null,
+        website: "https://www.gotballzbands.com/limpballz",
         socialMedia: {
-            facebook: null,
-            instagram: null
+            facebook: "https://www.facebook.com/LimpBallzOfficial",
+            instagram: "https://www.instagram.com/LimpBallzOfficial",
+            website: "https://www.gotballzbands.com/limpballz"
         },
         members: [
             { name: "Fred Ballz", role: "Lead Vocals" },
@@ -39,10 +41,11 @@ const bands = [
         name: "Beastie Ballz",
         genre: "Rap Rock Tribute",
         description: "A tribute band dedicated to delivering the iconic sounds and performances of the Beastie Boys.",
-        website: null,
+        website: "https://www.gotballzbands.com/beastieballz",
         socialMedia: {
-            facebook: null,
-            instagram: null
+            facebook: "https://www.facebook.com/BeastieBallzOfficial",
+            instagram: "https://www.instagram.com/BeastieBallzOfficial",
+            website: "https://www.gotballzbands.com/beastieballz"
         },
         members: [
             { name: "MCA Ballz", role: "Vocals" },
@@ -59,7 +62,7 @@ const bands = [
         socialMedia: {
             facebook: "https://www.facebook.com/thedmbproject",
             instagram: "https://www.instagram.com/thedmbproject",
-            website: "https://www.thedmbproject.com",
+            website: "https://www.thedmbproject.com"
         },
         members: [
             { name: "Dave Tribute", role: "Lead Vocals & Guitar" },

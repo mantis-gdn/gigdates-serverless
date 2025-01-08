@@ -165,6 +165,46 @@ const events = [
         venueId: "oceanview_ri",
         venue: "Oceanview Pavilion RI",
         bandIds: ["wolfman_jack"]
+    },
+    {
+        id: 24,
+        title: "The DMB Project - Live at Oceanview Pavilion",
+        schedule: { date: "2025-02-15", doors: "7:00 PM", show: "8:00 PM" },
+        venue: "Oceanview Pavilion",
+        venueId: "oceanview_ri",
+        bandIds: ["dmb_project"]
+    },
+    {
+        id: 25,
+        title: "The DMB Project - Sunset Music Festival",
+        schedule: { date: "2025-03-10", doors: "6:30 PM", show: "7:30 PM" },
+        venue: "Sunset Music Festival Grounds",
+        venueId: "sunset_festival_ri",
+        bandIds: ["dmb_project"]
+    },
+    {
+        id: 26,
+        title: "The DMB Project - Summer Breeze Concert Series",
+        schedule: { date: "2025-06-20", doors: "8:00 PM", show: "9:00 PM" },
+        venue: "Breeze Amphitheater",
+        venueId: "breeze_amphitheater",
+        bandIds: ["dmb_project"]
+    },
+    {
+        id: 27,
+        title: "The DMB Project - Dave Matthews Night",
+        schedule: { date: "2025-09-05", doors: "7:30 PM", show: "8:30 PM" },
+        venue: "The Met RI",
+        venueId: "met_ri",
+        bandIds: ["dmb_project"]
+    },
+    {
+        id: 28,
+        title: "The DMB Project - Fall Festival Finale",
+        schedule: { date: "2025-10-12", doors: "6:00 PM", show: "7:00 PM" },
+        venue: "Greenfield Park Stage",
+        venueId: "greenfield_stage",
+        bandIds: ["dmb_project"]
     }
 ];
 
