@@ -46,11 +46,11 @@ async function fetchBandData() {
             eventsContainer.innerHTML = events.map(event => `
                 <div class="event-card">
                     <h3>
-                        <a href="/event.html?id=${event.id}">${event.title}</a>
+                        <a href="/event/?id=${event.id}">${event.title}</a>
                     </h3>
                     <p><strong>Date:</strong> ${event.date}</p>
                     <p><strong>Time:</strong> ${event.time}</p>
-                    <p><strong>Venue:</strong> <a href="/venue.html?id=${event.venueId}">${event.venue}</a></p>
+                    <p><strong>Venue:</strong> <a href="/venue/?id=${event.venueId}">${event.venue}</a></p>
                 </div>
             `).join('');
         } else {
