@@ -164,7 +164,9 @@ module.exports = { events: [
   "venueId": "the_strand",
   "venue": "The Strand Ballroom & Theater",
   "bandIds": [
-      "hollywood_undead"
+      "hollywood_undead",
+      "tech_n9ne",
+      "set_it_off"
   ]
 }
 ] };

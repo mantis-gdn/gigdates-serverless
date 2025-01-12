@@ -86,4 +86,54 @@ module.exports = { bands: [
       }
     ]
   },
+  {
+    "id": "tech_n9ne",
+    "name": "Tech N9ne",
+    "genre": "Hip-Hop",
+    "description": "Tech N9ne is the stage name of Aaron Dontez Yates, an American rapper and the co-founder of the independent record label Strange Music. Known for his rapid-fire, chopper-style delivery and intricate rhymes, Tech N9ne has built a massive following through relentless touring and prolific music releases. His music blends diverse genres, including hip-hop, rock, and metal, often incorporating dark, introspective, and high-energy themes. Accompanied by live performances that are theatrical and explosive, Tech N9ne's influence extends across the independent music scene, with a reputation for pushing creative boundaries while remaining fiercely independent. His work has earned him critical acclaim and a loyal fan base, making him one of the most successful independent artists in the music industry.",
+    "website": "https://www.therealtechn9ne.com/",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/therealTechN9ne",
+      "instagram": "https://www.instagram.com/therealtechn9ne"
+    },
+"members": [
+  {
+    "name": "Aaron Dontez Yates (Tech N9ne)",
+    "role": "Vocals, lyricist, rapper, founder of Strange Music"
+  },
+  {
+    "name": "Krizz Kaliko",
+    "role": "Vocals, singer, rapper (frequent collaborator)"
+  },
+  {
+    "name": "Dirty Wormz (collaborative band)",
+    "role": "Live instrumentation, guitars, drums, nu-metal elements (part of K.A.B.O.S.H. project)"
+  }
+]
+  },
+  {
+    "id": "set_it_off",
+    "name": "Set It Off",
+    "genre": "Hip-Hop",
+    "description": "Set It Off is an American rock band known for their eclectic style that blends pop-punk, alternative rock, and orchestral elements. Formed in 2008 in Tampa, Florida, the band is led by charismatic frontman Cody Carson, whose emotive vocals and engaging stage presence have been key to their success. Their music often explores themes of resilience, personal growth, and self-expression, with a theatrical flair that sets them apart in the alternative music scene. Over the years, Set It Off has gained a dedicated fanbase through their dynamic sound, which combines catchy melodies, energetic performances, and heartfelt lyrics, making them a standout act in contemporary rock music.",
+    "website": "https://setitoffband.com/",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/setitoffband",
+      "instagram": "https://www.instagram.com/setitoff"
+    },
+"members": [
+  {
+    "name": "Cody Carson",
+    "role": "Lead vocals, guitar"
+  },
+  {
+    "name": "Zach DeWall",
+    "role": "Guitar, bass, backing vocals"
+  },
+  {
+    "name": "Maxx Danziger",
+    "role": "Drums, percussion"
+  }
+]
+  },
 ] };
