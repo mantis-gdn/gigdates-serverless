@@ -28,21 +28,21 @@ async function fetchAllEvents() {
         return date.toLocaleDateString('en-US', { timeZone: 'America/New_York', weekday: 'long' });
     }
 
-    // Function to assign colors to each day of the week
-    function getDayBadge(day) {
-        const dayColors = {
-            'Sunday': '#FF6347',
-            'Monday': '#FFB347',
-            'Tuesday': '#FFD700',
-            'Wednesday': '#9ACD32',
-            'Thursday': '#6495ED',
-            'Friday': '#DA70D6',
-            'Saturday': '#8A2BE2'
-        };
+// Function to assign dark colors to each day of the week
+function getDayBadge(day) {
+    const dayColors = {
+        'Sunday': '#8B0000',    // Dark Red
+        'Monday': '#FF8C00',    // Dark Orange
+        'Tuesday': '#B8860B',   // Dark Goldenrod
+        'Wednesday': '#006400', // Dark Green
+        'Thursday': '#4682B4',  // Steel Blue
+        'Friday': '#4B0082',    // Indigo
+        'Saturday': '#2F4F4F'   // Dark Slate Gray
+    };
 
-        const color = dayColors[day] || '#FFFFFF';
-        return `<span class="day-badge" style="background-color: ${color};">${day}</span>`;
-    }
+    const color = dayColors[day] || '#2C2C2C'; // Fallback: Dark Gray
+    return `<span class="day-badge" style="background-color: ${color}; color: #FFFFFF;">${day}</span>`;
+}
 
 // Function to fetch band details
 async function fetchBandDetails(bandIds) {

@@ -43,5 +43,65 @@ module.exports = { venues: [
       "facebook": "https://www.facebook.com/raggedisland/",
       "instagram": "https://www.instagram.com/raggedisland/"
     }
+  },
+  {
+    "id": "cadys_tavern",
+    "name": "Cady's Tavern",
+    "address": "2787 Caddys Way, West Greenwich, RI 02817",
+    "phone": "401-385-3799",
+    "website": "",
+    "description": "Established in 1810, Cady's Tavern stands as Rhode Island's oldest roadhouse, rich in history and charm. Originally serving as a stagecoach stop, this iconic establishment has evolved into a beloved destination for both locals and travelers. Guests can enjoy a full bar featuring twenty beers on tap, a rotating selection of domestic and craft brews, and an award-winning menu available seven days a week. Live entertainment is a staple, with performances that enhance the tavern's vibrant atmosphere.",
+    "seating": "Cady's Tavern offers a variety of seating options to accommodate diverse preferences. Inside, patrons can choose from cozy tables and bar seating, creating an intimate dining experience. The expansive outdoor area features additional seating and a bar, perfect for enjoying meals and drinks in a relaxed, open-air environment. This versatile space is ideal for hosting events such as bike runs, fundraisers, and weddings, with catering services available to enhance any occasion.",
+    "parking": "Ample parking is available on-site at Cady's Tavern, ensuring convenient access for all guests. The spacious parking area accommodates both regular patrons and larger groups attending special events, making visits hassle-free. Whether stopping by for a casual meal or participating in one of the tavern's lively events, guests can expect easy and accessible parking during their visit.",
+    "eventsLink": "https://raggedislandbrewing.com",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/cadystavern/",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "music_lady_cafe",
+    "name": "Music Lady Cafe",
+    "address": "6 Green Hollow Road, Moosup, Connecticut 06354",
+    "phone": "860-564-0666",
+    "website": "",
+    "description": "Music Lady Cafe is a vibrant bar and restaurant known for its casual atmosphere and live music events. Patrons can enjoy a variety of alcoholic beverages, including a selection of beers on tap and cocktails, while listening to live performances that enhance the lively ambiance. The establishment also offers a dance floor, making it a popular spot for those looking to enjoy music and dancing in a relaxed setting.",
+    "seating": "The cafe provides both indoor and outdoor seating options to accommodate guests' preferences. Inside, the casual setting includes a bar area and tables, creating a comfortable environment for dining and socializing. The outdoor seating area allows patrons to enjoy their meals and drinks in the open air, adding to the establishment's appeal during pleasant weather. The venue is wheelchair accessible, ensuring inclusivity for all guests.",
+    "parking": "Ample parking is available on-site at Music Lady Cafe, providing convenience for visitors arriving by car. The parking area is easily accessible and accommodates both regular patrons and larger groups attending special events. This ensures that guests can enjoy their time at the cafe without concerns about vehicle safety or parking availability",
+    "eventsLink": "https://www.facebook.com/profile.php?id=100063495191094",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/profile.php?id=100063495191094",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "luckys_pub_and_snug",
+    "name": "Lucky’s Pub and Snug",
+    "address": "1175 Warren Ave, East Providence RI",
+    "phone": "401-431-6500",
+    "website": "https://www.luckyspubri.com/",
+    "description": "Music Lady Cafe is a vibrant bar and restaurant known for its casual atmosphere and live music events. Patrons can enjoy a variety of alcoholic beverages, including a selection of beers on tap and cocktails, while listening to live performances that enhance the lively ambiance. The establishment also offers a dance floor, making it a popular spot for those looking to enjoy music and dancing in a relaxed setting.",
+    "seating": "The cafe provides both indoor and outdoor seating options to accommodate guests' preferences. Inside, the casual setting includes a bar area and tables, creating a comfortable environment for dining and socializing. The outdoor seating area allows patrons to enjoy their meals and drinks in the open air, adding to the establishment's appeal during pleasant weather. The venue is wheelchair accessible, ensuring inclusivity for all guests.",
+    "parking": "Ample parking is available on-site at Music Lady Cafe, providing convenience for visitors arriving by car. The parking area is easily accessible and accommodates both regular patrons and larger groups attending special events. This ensures that guests can enjoy their time at the cafe without concerns about vehicle safety or parking availability",
+    "eventsLink": "https://www.luckyspubri.com/",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/luckyspubri",
+      "instagram": "https://www.instagram.com/luckyspubri/"
+    }
+  },
+  {
+    "id": "the_strand",
+    "name": "The Strand Ballroom & Theatre",
+    "address": "79 Washington St., Providence, RI 02903",
+    "phone": "401-618-8900",
+    "website": "https://thestrandri.com",
+    "description": "The Strand Ballroom & Theatre, located at 79 Washington Street in Providence, Rhode Island, is a historic live music venue that has been a cornerstone of the city's entertainment scene since its opening in 1915. Originally established as a cinema, it has evolved over the years into a premier destination for concerts and events, hosting a diverse array of performances that cater to a wide range of musical tastes. With its rich history and commitment to providing quality entertainment, The Strand continues to be a vibrant hub for both artists and audiences in downtown Providence. ",
+    "seating": "The Strand primarily offers general admission for its events, allowing patrons the flexibility to choose their preferred viewing spots on a first-come, first-served basis. For certain shows, reserved seating is available in the balcony, typically within the first 10 rows, providing an elevated vantage point for attendees seeking a more structured seating arrangement. The venue's layout is designed to accommodate a variety of event types, ensuring an engaging experience for all guests.",
+    "parking": "While The Strand does not have its own dedicated parking facility, several parking options are available nearby. Guests can utilize various parking lots and garages in the vicinity, with services like ParkWhiz offering the ability to find and reserve parking spaces in advance, ensuring a convenient and stress-free arrival. Additionally, Down City Parking provides event parking solutions close to the venue, further enhancing accessibility for attendees.",
+    "eventsLink": "https://thestrandri.com/events/",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/TheStrandRI",
+      "instagram": "https://www.instagram.com/thestrandri/"
+    }
   }
 ] };

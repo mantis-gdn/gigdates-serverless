@@ -56,7 +56,7 @@ module.exports = { events: [
     ]
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "The DMB Project – Dave Matthews Tribute",
     "schedule": {
         "date": "2025-08-13",
@@ -69,4 +69,102 @@ module.exports = { events: [
         "dmb_project"
     ]
   },
+{
+  "id": 9,
+  "title": "Brothers All Band – Allman Brothers Tribute",
+  "schedule": {
+      "date": "2025-02-08",
+      "doors": "8:00 PM",
+      "show": "8:00 PM"
+  },
+  "venueId": "cadys_tavern",
+  "venue": "Cady's Tavern",
+  "bandIds": [
+      "brothers_all_band"
+  ]
+},
+{
+  "id": 10,
+  "title": "Brothers All Band – Allman Brothers Tribute",
+  "schedule": {
+      "date": "2025-08-02",
+      "doors": "8:00 PM",
+      "show": "8:00 PM"
+  },
+  "venueId": "cadys_tavern",
+  "venue": "Cady's Tavern",
+  "bandIds": [
+      "brothers_all_band"
+  ]
+},
+{
+  "id": 11,
+  "title": "Brothers All Band – Allman Brothers Tribute",
+  "schedule": {
+      "date": "2025-10-04",
+      "doors": "8:00 PM",
+      "show": "8:00 PM"
+  },
+  "venueId": "cadys_tavern",
+  "venue": "Cady's Tavern",
+  "bandIds": [
+      "brothers_all_band"
+  ]
+},
+{
+  "id": 12,
+  "title": "Brothers All Band – Allman Brothers Tribute",
+  "schedule": {
+      "date": "2025-04-31",
+      "doors": "8:00 PM",
+      "show": "8:00 PM"
+  },
+  "venueId": "cadys_tavern",
+  "venue": "Cady's Tavern",
+  "bandIds": [
+      "brothers_all_band"
+  ]
+},
+{
+  "id": 12,
+  "title": "Brothers All Band – Allman Brothers Tribute",
+  "schedule": {
+      "date": "2025-02-15",
+      "doors": "9:00 PM",
+      "show": "9:00 PM"
+  },
+  "venueId": "music_lady_cafe",
+  "venue": "Music Lady Cafe",
+  "bandIds": [
+      "brothers_all_band"
+  ]
+},
+{
+  "id": 13,
+  "title": "Brothers All Band – Allman Brothers Tribute",
+  "schedule": {
+      "date": "2025-02-15",
+      "doors": "9:00 PM",
+      "show": "9:00 PM"
+  },
+  "venueId": "luckys_pub_and_snug",
+  "venue": "Lucky's Pub and Snug",
+  "bandIds": [
+      "brothers_all_band"
+  ]
+},
+{
+  "id": 14,
+  "title": "Hollywood & N9ne Returns",
+  "schedule": {
+      "date": "2025-05-07",
+      "doors": "5:30 PM",
+      "show": "6:25 PM"
+  },
+  "venueId": "the_strand",
+  "venue": "The Strand Ballroom & Theater",
+  "bandIds": [
+      "hollywood_undead"
+  ]
+}
 ] };

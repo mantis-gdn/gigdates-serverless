@@ -11,25 +11,79 @@ module.exports = { bands: [
     },
     "members": [
       {
-        "name": "Dave Tribute",
+        "name": "Dave",
         "role": "Lead Vocals & Guitar"
       },
       {
-        "name": "Boyd Tribute",
+        "name": "Boyd",
         "role": "Violin"
       },
       {
-        "name": "Stefan Tribute",
+        "name": "Stefan",
         "role": "Bass"
       },
       {
-        "name": "Carter Tribute",
+        "name": "Carter",
         "role": "Drums"
       },
       {
-        "name": "Tim Tribute",
+        "name": "Tim",
         "role": "Lead Guitar"
       }
     ]
-  }
+  },
+  {
+    "id": "brothers_all_band",
+    "name": "Brothers All Band - Allman Brothers Tribute",
+    "genre": "Tribute Band",
+    "description": "Brothers All Band is a dynamic group known for their high-energy performances and heartfelt connection to their music. With a style that blends classic rock, blues, and a touch of soul, they deliver a sound that resonates deeply with audiences. The band's chemistry is rooted in their shared passion for storytelling through music, bringing both original songs and timeless covers to life with authenticity and flair. Their dedication to creating an engaging and memorable experience has made them a favorite in the local music scene, captivating fans with every note.",
+    "website": "https://www.brothersallband.com/",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/The-Brothers-All-Band-561693917338946/",
+      "instagram": ""
+    },
+    "members": [
+      {
+        "name": "Russ Lema",
+        "role": "Organ, Piano, Vocals"
+      },
+      {
+        "name": "Robert Blaschke",
+        "role": "Drums, Percussion"
+      },
+      {
+        "name": "Rick Mariotti",
+        "role": "Guitar"
+      },
+      {
+        "name": "Giuseppe D'Amelio",
+        "role": "Slide Guitar, Vocals"
+      },
+      {
+        "name": "Jocko Safford",
+        "role": "Bass, Vocals"
+      }
+    ]
+  },
+  {
+    "id": "hollywood_undead",
+    "name": "Hollywood Undead",
+    "genre": "Rock",
+    "description": "Hollywood Undead is an American rap rock band from Los Angeles, California, formed in 2005. Known for their unique blend of hip-hop, rock, and metal elements, the band gained popularity with their debut album, Swan Songs, released in 2008. They are recognized for performing under pseudonyms and wearing distinctive masks, adding a theatrical element to their performances.",
+    "website": "https://www.brothersallband.com/",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/The-Brothers-All-Band-561693917338946/",
+      "instagram": ""
+    },
+    "members": [
+      {
+        "name": "Jorel Decke",
+        "role": "Vocals, guitars, bass, keyboards, programming"
+      },
+      {
+        "name": "Dylan Alvarez",
+        "role": "Vocals"
+      }
+    ]
+  },
 ] };
