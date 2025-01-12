@@ -180,6 +180,12 @@ body {
     margin-bottom: 10px;
 }
 
+.day-badge {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
 /* === Responsive Adjustments === */
 @media (max-width: 768px) {
     .details-container {

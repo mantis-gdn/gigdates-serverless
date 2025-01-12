@@ -43,13 +43,13 @@ function getDayOfWeek(dateString) {
 // Function to assign colors to each day of the week
 function getDayBadge(day) {
     const dayColors = {
-        'Sunday': '#FF6347',
-        'Monday': '#FFB347',
-        'Tuesday': '#FFD700',
-        'Wednesday': '#9ACD32',
-        'Thursday': '#6495ED',
-        'Friday': '#DA70D6',
-        'Saturday': '#8A2BE2'
+        'Sunday': '#FF6F61',    // Warm Coral
+        'Monday': '#FBB13C',    // Vibrant Amber
+        'Tuesday': '#FFD700',    // Gold
+        'Wednesday': '#7FDBB6', // Soft Teal
+        'Thursday': '#4C9F70',  // Forest Green
+        'Friday': '#6C63FF',    // Periwinkle
+        'Saturday': '#845EC2'   // Majestic Purple
     };
 
     const color = dayColors[day] || '#FFFFFF';
