@@ -221,6 +221,65 @@ body {
     margin: 0.3rem 0;
 }
 
+/* Event Container Styles */
+#event-container {
+    background-color: #1f2937; /* Darker background for contrast */
+    border: 1px solid #374151; /* Subtle border for definition */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    padding: 20px; /* Adequate padding for content spacing */
+    margin: 20px auto; /* Center alignment with spacing */
+    max-width: 800px; /* Restrict width for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    text-align: left; /* Align text for a professional look */
+}
+
+/* Headings in the Event Container */
+#event-container h1 {
+    font-size: 2rem;
+    color: #f3f4f6; /* Light color for better contrast */
+    margin-bottom: 15px;
+}
+
+#event-container h2 a {
+    font-size: 1.5rem;
+    color: #60a5fa; /* Soft blue for clickable links */
+    text-decoration: none;
+}
+
+#event-container h2 a:hover {
+    text-decoration: underline;
+    color: #2563eb; /* Darker blue on hover */
+}
+
+/* Paragraphs and Details */
+#event-container p {
+    font-size: 1rem;
+    color: #d1d5db; /* Subtle light gray for details */
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+#event-container p strong {
+    color: #f3f4f6; /* Highlighted text */
+}
+
+/* Band List */
+#event-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#event-container ul li a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+#event-container ul li a:hover {
+    text-decoration: underline;
+    color: #2563eb;
+}
+
 /* === Shared Events Section (Band & Venue Pages) === */
 .events-section {
     margin-top: 2rem;
@@ -298,32 +357,318 @@ body {
     text-transform: uppercase;
 }
 
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f2f2f2;
+}
+
+/* Main Title */
+h1 {
+    color: #f2f2f2;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+/* Subheading for Forms */
+h2 {
+    color: #f2f2f2;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #222;
+    color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+table th {
+    background-color: #333;
+    font-size: 1em;
+}
+
+table td {
+    font-size: 0.9em;
+}
+
+table td a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+table td button {
+    background-color: #ff4c4c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 3px;
+}
+
+table td button:hover {
+    background-color: #ff3232;
+}
+
+/* Form Styles */
+form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    outline: none;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #1e90ff;
+}
+
+form button {
+    background-color: #1e90ff;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1c78d4;
+}
+
+/* Textarea for Band IDs */
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Band and Events Flex Container */
+#band-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Band Info Section */
+.band-header {
+    flex: 1 1 30%;
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.band-header h1 {
+    font-size: 1.8rem;
+    color: #f3f4f6;
+    margin-bottom: 15px;
+}
+
+.band-header p, .band-header h3 {
+    font-size: 1rem;
+    color: #d1d5db;
+    margin-bottom: 10px;
+}
+
+.band-header a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.band-header a:hover {
+    text-decoration: underline;
+    color: #2563eb;
+}
+
+/* Events Section */
+.events-section {
+    flex: 1 1 65%;
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.events-section h2 {
+    font-size: 1.5rem;
+    color: #f3f4f6;
+    margin-bottom: 15px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+/* Venue and Events Flex Container */
+#venue-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Venue Details Section */
+.venue-header {
+    flex: 1 1 30%;
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.venue-header h1 {
+    font-size: 1.8rem;
+    color: #f3f4f6;
+    margin-bottom: 15px;
+}
+
+.venue-header p {
+    font-size: 1rem;
+    color: #d1d5db;
+    margin-bottom: 10px;
+}
+
+/* Events Section */
+.events-section {
+    flex: 1 1 65%;
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.events-section h2 {
+    font-size: 1.5rem;
+    color: #f3f4f6;
+    margin-bottom: 15px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
 /* === Responsive Adjustments === */
 @media (max-width: 768px) {
     .nav {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .header h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .events-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column for events */
+        gap: 1rem;
     }
 
     .event-card {
-        width: 100%;
+        width: 100%; /* Full width for event cards */
     }
 
-    .venue-details {
-        padding: 15px;
+    #band-container,
+    #venue-container {
+        flex-direction: column; /* Stack sections vertically */
+        gap: 15px; /* Add spacing between stacked sections */
     }
 
+    .band-header,
+    .venue-header {
+        flex: 1 1 auto; /* Allow flexible height */
+        width: 100%; /* Full width on small screens */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .events-section {
+        flex: 1 1 auto; /* Adjust width automatically */
+        width: 100%; /* Full width for events section */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .events-section h2 {
+        font-size: 1.2rem; /* Slightly smaller heading */
+    }
+
+    .venue-details,
     .review-card {
-        padding: 15px;
+        padding: 15px; /* Adjust padding for mobile */
+        margin: 15px auto; /* Center the element */
+    }
+
+    .venue-header h1,
+    .band-header h1 {
+        font-size: 1.5rem; /* Smaller title size */
+    }
+
+    .venue-header p,
+    .band-header p {
+        font-size: 0.9rem; /* Reduce text size */
     }
 }
+
 
 /* === Footer === */
 .footer {

@@ -107,6 +107,7 @@ async function fetchBandData() {
         document.getElementById('band-name').innerText = band.name || 'No Name Provided';
         document.getElementById('band-genre').innerText = band.genre || 'No Genre Provided';
         document.getElementById('band-description').innerText = band.description || 'No Description Provided';
+        console.log(band.website);
 
         // ✅ Populate Band Members
         const membersList = document.getElementById('band-members-list');
@@ -123,7 +124,7 @@ async function fetchBandData() {
         // ✅ Populate Social Media Links
         document.getElementById('band-facebook').href = band.socialMedia?.facebook || '#';
         document.getElementById('band-instagram').href = band.socialMedia?.instagram || '#';
-        document.getElementById('band-website').href = band.socialMedia?.website || '#';
+        document.getElementById('band-website').href = band.website || '#';
 
         // ✅ Populate Upcoming Events
         const eventsContainer = document.getElementById('band-events');

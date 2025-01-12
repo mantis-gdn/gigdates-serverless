@@ -56,10 +56,10 @@ exports.handler = async (event) => {
                     name: band.name,
                     genre: band.genre || 'No Genre Provided',
                     description: band.description || 'No description available',
+                    website: band.website || '#',
                     socialMedia: {
                         facebook: band.socialMedia?.facebook || '#',
                         instagram: band.socialMedia?.instagram || '#',
-                        website: band.socialMedia?.website || '#',
                     },
                     members: band.members || []
                 },

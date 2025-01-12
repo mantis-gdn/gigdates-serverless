@@ -1,90 +1,35 @@
-const bands = [
-    {
-        id: "korn_ballz",
-        name: "Korn Ballz",
-        genre: "Nu Metal Tribute",
-        description: "A tribute band delivering the powerful and aggressive music of Korn with an extra helping of energy.",
-        website: "https://www.gotballzbands.com/kornballz",
-        socialMedia: {
-            facebook: "https://www.facebook.com/KornBallzOfficial",
-            instagram: "https://www.instagram.com/KornBallzOfficial",
-            website: "https://www.gotballzbands.com/kornballz"
-        },
-        members: [
-            { name: "Jonathan Ballz", role: "Lead Vocals" },
-            { name: "Munky Ballz", role: "Guitar" },
-            { name: "Head Ballz", role: "Guitar" },
-            { name: "Fieldy Ballz", role: "Bass" },
-            { name: "David Ballz", role: "Drums" }
-        ]
+module.exports = { bands: [
+  {
+    "id": "dmb_project",
+    "name": "The DMB Project - Dave Matthews Tribute",
+    "genre": "Tribute Band",
+    "description": "The DMB Project is a premier tribute band dedicated to capturing the spirit, sound, and energy of the iconic Dave Matthews Band. Known for their impressive musicianship and attention to detail, the group brings the intricate rhythms, soulful melodies, and improvisational brilliance of DMB to life on stage. Covering a wide range of hits and fan favorites, The DMB Project delivers a dynamic live experience that resonates with both die-hard DMB enthusiasts and casual music lovers alike. With a reputation for high-energy performances, the band has become a crowd favorite at venues like The Met in Pawtucket, Rhode Island, creating unforgettable evenings of music and celebration.",
+    "website": "https://www.thedmbproject.com",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/thedmbproject",
+      "instagram": "https://www.instagram.com/thedmbproject"
     },
-    {
-        id: "limp_ballz",
-        name: "Limp Ballz",
-        genre: "Nu Metal Tribute",
-        description: "A tribute band capturing the essence and high-energy performances of Limp Bizkit.",
-        website: "https://www.gotballzbands.com/limpballz",
-        socialMedia: {
-            facebook: "https://www.facebook.com/LimpBallzOfficial",
-            instagram: "https://www.instagram.com/LimpBallzOfficial",
-            website: "https://www.gotballzbands.com/limpballz"
-        },
-        members: [
-            { name: "Fred Ballz", role: "Lead Vocals" },
-            { name: "Wes Ballz", role: "Guitar" },
-            { name: "Sam Ballz", role: "Bass" },
-            { name: "John Ballz", role: "Drums" }
-        ]
-    },
-    {
-        id: "beastie_ballz",
-        name: "Beastie Ballz",
-        genre: "Rap Rock Tribute",
-        description: "A tribute band dedicated to delivering the iconic sounds and performances of the Beastie Boys.",
-        website: "https://www.gotballzbands.com/beastieballz",
-        socialMedia: {
-            facebook: "https://www.facebook.com/BeastieBallzOfficial",
-            instagram: "https://www.instagram.com/BeastieBallzOfficial",
-            website: "https://www.gotballzbands.com/beastieballz"
-        },
-        members: [
-            { name: "MCA Ballz", role: "Vocals" },
-            { name: "Ad-Rock Ballz", role: "Vocals" },
-            { name: "Mike D Ballz", role: "Vocals" }
-        ]
-    },
-    {
-        id: "dmb_project",
-        name: "The DMB Project - Dave Matthews Tribute",
-        genre: "Tribute Band",
-        description: "A heartfelt tribute to Dave Matthews Band, bringing their iconic sound and timeless songs to life on stage.",
-        website: "https://www.thedmbproject.com",
-        socialMedia: {
-            facebook: "https://www.facebook.com/thedmbproject",
-            instagram: "https://www.instagram.com/thedmbproject",
-            website: "https://www.thedmbproject.com"
-        },
-        members: [
-            { name: "Dave Tribute", role: "Lead Vocals & Guitar" },
-            { name: "Boyd Tribute", role: "Violin" },
-            { name: "Stefan Tribute", role: "Bass" },
-            { name: "Carter Tribute", role: "Drums" },
-            { name: "Tim Tribute", role: "Lead Guitar" }
-        ]
-    },
-    {
-        id: "wolfman_jack",
-        name: "Wolfman Jack",
-        genre: "Psychedelic Rock Tribute",
-        description: "A live music project featuring veteran musicians from the New England area, dedicated to performing the psychedelic and electrifying 'Live Dead' era of The Grateful Dead.",
-        website: "https://www.wolfmanjackprimaldead.net",
-        socialMedia: {
-            facebook: "https://www.facebook.com/WolfmanJackPrimalDead",
-            instagram: "https://www.instagram.com/wolfmanjackband",
-            website: "https://www.wolfmanjackprimaldead.net"
-        },
-        members: null
-    }
-];
-
-module.exports = { bands };
+    "members": [
+      {
+        "name": "Dave Tribute",
+        "role": "Lead Vocals & Guitar"
+      },
+      {
+        "name": "Boyd Tribute",
+        "role": "Violin"
+      },
+      {
+        "name": "Stefan Tribute",
+        "role": "Bass"
+      },
+      {
+        "name": "Carter Tribute",
+        "role": "Drums"
+      },
+      {
+        "name": "Tim Tribute",
+        "role": "Lead Guitar"
+      }
+    ]
+  }
+] };
