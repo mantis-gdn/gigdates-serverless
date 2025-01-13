@@ -166,7 +166,8 @@ module.exports = { events: [
   "bandIds": [
       "hollywood_undead",
       "tech_n9ne",
-      "set_it_off"
+      "set_it_off",
+      "zero936"
   ]
 }
 ] };
