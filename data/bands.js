@@ -1,4 +1,4 @@
-const newLocal = module.exports = {
+const newLocal_1 = module.exports = {
   bands: [
     {
       "id": "dmb_project",
@@ -147,12 +147,34 @@ const newLocal = module.exports = {
         "facebook": "https://www.facebook.com/Zero936",
         "instagram": "https://www.instagram.com/zero936"
       },
-"members": [
-  {
-    "name": "Matthew Cullen (Zero 9:36)",
-    "role": "Lead vocals, songwriter"
-  },
-]
+      "members": [
+        {
+          "name": "Matthew Cullen (Zero 9:36)",
+          "role": "Lead vocals, songwriter"
+        },
+      ]
     },
+    {
+      "id": "lightning_bolt",
+      "name": "Lightning Bolt",
+      "genre": "Noise Rock",
+      "description": "Lightning Bolt is a Providence, Rhode Island-based noise rock duo known for their raw energy, chaotic performances, and genre-defying sound. Formed in 1994 by Brian Chippendale on drums and vocals and Brian Gibson on bass, the band has built a reputation for their blistering live shows, often performed at floor level with the audience encircling them. Their music features distorted bass riffs, frenetic drumming, and a relentless wall of sound that pushes the boundaries of traditional rock and noise genres. Lightning Bolt's DIY ethos, innovative approach to instrumentation, and visceral energy have made them influential figures in the noise rock scene and beyond, earning a devoted cult following worldwide.",
+      "website": "https://www.laserbeast.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/lightningboltband",
+        "instagram": "https://www.instagram.com/lightningboltband/"
+      },
+      "members": [
+        {
+          "name": "Brian Chippendale",
+          "role": "Drums, vocals"
+        },
+        {
+          "name": "Brian Gibson",
+          "role": "Bass"
+        }
+      ]
+    }    
   ]
 };
+const newLocal = newLocal_1;
