@@ -174,6 +174,39 @@ const newLocal_1 = module.exports = {
           "role": "Bass"
         }
       ]
+    },
+    {
+      "id": "wolfman_jack",
+      "name": "Wolfman_jack",
+      "genre": "Rock",
+      "description": "Wolfman Jack is a live music project featuring veteran musicians from New England who specialize in performing the psychedelic and electrifying Primal Dead era of the Grateful Dead, particularly from the Live/Dead to Europe '72 period. They are renowned for recreating vintage sets reminiscent of legendary venues like the Fillmore West and Avalon Ballroom, delivering authentic dance band experiences. In Rhode Island, they have performed at venues such as The Met in Pawtucket, offering audiences immersive journeys into the early days of the Grateful Dead's live performances.",
+      "website": "https://www.laserbeast.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/lightningboltband",
+        "instagram": "https://www.instagram.com/lightningboltband/"
+      },
+"members": [
+    {
+        "name": "Ari El",
+        "role": "Guitar, vocals"
+    },
+    {
+        "name": "Jason Ferguson",
+        "role": "Drums"
+    },
+    {
+        "name": "Brian O'Connell",
+        "role": "Bass, vocals"
+    },
+    {
+        "name": "Geoffrey Williams",
+        "role": "Percussion"
+    },
+    {
+        "name": "Parker McQueeney",
+        "role": "Keyboards, vocals"
+    }
+]
     }    
   ]
 };

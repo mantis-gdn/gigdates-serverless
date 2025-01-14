@@ -181,5 +181,20 @@ module.exports = { events: [
       "set_it_off",
       "zero936"
   ]
+},
+{
+  "id": 15,
+  "genre": "Rock",
+  "title": "Wolfman Jack",
+  "schedule": {
+      "date": "2025-01-17",
+      "doors": "7:00 PM",
+      "show": "8:00 PM"
+  },
+  "venueId": "met_ri",
+  "venue": "The Met RI",
+  "bandIds": [
+      "wolfman_jack"
+  ]
 }
 ] };
