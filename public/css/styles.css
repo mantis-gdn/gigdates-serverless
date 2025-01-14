@@ -227,6 +227,25 @@ body {
     color: #8b949e; /* Subtle variation in color */
 }
 
+/* Span styling */
+#band-genre {
+    font-weight: bold; /* Make the genre stand out */
+    color: #ffffff; /* Accent color for emphasis */
+    padding: 0.2rem 0.4rem; /* Add some padding around the text */
+    background: #1e1e1e; /* Subtle background to highlight the text */
+    border-radius: 4px; /* Smooth corners */
+    display: inline-block; /* Ensure padding doesn't affect layout */
+    text-align: center; /* Center text for consistency */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1rem;
+    color: #e6edf3; /* Light text color to match the theme */
+    margin: 0.5rem 0; /* Add space above and below */
+    line-height: 1.5; /* Improve readability */
+}
+
     /* Filter Section */
     .filters {
         background: #1e1e1e;
