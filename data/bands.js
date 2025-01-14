@@ -207,6 +207,101 @@ const newLocal_1 = module.exports = {
         "role": "Keyboards, vocals"
     }
 ]
+    },
+    {
+      "id": "korn_ballz",
+      "name": "Korn Ballz",
+      "genre": "Nu-Metal",
+      "description": "Korn Ballz is a high-energy nu-metal tribute band that channels the raw, emotional power of Korn's iconic sound. Known for their intense stage presence and hard-hitting performances, Korn Ballz delivers authentic renditions of classic nu-metal tracks with heavy riffs, dynamic vocals, and an electrifying atmosphere. They have performed at various venues across New England, drawing fans of the genre into a visceral, unforgettable live music experience.",
+      "website": "https://www.kornballztribute.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/kornballzband",
+        "instagram": "https://www.instagram.com/kornballzband/"
+      },
+      "members": [
+        {
+          "name": "Mike Steele",
+          "role": "Vocals"
+        },
+        {
+          "name": "Jake Rivers",
+          "role": "Guitar"
+        },
+        {
+          "name": "Troy Hanson",
+          "role": "Bass"
+        },
+        {
+          "name": "Alex Grant",
+          "role": "Drums"
+        }
+      ]
+    },
+    {
+      "id": "limp_ballz",
+      "name": "Limp Ballz",
+      "genre": "Rap Rock",
+      "description": "Limp Ballz is a tribute band dedicated to recreating the iconic sound and swagger of Limp Bizkit. Their performances feature the explosive combination of rap vocals, hard-hitting guitars, and infectious beats that defined the rap rock era of the late '90s and early 2000s. With a loyal following in Rhode Island and beyond, Limp Ballz brings the energy and attitude of classic tracks like 'Rollin'' and 'My Way' to life on stage.",
+      "website": "https://www.limpballztribute.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/limpballzband",
+        "instagram": "https://www.instagram.com/limpballzband/"
+      },
+      "members": [
+        {
+          "name": "Chris Taylor",
+          "role": "Vocals"
+        },
+        {
+          "name": "Nick Johnson",
+          "role": "Guitar"
+        },
+        {
+          "name": "Ryan Carter",
+          "role": "Bass"
+        },
+        {
+          "name": "Sam Flores",
+          "role": "Drums"
+        },
+        {
+          "name": "Tony Diaz",
+          "role": "Turntables"
+        }
+      ]
+    },
+    {
+      "id": "beastie_ballz",
+      "name": "Beastie Ballz",
+      "genre": "Hip Hop Rock",
+      "description": "Beastie Ballz is a tribute band that pays homage to the legendary Beastie Boys, blending hip hop and rock in an energetic, party-starting performance. Known for their crowd-engaging antics and faithful renditions of classics like 'Sabotage' and 'Intergalactic,' Beastie Ballz captures the rebellious spirit and genre-defying sound that made the Beastie Boys icons. They perform regularly at venues throughout Rhode Island, delivering unforgettable shows that bring the old-school hip hop vibe to life.",
+      "website": "https://www.beastieballztribute.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/beastieballzband",
+        "instagram": "https://www.instagram.com/beastieballzband/"
+      },
+      "members": [
+        {
+          "name": "Jordan Reed",
+          "role": "Vocals"
+        },
+        {
+          "name": "Derek Scott",
+          "role": "Vocals"
+        },
+        {
+          "name": "Ethan Price",
+          "role": "Vocals"
+        },
+        {
+          "name": "Matt Brown",
+          "role": "Guitar"
+        },
+        {
+          "name": "Tyler Moore",
+          "role": "Drums"
+        }
+      ]
     }    
   ]
 };

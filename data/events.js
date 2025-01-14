@@ -196,5 +196,22 @@ module.exports = { events: [
   "bandIds": [
       "wolfman_jack"
   ]
+},
+{
+  "id": 16,
+  "genre": "Tribute Rock",
+  "title": "BallzNight Live",
+  "schedule": {
+      "date": "2025-01-18",
+      "doors": "7:30 PM",
+      "show": "8:30 PM"
+  },
+  "venueId": "met_ri",
+  "venue": "The Met RI",
+  "bandIds": [
+      "korn_ballz",
+      "limp_ballz",
+      "beastie_ballz"
+  ]
 }
 ] };
