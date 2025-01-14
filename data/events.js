@@ -213,5 +213,20 @@ module.exports = { events: [
       "limp_ballz",
       "beastie_ballz"
   ]
+},
+{
+  "id": 17,
+  "genre": "Tribute Rock",
+  "title": "Dead Meat - Grateful Dead Tribute",
+  "schedule": {
+      "date": "2025-02-01",
+      "doors": "7:30 PM",
+      "show": "8:30 PM"
+  },
+  "venueId": "met_ri",
+  "venue": "The Met RI",
+  "bandIds": [
+      "dead_meat"
+  ]
 }
 ] };

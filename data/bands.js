@@ -302,6 +302,39 @@ const newLocal_1 = module.exports = {
           "role": "Drums"
         }
       ]
+    },
+    {
+      "id": "dead_meat",
+      "name": "Dead Meat",
+      "genre": "Jam Band Rock",
+      "description": "Dead Meat is a tribute band dedicated to celebrating the music of The Grateful Dead. Known for their authentic recreations of the band's iconic live performances, Dead Meat blends psychedelic improvisation, soulful melodies, and a timeless sense of community. They bring the energy of The Grateful Dead's legendary concerts to life, delivering performances that transport audiences back to the golden age of jam band rock. Regularly performing in venues across Rhode Island and New England, Dead Meat invites fans to join them on a journey through the music that defined a generation.",
+      "website": "https://www.deadmeattribute.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/deadmeatband",
+        "instagram": "https://www.instagram.com/deadmeatband/"
+      },
+      "members": [
+        {
+          "name": "James Hunter",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Alan Cooper",
+          "role": "Bass"
+        },
+        {
+          "name": "Mark Rivers",
+          "role": "Drums"
+        },
+        {
+          "name": "Steve Larson",
+          "role": "Keyboards"
+        },
+        {
+          "name": "Chris Bennett",
+          "role": "Percussion"
+        }
+      ]
     }    
   ]
 };
