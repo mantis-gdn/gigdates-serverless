@@ -204,13 +204,10 @@ body {
 }
 
 .venue-details {
-    background: #1e1e1e; /* Dark background to match your theme */
     color: #e6edf3; /* Light text for readability */
     padding: 1rem 2rem; /* Add space inside the container */
     margin: 1rem 0; /* Add space above and below the container */
     border-radius: 8px; /* Smooth corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    border: 1px solid #30363d; /* Border to define the container */
 }
 
 .venue-details p {
@@ -222,7 +219,7 @@ body {
 
 #venue-address {
     font-weight: bold; /* Highlight address */
-    color: #58a6ff; /* Slightly different color for emphasis */
+    color: #8b949e; /* Slightly different color for emphasis */
 }
 
 #venue-phone {
