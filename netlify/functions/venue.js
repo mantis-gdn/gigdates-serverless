@@ -49,9 +49,6 @@ exports.handler = async (event) => {
                 bandIds: event.bandIds || [] // Include bandIds in the response
             }));
 
-        console.log('Venue Data:', venue);
-        console.log('Venue Events:', venueEvents);
-
         return {
             statusCode: 200,
             headers: { "Content-Type": "application/json" },

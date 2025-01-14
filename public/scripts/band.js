@@ -50,8 +50,6 @@ function getTodayDateEastern() {
 async function fetchBandDetails(bandIds) {
     if (!bandIds || bandIds.length === 0) return [];
 
-    console.log('Fetching bands:', bandIds);
-
     const bandDetails = await Promise.all(bandIds.map(async (bandId) => {
         try {
             const response = await fetch(`/.netlify/functions/band?id=${bandId}`);
@@ -86,7 +84,6 @@ async function fetchBandData() {
     }
 
     try {
-        console.log('Fetching band details for ID:', bandId);
         const response = await fetch(`/.netlify/functions/band?id=${bandId}`);
         
         if (!response.ok) {
@@ -97,9 +94,6 @@ async function fetchBandData() {
         const band = data.band;
         const events = data.events;
 
-        console.log('Fetched Band Data:', band);
-        console.log('Fetched Band Events:', events);
-
         // ✅ Set Dynamic Page Title
         document.title = `${band.name || 'Unnamed Band'} - Gigdates.net`;
 
@@ -107,7 +101,6 @@ async function fetchBandData() {
         document.getElementById('band-name').innerText = band.name || 'No Name Provided';
         document.getElementById('band-genre').innerText = band.genre || 'No Genre Provided';
         document.getElementById('band-description').innerText = band.description || 'No Description Provided';
-        console.log(band.website);
 
         // ✅ Populate Band Members
         const membersList = document.getElementById('band-members-list');

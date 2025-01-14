@@ -48,12 +48,9 @@ function getDayBadge(day) {
 async function fetchBandDetails(bandIds) {
     if (!bandIds || bandIds.length === 0) return [];
     
-    console.log('Fetching bands:', bandIds); // Debug log
-
     const bandDetails = await Promise.all(bandIds.map(async (bandId) => {
         try {
             const response = await fetch(`/.netlify/functions/band?id=${bandId}`);
-            console.log(`Response for ${bandId}:`, response);
 
             if (!response.ok) {
                 console.warn(`Failed to fetch details for band ID: ${bandId}, Status: ${response.status}`);
@@ -61,7 +58,6 @@ async function fetchBandDetails(bandIds) {
             }
 
             const data = await response.json();
-            console.log(`Data for ${bandId}:`, data);
 
             return {
                 id: bandId,
@@ -72,8 +68,6 @@ async function fetchBandDetails(bandIds) {
             return { id: bandId, name: `Error Loading Band (${bandId})` };
         }
     }));
-
-    console.log('Final band details:', bandDetails); // Debug log
 
     return bandDetails.filter(Boolean); // Remove nulls or undefined entries
 }

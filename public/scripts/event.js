@@ -2,8 +2,6 @@
 async function fetchBandDetails(bandIds) {
     if (!bandIds || bandIds.length === 0) return [];
 
-    console.log('Fetching bands:', bandIds);
-
     const bandDetails = await Promise.all(bandIds.map(async (bandId) => {
         try {
             const response = await fetch(`/.netlify/functions/band?id=${bandId}`);
@@ -23,7 +21,6 @@ async function fetchBandDetails(bandIds) {
         }
     }));
 
-    console.log('Final band details:', bandDetails);
     return bandDetails.filter(Boolean); // Remove nulls or undefined entries
 }
 
@@ -46,7 +43,6 @@ async function fetchEventDetails() {
     }
 
     try {
-        console.log('Fetching event details for ID:', eventId);
         const response = await fetch(`/.netlify/functions/event?id=${eventId}`);
 
         if (!response.ok) {
@@ -54,7 +50,6 @@ async function fetchEventDetails() {
         }
 
         const event = await response.json();
-        console.log('Fetched Event:', event);
 
         // Set Dynamic Page Title
         document.title = `${event.title || 'Unnamed Event'} - Gigdates.net`;

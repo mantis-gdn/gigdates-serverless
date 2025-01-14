@@ -60,8 +60,6 @@ function getDayBadge(day) {
 async function fetchBandDetails(bandIds) {
     if (!bandIds || bandIds.length === 0) return [];
 
-    console.log('Fetching bands:', bandIds);
-
     const bandDetails = await Promise.all(bandIds.map(async (bandId) => {
         try {
             const response = await fetch(`/.netlify/functions/band?id=${bandId}`);
@@ -95,7 +93,6 @@ async function fetchVenueData() {
     }
 
     try {
-        console.log('Fetching venue details for ID:', venueId);
         const response = await fetch(`/.netlify/functions/venue?id=${venueId}`);
 
         if (!response.ok) {
@@ -103,7 +100,6 @@ async function fetchVenueData() {
         }
 
         const data = await response.json();
-        console.log('Fetched Data:', data);
 
         if (!data.venue) {
             throw new Error('Venue data is missing in the response.');
