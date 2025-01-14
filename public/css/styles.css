@@ -261,8 +261,8 @@ p {
       .filters input,
       .filters select,
       .filters button {
-        padding: 0.5rem;
-        font-size: 1rem;
+        padding: 0.8rem;
+        font-size: 0.8rem;
         border: 1px solid #555;
         border-radius: 5px;
         background: #2c2c2c;
