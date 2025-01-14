@@ -6,6 +6,12 @@
     <title>Band Gigdates.net</title>
     <link rel="stylesheet" href="/css/styles.css">
     <script src="/main.js" defer></script>
+    <script>
+        window.toggleMenu = function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        };
+    </script>
 </head>
 <body>
     <!-- Header Section -->
