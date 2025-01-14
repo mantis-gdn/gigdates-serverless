@@ -24,6 +24,7 @@ exports.handler = async () => {
             body: JSON.stringify({
                 events: filteredAndSortedEvents.map(event => ({
                     id: event.id,
+                    genre: event.genre,
                     title: event.title,
                     date: event.schedule?.date || 'No Date Provided',
                     time: event.schedule?.show || 'No Time Provided',

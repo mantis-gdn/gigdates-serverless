@@ -103,7 +103,7 @@ async function fetchBandDetails(bandIds) {
                     }
 
                     return `
-                        <div class="event-card">
+                        <div class="event-card" data-genre="${event.genre}" data-date="${event.date}">
                             <h3>
                                 <a href="/event/${event.id}">
                                     ${event.title || 'Unnamed Event'}

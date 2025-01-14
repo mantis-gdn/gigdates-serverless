@@ -1,6 +1,7 @@
 module.exports = { events: [
   {
     "id": 4,
+    "genre": "Rock",
     "title": "The DMB Project – Dave Matthews Tribute – Dave’s Birthday Bash",
     "schedule": {
         "date": "2025-01-11",
@@ -15,6 +16,7 @@ module.exports = { events: [
   },
   {
     "id": 5,
+    "genre": "Rock",
     "title": "The DMB Project – Dave Matthews Tribute",
     "schedule": {
         "date": "2025-03-29",
@@ -29,6 +31,7 @@ module.exports = { events: [
   },
   {
     "id": 6,
+    "genre": "Rock",
     "title": "The DMB Project – Dave Matthews Tribute",
     "schedule": {
         "date": "2025-07-12",
@@ -43,6 +46,7 @@ module.exports = { events: [
   },
   {
     "id": 7,
+    "genre": "Rock",
     "title": "The DMB Project – Dave Matthews Tribute",
     "schedule": {
         "date": "2025-04-12",
@@ -57,6 +61,7 @@ module.exports = { events: [
   },
   {
     "id": 8,
+    "genre": "Rock",
     "title": "The DMB Project – Dave Matthews Tribute",
     "schedule": {
         "date": "2025-08-13",
@@ -71,6 +76,7 @@ module.exports = { events: [
   },
 {
   "id": 9,
+  "genre": "Rock",
   "title": "Brothers All Band – Allman Brothers Tribute",
   "schedule": {
       "date": "2025-02-08",
@@ -85,6 +91,7 @@ module.exports = { events: [
 },
 {
   "id": 10,
+  "genre": "Rock",
   "title": "Brothers All Band – Allman Brothers Tribute",
   "schedule": {
       "date": "2025-08-02",
@@ -99,6 +106,7 @@ module.exports = { events: [
 },
 {
   "id": 11,
+  "genre": "Rock",
   "title": "Brothers All Band – Allman Brothers Tribute",
   "schedule": {
       "date": "2025-10-04",
@@ -113,6 +121,7 @@ module.exports = { events: [
 },
 {
   "id": 12,
+  "genre": "Rock",
   "title": "Brothers All Band – Allman Brothers Tribute",
   "schedule": {
       "date": "2025-04-31",
@@ -127,6 +136,7 @@ module.exports = { events: [
 },
 {
   "id": 12,
+  "genre": "Rock",
   "title": "Brothers All Band – Allman Brothers Tribute",
   "schedule": {
       "date": "2025-02-15",
@@ -141,6 +151,7 @@ module.exports = { events: [
 },
 {
   "id": 13,
+  "genre": "Rock",
   "title": "Brothers All Band – Allman Brothers Tribute",
   "schedule": {
       "date": "2025-02-15",
@@ -155,6 +166,7 @@ module.exports = { events: [
 },
 {
   "id": 14,
+  "genre": "Rock",
   "title": "Hollywood & N9ne Returns",
   "schedule": {
       "date": "2025-05-07",

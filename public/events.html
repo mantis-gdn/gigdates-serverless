@@ -6,24 +6,75 @@
     <title>Events Gigdates.net</title>
     <link rel="stylesheet" href="/css/styles.css">
     <script src="/main.js" defer></script>
-    <script>
-        window.toggleMenu = function () {
-            const menu = document.getElementById('mobile-menu');
-            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-        };
+    <script defer>
+        function filterEvents() {
+    const searchText = document.getElementById('search').value.toLowerCase();
+    const genre = document.getElementById('genre').value;
+
+    const date = document.getElementById('date').value;
+
+    const events = document.querySelectorAll('.event-card');
+
+    events.forEach(event => {
+      const title = event.querySelector('h3').textContent.toLowerCase();
+      const eventGenre = event.getAttribute('data-genre');
+      const eventDate = event.getAttribute('data-date');
+
+      const matchesSearch = title.includes(searchText);
+      const matchesGenre = genre === '' || eventGenre === genre;
+      const matchesDate = date === '' || eventDate === date;
+
+      console.log(eventGenre, genre);4
+
+      if (matchesSearch && matchesGenre && matchesDate) {
+        event.style.display = 'block';
+      } else {
+        event.style.display = 'none';
+      }
+    });
+  }
+
+  function clearFilters() {
+    document.getElementById('search').value = '';
+    document.getElementById('genre').value = '';
+    document.getElementById('date').value = '';
+
+    const events = document.querySelectorAll('.event-card');
+    events.forEach(event => {
+      event.style.display = 'block';
+    });
+  }
+
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+  }
     </script>
 </head>
 <body>
     <!-- Header Section -->
     <div id="header"></div>
 
+    <div class="events-header">
+        <h1>Events</h1>
+        <p>Discover amazing events happening near you!</p>
+    </div>
+
+    <section class="filters">
+        <input type="text" id="search" placeholder="Search events...">
+        <select id="genre">
+          <option value="">Select Genre</option>
+          <option value="Rock">Rock</option>
+          <option value="Jazz">Jazz</option>
+          <option value="Pop">Pop</option>
+        </select>
+        <input type="date" id="date">
+        <button onclick="filterEvents()">Filter</button>
+        <button onclick="clearFilters()">Clear Filters</button>
+      </section>
+      
     <!-- Main Content -->
     <div class="container">
-
-        <div class="events-header">
-            <h1>All Events</h1>
-            <p>Discover amazing events happening near you!</p>
-        </div>
         <!-- Events Container -->
         <div id="events-container" class="events-grid">
             <!-- Events will be dynamically loaded here -->
