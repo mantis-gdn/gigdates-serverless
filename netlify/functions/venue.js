@@ -43,7 +43,8 @@ exports.handler = async (event) => {
                 id: event.id,
                 title: event.title || 'Unnamed Event',
                 date: event.schedule?.date || 'No Date Provided',
-                time: event.schedule?.show || 'No Time Provided',
+                doors: event.schedule?.doors || 'No Doors Time Provided',
+                show: event.schedule?.show || 'No Show Time Provided',
                 venueName: event.venue || 'Unknown Venue',
                 venueId: event.venueId || null,
                 bandIds: event.bandIds || [] // Include bandIds in the response

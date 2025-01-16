@@ -335,7 +335,126 @@ const newLocal_1 = module.exports = {
           "role": "Percussion"
         }
       ]
-    }    
+    },
+    {
+      "id": "red_eft",
+      "name": "Red Eft",
+      "genre": "Indie Experimental Pop",
+      "description": "Red Eft is a dynamic indie and experimental pop band from Portland, Maine, known for their electrifying performances and genre-defying sound. Blending elements of indie rock, punk, and experimental music, their emotionally charged vocals shift between melodic singing and raw, expressive yelling, creating a captivating sonic experience. Their 2023 singles, 'Rain Cycle' and 'Purgatory Love,' released under Dollhouse Lightning, showcase their talent for crafting intricate, evocative soundscapes that explore themes of love, loss, and transformation. With performances at notable venues like SPACE in Portland and collaborations with acts such as Sequela and Matriarch, Red Eft continues to build their reputation as a rising force in the indie music scene.",
+      "website": "https://redeft207.bandcamp.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/RedEftMusic",
+        "instagram": "http://instagram.com/redeft207"
+      },
+      "members": [
+        {
+          "name": "Zoe Grieze",
+          "role": "Vocals"
+        },
+        {
+          "name": "Charlie Hart",
+          "role": "Guitars"
+        },
+        {
+          "name": "Cameron Silveira",
+          "role": "Bass, Vocals"
+        },
+        {
+          "name": "Michael Margolies",
+          "role": "Drums"
+        },
+        {
+          "name": "Josh Elwood",
+          "role": "Guitars"
+        }
+      ]
+    },
+    {
+      "id": "wooll",
+      "name": "Wooll",
+      "genre": "Indie Rock",
+      "description": "Wooll is an American indie rock band from Providence, Rhode Island, known for their captivating sound and dynamic performances. Formed in 2023, the band blends introspective lyrics with melodic instrumentation, drawing influences from artists like Cat Stevens. Their debut album, 'Unwind,' released in April 2024, showcases their ability to craft songs that resonate with listeners, exploring themes of modern life's complexities and the pursuit of balance. With a strong presence in the local music scene, Wooll has performed at various venues, sharing stages with acts such as Maddy Wood and Matriarch.",
+      "website": "https://wooll.bandcamp.com/",
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/woollband/"
+      },
+      "members": [
+        {
+          "name": "Corinne Roma",
+          "role": "Vocals, Acoustic Guitar"
+        },
+        {
+          "name": "Tyler Rosenholm",
+          "role": "Electric Guitar"
+        },
+        {
+          "name": "Tyler Chauncey",
+          "role": "Bass"
+        },
+        {
+          "name": "Derek Goulet",
+          "role": "Drums"
+        },
+        {
+          "name": "Robert LaSalvia",
+          "role": "Electric Guitar, Keys"
+        }
+      ]
+    },
+    {
+      "id": "femur",
+      "name": "Femur",
+      "genre": "Mathcore/Sludge Metal",
+      "description": "Femur is a Canadian band from Thunder Bay, Ontario, known for their intense fusion of mathcore and sludge metal. Since their formation in 2014, they have captivated audiences with complex rhythms, aggressive guitar work, and raw vocals. Their discography includes the debut album 'Red Marks' (2018) and the sophomore release 'For the Love of It' (2020), both showcasing their ability to blend technical proficiency with heavy, emotive soundscapes. Tracks like 'Locus of Control' highlight their dynamic range and have been featured on platforms such as Mathcore Index. Femur's relentless energy and innovative approach have solidified their status in the Canadian heavy music scene.",
+      "website": "https://femurtheband.bandcamp.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/femurtheband/",
+        "instagram": ""
+      },
+      "members": [
+        {
+          "name": "Jake Laakkonen",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Eric Niemi",
+          "role": "Bass"
+        },
+        {
+          "name": "Dylan Maxwell",
+          "role": "Drums"
+        }
+      ]
+    },
+    {
+      "id": "mutter",
+      "name": "Mutter",
+      "genre": "Alternative Rock",
+      "description": "Mutter is an alternative rock band from Providence, Rhode Island, celebrated for their introspective lyrics and emotive soundscapes. Known for their ability to blend dynamic instrumentation with heartfelt performances, Mutter creates a unique connection with their audience. Their live shows, featuring tracks like 'Jaundice,' highlight the band’s commitment to delivering raw, authentic music that resonates deeply with listeners. As a staple in the Rhode Island music scene, Mutter continues to grow their fanbase through compelling storytelling and powerful performances.",
+      "website": "https://muttered.bandcamp.com/",
+      "socialMedia": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "members": [
+        {
+          "name": "Molly Halpin",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Dante Krystman",
+          "role": "Bass"
+        },
+        {
+          "name": "Tyler Faria",
+          "role": "Drums"
+        },
+        {
+          "name": "Neumi Lamarre",
+          "role": "Tenor Saxophone"
+        }
+      ]
+    }        
   ]
 };
 const newLocal = newLocal_1;

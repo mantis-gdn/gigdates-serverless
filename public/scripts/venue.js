@@ -159,7 +159,7 @@ async function fetchVenueData() {
                                 ${dayBadge} 
                                 ${formatDate(event.date)}
                             </p>
-                            <p><strong>Time:</strong> ${event.time || 'No Time Provided'}</p>
+                            <p><strong>Doors:</strong> ${event.doors || 'No Doors Time Provided'}</p>
                            <p><strong>Venue:</strong> 
                                 <a href="/venue/${event.venueId}">
                                     ${event.venueName || 'Unknown Venue'}

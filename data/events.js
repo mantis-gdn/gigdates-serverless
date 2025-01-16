@@ -228,5 +228,57 @@ module.exports = { events: [
   "bandIds": [
       "dead_meat"
   ]
+},
+{
+  "id": 18,
+  "genre": "Shoegaze vs Screamo",
+  "title": "Shoegaze vs Screamo Battle",
+  "schedule": {
+      "date": "2025-01-17",
+      "doors": "6:00 PM",
+      "show": "6:00 PM"
+  },
+  "venueId": "as220",
+  "venue": "AS220",
+  "bandIds": []
+},
+{
+  "id": 19,
+  "genre": "Live Performance",
+  "title": "Red Eft + Wooll + Femur + Mutter",
+  "schedule": {
+      "date": "2025-01-18",
+      "doors": "8:00 PM",
+      "show": "8:00 PM"
+  },
+  "venueId": "as220",
+  "venue": "AS220",
+  "bandIds": ["red_eft", "wooll", "femur", "mutter"]
+},
+{
+  "id": 20,
+  "genre": "Rock",
+  "title": "PWRUP + Threat Level Burgundy + Palmslow + So Many Dangers",
+  "schedule": {
+      "date": "2025-01-24",
+      "doors": "8:00 PM",
+      "show": "8:00 PM"
+  },
+  "venueId": "as220",
+  "venue": "AS220",
+  "bandIds": []
+},
+{
+  "id": 21,
+  "genre": "Rock",
+  "title": "ENERGY Live at AS220",
+  "schedule": {
+      "date": "2025-01-28",
+      "doors": "8:00 PM",
+      "show": "8:00 PM"
+  },
+  "venueId": "as220",
+  "venue": "AS220",
+  "bandIds": []
 }
 ] };

@@ -51,6 +51,18 @@ async function fetchEventDetails() {
 
         const event = await response.json();
 
+        // Format the date if it exists
+        let formattedDate = 'No Date Provided';
+        if (event.date) {
+            const date = new Date(event.date);
+            formattedDate = date.toLocaleDateString('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+            });
+        }
+
         // Set Dynamic Page Title
         document.title = `${event.title || 'Unnamed Event'} - Gigdates.net`;
 
@@ -78,7 +90,7 @@ async function fetchEventDetails() {
                     ${event.venue || 'Unknown Venue'}
                 </a>
             </h2>
-            <p><strong>Date:</strong> ${event.date || 'No Date Provided'}</p>
+            <p><strong>Date:</strong> ${formattedDate}</p>
             <p><strong>Doors Open:</strong> ${event.doors || 'No Time Provided'}</p>
             <p><strong>Show Starts:</strong> ${event.show || 'No Time Provided'}</p>
             ${bandListHTML}

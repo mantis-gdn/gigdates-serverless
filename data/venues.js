@@ -103,5 +103,20 @@ module.exports = { venues: [
       "facebook": "https://www.facebook.com/TheStrandRI",
       "instagram": "https://www.instagram.com/thestrandri/"
     }
+  },
+  {
+    "id": "as220",
+    "name": "AS220",
+    "address": "95 Mathewson St, Suite 204, Providence, RI 02903",
+    "phone": "401-831-9327",
+    "website": "https://as220.org",
+    "description": "AS220 is a nonprofit community arts organization located in the heart of Providence, Rhode Island. It offers a creative and inclusive space for artists of all backgrounds to collaborate, perform, and showcase their work. AS220 supports a wide range of artistic endeavors, including music, theater, visual arts, and poetry, and it is a cornerstone of the local arts community.",
+    "seating": "AS220 features flexible seating arrangements that vary depending on the event, ranging from standing-room-only for concerts to seated arrangements for workshops and performances.",
+    "parking": "Street parking is available nearby, with several parking garages within walking distance for added convenience.",
+    "eventsLink": "https://as220.org/calendar/",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/AS22O/",
+      "instagram": "https://www.instagram.com/as220providence/"
+    }
   }
 ] };
