@@ -231,7 +231,7 @@ module.exports = { events: [
 },
 {
   "id": 18,
-  "genre": "Shoegaze vs Screamo",
+  "genre": "Rock",
   "title": "Shoegaze vs Screamo Battle",
   "schedule": {
       "date": "2025-01-17",
@@ -244,7 +244,7 @@ module.exports = { events: [
 },
 {
   "id": 19,
-  "genre": "Live Performance",
+  "genre": "Rock",
   "title": "Red Eft + Wooll + Femur + Mutter",
   "schedule": {
       "date": "2025-01-18",
