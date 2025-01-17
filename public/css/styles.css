@@ -290,6 +290,7 @@ p {
     font-size: 14px;
 }
 
+/* Footer Navigation */
 .footer nav ul {
     list-style-type: none; /* Remove bullets */
     margin: 0 auto; /* Center the list container */
@@ -313,6 +314,7 @@ p {
     color: #fff; /* Change to white on hover */
 }
 
+/* Copyright Styling */
 .footer div {
     margin-top: 10px; /* Space above the copyright text */
     font-size: 12px; /* Slightly smaller font size for copyright */
@@ -320,7 +322,17 @@ p {
 }
 
 /* === Responsive Adjustments === */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+    .footer nav ul {
+        display: block; /* Stack links vertically */
+        text-align: center; /* Center-align links */
+        gap: 10px; /* Reduce gap between links */
+    }
+
+    .footer nav ul li {
+        display: block; /* Make each link take up its own line */
+        margin: 5px 0; /* Add spacing between vertical links */
+    }
     nav {
         display: none;
       }
