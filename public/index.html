@@ -42,6 +42,7 @@
       
             fetch(TRACKER_URL, {
               method: "POST",
+              mode: "no-cors", // Temporarily disable CORS enforcement
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify(payload),
             })
