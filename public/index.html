@@ -26,54 +26,5 @@
 
     <!-- Footer Section -->
     <div id="footer"></div>
-    <script defer>
-        (function () {
-          const TRACKER_URL = "https://gigdates-tracker.netlify.app/.netlify/functions/track";
-      
-          /**
-           * Function to track an event
-           * @param {string} eventType - The type of event (e.g., 'pageview', 'click')
-           * @param {object} eventData - Additional data related to the event
-           */
-          const trackEvent = (eventType, eventData = {}) => {
-            const payload = {
-              eventType,
-              eventData,
-              timestamp: new Date().toISOString(),
-              url: window.location.href,
-              referrer: document.referrer,
-            };
-      
-            console.log("Tracking payload:", payload);
-      
-            fetch(TRACKER_URL, {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify(payload),
-            })
-              .then((response) => {
-                if (!response.ok) {
-                  console.error("Server responded with an error:", response.status, response.statusText);
-                  return response.text().then((text) => console.error("Error details:", text));
-                } else {
-                  console.log("Event successfully logged");
-                }
-              })
-              .catch((err) => console.error("Tracking error:", err));
-          };
-      
-          // Automatically track page views when the page loads
-          window.onload = () => {
-            trackEvent("pageview");
-          };
-      
-          // Track clicks on elements with a `data-track` attribute
-          document.addEventListener("click", (e) => {
-            if (e.target.dataset.track) {
-              trackEvent("click", { element: e.target.dataset.track });
-            }
-          });
-        })();
-      </script>      
 </body>
 </html>
