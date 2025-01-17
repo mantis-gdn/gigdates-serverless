@@ -26,5 +26,36 @@
 
     <!-- Footer Section -->
     <div id="footer"></div>
+    <script defer>
+        (function () {
+          // Replace with the actual URL of your tracker Netlify Function
+          const TRACKER_URL = "https://gigdates-tracker.netlify.app/.netlify/functions/track";
+      
+          // Function to send tracking events
+          const trackEvent = (eventType, eventData = {}) => {
+            fetch(TRACKER_URL, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                eventType,
+                eventData,
+                timestamp: new Date().toISOString(),
+                url: window.location.href,
+                referrer: document.referrer,
+              }),
+            }).catch((err) => console.error("Tracking error:", err));
+          };
+      
+          // Track page views automatically when the page loads
+          trackEvent("pageview");
+      
+          // Track clicks on elements with the `data-track` attribute
+          document.addEventListener("click", (e) => {
+            if (e.target.dataset.track) {
+              trackEvent("click", { element: e.target.dataset.track });
+            }
+          });
+        })();
+    </script>
 </body>
 </html>
