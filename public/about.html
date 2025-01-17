@@ -40,24 +40,5 @@
 
     <!-- Footer Section -->
     <div id="footer"></div>
-    // Code for the tracked website (https://gigdates.net)
-    // Add this script to the <head> or <body> of the website
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        fetch('https://gigdates-tracker.netlify.app/.netlify/functions/track', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            url: window.location.href,
-            referrer: document.referrer,
-          }),
-        })
-        .then(response => response.json())
-        .then(data => console.log('Tracking response:', data))
-        .catch(error => console.error('Tracking error:', error));
-      });
-    </script>
 </body>
 </html>
