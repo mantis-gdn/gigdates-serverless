@@ -31,14 +31,6 @@
           const TRACKER_URL = "https://gigdates-tracker.netlify.app/.netlify/functions/track";
       
           const trackEvent = (eventType, eventData = {}) => {
-            // Ensure eventData is a simple object with text or meaningful metadata
-            const simplifiedEventData = Object.keys(eventData).reduce((acc, key) => {
-              if (typeof eventData[key] === "string" || typeof eventData[key] === "number") {
-                acc[key] = eventData[key];
-              }
-              return acc;
-            }, {});
-      
             const payload = {
               eventType,
               timestamp: new Date().toISOString(),
@@ -55,12 +47,13 @@
             })
               .then((response) => {
                 if (!response.ok) {
-                  console.error("Server responded with an error:", response.status, response.statusText);
+                  console.error("Server error:", response.status, response.statusText);
+                  return response.text().then((text) => console.error("Error details:", text));
                 } else {
                   console.log("Event successfully logged");
                 }
               })
-              .catch((err) => console.error("Tracking error:", err, TRACKER_URL));
+              .catch((err) => console.error("Tracking error:", err));
           };
       
           // Automatically track page views
@@ -73,6 +66,6 @@
             }
           });
         })();
-      </script>           
+      </script>                 
 </body>
 </html>
