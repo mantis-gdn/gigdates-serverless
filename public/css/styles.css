@@ -323,23 +323,8 @@ p {
 
 /* === Responsive Adjustments === */
 @media (max-width: 768px) {
-    .footer nav ul {
-        display: flex; /* Ensure navigation is visible */
-        flex-direction: column; /* Stack links vertically */
-        align-items: center; /* Center-align links */
-        gap: 10px; /* Add space between links */
-    }
-
-    .footer nav ul li {
-        display: block; /* Each link on its own line */
-        margin: 5px 0; /* Add spacing for vertical alignment */
-    }
-
-    .footer nav ul li a {
-        font-size: 16px; /* Slightly larger font for better readability on small screens */
-    }
     nav {
-        display: block;
+        display: none;
       }
 
       .hamburger {
