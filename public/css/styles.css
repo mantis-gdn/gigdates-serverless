@@ -322,7 +322,7 @@ p {
 }
 
 /* === Responsive Adjustments === */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .footer nav ul {
         display: flex; /* Ensure navigation is visible */
         flex-direction: column; /* Stack links vertically */
