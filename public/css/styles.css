@@ -281,6 +281,44 @@ p {
         background: #2980b9;
       }
 
+/* Footer Styling */
+.footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    text-align: center; /* Center-align all footer content */
+    padding: 20px;
+    font-size: 14px;
+}
+
+.footer nav ul {
+    list-style-type: none; /* Remove bullets */
+    margin: 0 auto; /* Center the list container */
+    padding: 0; /* Remove default padding */
+    display: inline-block; /* Align the list horizontally */
+    gap: 15px; /* Space between links */
+}
+
+.footer nav ul li {
+    display: inline; /* Ensure links are inline */
+}
+
+.footer nav ul li a {
+    color: #ccc; /* Light grey for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make links stand out */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.footer nav ul li a:hover {
+    color: #fff; /* Change to white on hover */
+}
+
+.footer div {
+    margin-top: 10px; /* Space above the copyright text */
+    font-size: 12px; /* Slightly smaller font size for copyright */
+    color: #aaa; /* Light grey for copyright text */
+}
+
 /* === Responsive Adjustments === */
 @media (max-width: 768px) {
     nav {
