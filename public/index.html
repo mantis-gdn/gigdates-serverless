@@ -26,5 +26,47 @@
 
     <!-- Footer Section -->
     <div id="footer"></div>
+    <script defer>
+        (function () {
+          const TRACKER_URL = "https://gigdates-tracker.netlify.app/.netlify/functions/track";
+      
+          const trackEvent = (eventType, eventData = {}) => {
+            const payload = {
+              eventType,
+              timestamp: new Date().toISOString(),
+              url: window.location.href,
+              referrer: document.referrer,
+            };
+      
+            console.log("Tracking payload:", payload);
+      
+            fetch(TRACKER_URL, {
+              method: "POST",
+              mode: "no-cors", // Temporarily disable CORS enforcement
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload),
+            })
+              .then((response) => {
+                if (!response.ok) {
+                  console.error("Server error:", response.status, response.statusText);
+                  return response.text().then((text) => console.error("Error details:", text));
+                } else {
+                  console.log("Event successfully logged");
+                }
+              })
+              .catch((err) => console.error("Tracking error:", err));
+          };
+      
+          // Automatically track page views
+          trackEvent("pageview");
+      
+          // Track clicks on elements with `data-track` attributes
+          document.addEventListener("click", (e) => {
+            if (e.target.dataset.track) {
+              trackEvent("click", { element: e.target.dataset.track });
+            }
+          });
+        })();
+      </script>                 
 </body>
 </html>
