@@ -28,34 +28,44 @@
     <div id="footer"></div>
     <script defer>
         (function () {
-          // Replace with the actual URL of your tracker Netlify Function
           const TRACKER_URL = "https://gigdates-tracker.netlify.app/.netlify/functions/track";
       
-          // Function to send tracking events
           const trackEvent = (eventType, eventData = {}) => {
+            const payload = {
+              eventType,
+              eventData,
+              timestamp: new Date().toISOString(),
+              url: window.location.href,
+              referrer: document.referrer,
+            };
+      
+            console.log("Tracking payload:", payload);
+      
             fetch(TRACKER_URL, {
               method: "POST",
               headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({
-                eventType,
-                eventData,
-                timestamp: new Date().toISOString(),
-                url: window.location.href,
-                referrer: document.referrer,
-              }),
-            }).catch((err) => console.error("Tracking error:", err));
+              body: JSON.stringify(payload),
+            })
+              .then((response) => {
+                if (!response.ok) {
+                  console.error("Server responded with an error:", response.status, response.statusText);
+                } else {
+                  console.log("Event successfully logged");
+                }
+              })
+              .catch((err) => console.error("Tracking error:", err, TRACKER_URL));
           };
       
-          // Track page views automatically when the page loads
+          // Automatically track page views
           trackEvent("pageview");
       
-          // Track clicks on elements with the `data-track` attribute
+          // Track clicks on elements with `data-track` attributes
           document.addEventListener("click", (e) => {
             if (e.target.dataset.track) {
               trackEvent("click", { element: e.target.dataset.track });
             }
           });
         })();
-    </script>
+      </script>      
 </body>
 </html>
