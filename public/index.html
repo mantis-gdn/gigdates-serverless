@@ -31,9 +31,17 @@
           const TRACKER_URL = "https://gigdates-tracker.netlify.app/.netlify/functions/track";
       
           const trackEvent = (eventType, eventData = {}) => {
+            // Ensure eventData is a simple object with text or meaningful metadata
+            const simplifiedEventData = Object.keys(eventData).reduce((acc, key) => {
+              if (typeof eventData[key] === "string" || typeof eventData[key] === "number") {
+                acc[key] = eventData[key];
+              }
+              return acc;
+            }, {});
+      
             const payload = {
               eventType,
-              eventData,
+              eventData: simplifiedEventData,
               timestamp: new Date().toISOString(),
               url: window.location.href,
               referrer: document.referrer,
@@ -66,6 +74,6 @@
             }
           });
         })();
-      </script>      
+      </script>           
 </body>
 </html>
