@@ -15,77 +15,79 @@ body {
     padding: 20px;
 }
 
-    /* Header and Logo */
-    header {
-        background: #1f1f1f;
-        color: #ffffff;
-        padding: 1rem 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid #333;
-        position: relative; /* Added to fix menu alignment */
-      }
-  
-      header .logo {
-        font-size: 1.5rem;
-        font-weight: bold;
-      }
-  
-      nav {
-        display: flex;
-        gap: 1rem;
-      }
-  
-      nav a {
-        color: #ffffff;
-        text-decoration: none;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-      }
-  
-      nav a:hover {
-        background: #333333;
-      }
-  
-      .hamburger {
-        display: none;
-        flex-direction: column;
-        cursor: pointer;
-      }
-  
-      .hamburger span {
-        background: white;
-        height: 3px;
-        width: 25px;
-        margin: 3px 0;
-      }
-  
-      .mobile-menu {
-        display: none;
-        flex-direction: column;
-        gap: 1rem;
-        background: #1f1f1f;
-        position: absolute;
-        top: 100%; /* Ensure it appears directly below the header */
-        left: 0;
-        width: 100%;
-        padding: 1rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-      }
-  
-      .mobile-menu a {
-        color: #ffffff;
-        text-decoration: none;
-        padding: 0.5rem;
-        text-align: center;
-        border-radius: 5px;
-      }
-  
-      .mobile-menu a:hover {
-        background: #333333;
-      }
-  
+/* Header and Logo */
+header {
+    background: #1f1f1f;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    position: relative;
+    /* Added to fix menu alignment */
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #333333;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: #1f1f1f;
+    position: absolute;
+    top: 100%;
+    /* Ensure it appears directly below the header */
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.mobile-menu a:hover {
+    background: #333333;
+}
+
 
 /* === Hero Section === */
 .hero-section {
@@ -204,173 +206,213 @@ body {
 }
 
 .venue-details {
-    color: #e6edf3; /* Light text for readability */
-    padding: 1rem 2rem; /* Add space inside the container */
-    margin: 1rem 0; /* Add space above and below the container */
-    border-radius: 8px; /* Smooth corners */
+    color: #e6edf3;
+    /* Light text for readability */
+    padding: 1rem 2rem;
+    /* Add space inside the container */
+    margin: 1rem 0;
+    /* Add space above and below the container */
+    border-radius: 8px;
+    /* Smooth corners */
 }
 
 .venue-details p {
-    margin: 0.5rem 0; /* Space between paragraphs */
-    font-size: 1rem; /* Base font size */
-    line-height: 1.5; /* Improve readability */
-    text-align: center; /* Center text for consistency */
+    margin: 0.5rem 0;
+    /* Space between paragraphs */
+    font-size: 1rem;
+    /* Base font size */
+    line-height: 1.5;
+    /* Improve readability */
+    text-align: center;
+    /* Center text for consistency */
 }
 
 #venue-address {
-    font-weight: bold; /* Highlight address */
-    color: #8b949e; /* Slightly different color for emphasis */
+    font-weight: bold;
+    /* Highlight address */
+    color: #8b949e;
+    /* Slightly different color for emphasis */
 }
 
 #venue-phone {
-    font-style: italic; /* Differentiate phone details */
-    color: #8b949e; /* Subtle variation in color */
+    font-style: italic;
+    /* Differentiate phone details */
+    color: #8b949e;
+    /* Subtle variation in color */
 }
 
 /* Span styling */
 #band-genre {
-    font-weight: bold; /* Make the genre stand out */
-    color: #ffffff; /* Accent color for emphasis */
-    padding: 0.2rem 0.4rem; /* Add some padding around the text */
-    background: #1e1e1e; /* Subtle background to highlight the text */
-    border-radius: 4px; /* Smooth corners */
-    display: inline-block; /* Ensure padding doesn't affect layout */
-    text-align: center; /* Center text for consistency */
+    font-weight: bold;
+    /* Make the genre stand out */
+    color: #ffffff;
+    /* Accent color for emphasis */
+    padding: 0.2rem 0.4rem;
+    /* Add some padding around the text */
+    background: #1e1e1e;
+    /* Subtle background to highlight the text */
+    border-radius: 4px;
+    /* Smooth corners */
+    display: inline-block;
+    /* Ensure padding doesn't affect layout */
+    text-align: center;
+    /* Center text for consistency */
 }
 
 /* Paragraph styling */
 p {
     font-size: 1rem;
-    color: #e6edf3; /* Light text color to match the theme */
-    margin: 0.5rem 0; /* Add space above and below */
-    line-height: 1.5; /* Improve readability */
+    color: #e6edf3;
+    /* Light text color to match the theme */
+    margin: 0.5rem 0;
+    /* Add space above and below */
+    line-height: 1.5;
+    /* Improve readability */
 }
 
-    /* Filter Section */
-    .filters {
-        background: #1e1e1e;
-        padding: 1rem;
-        margin: 1rem 2rem;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-  
-      .filters input,
-      .filters select,
-      .filters button {
-        padding: 0.8rem;
-        font-size: 0.8rem;
-        border: 1px solid #555;
-        border-radius: 5px;
-        background: #2c2c2c;
-        color: #ffffff;
-        flex: 1 1 calc(33.33% - 1rem);
-      }
-  
-      .filters button {
-        background: #3498db;
-        color: #ffffff;
-        cursor: pointer;
-        border: none;
-      }
-  
-      .filters button:hover {
-        background: #2980b9;
-      }
+/* Filter Section */
+.filters {
+    background: #1e1e1e;
+    padding: 1rem;
+    margin: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filters input,
+.filters select,
+.filters button {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #2c2c2c;
+    color: #ffffff;
+    flex: 1 1 calc(33.33% - 1rem);
+}
+
+.filters button {
+    background: #3498db;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+}
+
+.filters button:hover {
+    background: #2980b9;
+}
 
 /* Footer Styling */
 .footer {
-    background-color: #333; /* Dark background for contrast */
-    color: #fff; /* White text for readability */
-    text-align: center; /* Center-align all footer content */
+    background-color: #333;
+    /* Dark background for contrast */
+    color: #fff;
+    /* White text for readability */
+    text-align: center;
+    /* Center-align all footer content */
     padding: 20px;
     font-size: 14px;
 }
 
 /* Footer Navigation */
 .footer nav ul {
-    list-style-type: none; /* Remove bullets */
-    margin: 0 auto; /* Center the list container */
-    padding: 0; /* Remove default padding */
-    display: inline-block; /* Align the list horizontally */
-    gap: 15px; /* Space between links */
+    list-style-type: none;
+    /* Remove bullets */
+    margin: 0 auto;
+    /* Center the list container */
+    padding: 0;
+    /* Remove default padding */
+    display: inline-block;
+    /* Align the list horizontally */
+    gap: 15px;
+    /* Space between links */
 }
 
 .footer nav ul li {
-    display: inline; /* Ensure links are inline */
+    display: inline;
+    /* Ensure links are inline */
 }
 
 .footer nav ul li a {
-    color: #ccc; /* Light grey for links */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make links stand out */
-    transition: color 0.3s ease; /* Smooth color change on hover */
+    color: #ccc;
+    /* Light grey for links */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Make links stand out */
+    transition: color 0.3s ease;
+    /* Smooth color change on hover */
 }
 
 .footer nav ul li a:hover {
-    color: #fff; /* Change to white on hover */
+    color: #fff;
+    /* Change to white on hover */
 }
 
 /* Copyright Styling */
 .footer div {
-    margin-top: 10px; /* Space above the copyright text */
-    font-size: 12px; /* Slightly smaller font size for copyright */
-    color: #aaa; /* Light grey for copyright text */
+    margin-top: 10px;
+    /* Space above the copyright text */
+    font-size: 12px;
+    /* Slightly smaller font size for copyright */
+    color: #aaa;
+    /* Light grey for copyright text */
 }
 
 /* === Responsive Adjustments === */
 @media (max-width: 768px) {
     nav {
         display: none;
-      }
+    }
 
-      .hamburger {
+    .hamburger {
         display: flex;
-      }
+    }
 
-      .mobile-menu {
+    .mobile-menu {
         display: none;
-      }
+    }
 
-      .filters {
+    .filters {
         flex-direction: column;
-      }
+    }
 
-      .filters input,
-      .filters select,
-      .filters button {
+    .filters input,
+    .filters select,
+    .filters button {
         flex: 1 1 100%;
-      }
     }
-    .details-container {
-        flex-direction: column;
-        gap: 15px;
-    }
+}
 
-    .details-header {
-        width: 100%;
-        padding: 0px;
-    }
+.details-container {
+    flex-direction: column;
+    gap: 15px;
+}
 
-    .events-grid {
-        grid-template-columns: 1fr;
-    }
+.details-header {
+    width: 100%;
+    padding: 0px;
+}
 
-    .event-card {
-        width: 95%;
-    }
+.events-grid {
+    grid-template-columns: 1fr;
+}
 
-    h1 {
-        font-size: 2.0rem;
-        text-align: center;
-    }
+.event-card {
+    width: 95%;
+}
 
-    p {
-        font-size: 1.5rem;
-    }
+h1 {
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+}
 
 /* === Footer === */
 .footer {
