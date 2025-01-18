@@ -30,6 +30,15 @@ function getEventId() {
     return pathParts[pathParts.length - 1]; // Get the last part of the path (event ID)
 }
 
+// Function to get today's date in Eastern Time
+function getTodayDateEastern() {
+    const date = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
 // Function to fetch and display event details
 async function fetchEventDetails() {
     const eventContainer = document.getElementById('event-container');
@@ -53,17 +62,23 @@ async function fetchEventDetails() {
 
         // Format the date if it exists
         let formattedDate = 'No Date Provided';
+        const todayDate = getTodayDateEastern(); // Get today's date in Eastern Time
+        let isToday = false;
+
         if (event.date) {
-            const date = new Date(`${event.date}T05:00:00Z`); // Force UTC midnight
+            const date = new Date(`${event.date}T00:00:00Z`);
             const formatter = new Intl.DateTimeFormat('en-US', {
-                timeZone: 'America/New_York', // Specify Eastern Time Zone
+                timeZone: 'America/New_York',
                 weekday: 'long',
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
             });
             formattedDate = formatter.format(date);
-        }        
+
+            // Check if the event date matches today's date
+            isToday = event.date === todayDate;
+        }
 
         // Set Dynamic Page Title
         document.title = `${event.title || 'Unnamed Event'} - Gigdates.net`;
@@ -92,7 +107,11 @@ async function fetchEventDetails() {
                     ${event.venue || 'Unknown Venue'}
                 </a>
             </h2>
-            <p><strong>Date:</strong> ${formattedDate}</p>
+            <p>
+                <strong>Date:</strong> 
+                ${isToday ? '<span class="today-badge" style="color: red; font-weight: bold;">TODAY</span>' : ''} 
+                ${formattedDate}
+            </p>
             <p><strong>Doors Open:</strong> ${event.doors || 'No Time Provided'}</p>
             <p><strong>Show Starts:</strong> ${event.show || 'No Time Provided'}</p>
             ${bandListHTML}
