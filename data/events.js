@@ -213,7 +213,7 @@ module.exports = { events: [
       "limp_ballz",
       "beastie_ballz"
   ],
-  "preview": "Get ready for a night of epic tribute performances as Korn Ballz, Limp Ballz, and Beastie Ballz take the stage! Experience the raw energy and iconic hits like never before."
+  "preview": "Get ready to immerse yourself in an unforgettable night of high-octane tribute performances as Korn Ballz, Limp Ballz, and Beastie Ballz storm the stage! These powerhouse bands will take you on a nostalgic journey through the raw energy, iconic riffs, and electrifying anthems that defined a generation. From the headbanging intensity of Korn's legendary sound to Limp Bizkit's rebellious grooves and the Beastie Boys' unstoppable beats, this is your chance to relive the music that shaped an era. Don't miss this epic showdown of talent, passion, and pure rock energy—it's a night you'll talk about for years to come!"
 },
 {
   "id": 17,
