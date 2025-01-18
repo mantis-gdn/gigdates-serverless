@@ -66,7 +66,7 @@ async function fetchEventDetails() {
         let isToday = false;
 
         if (event.date) {
-            const date = new Date(`${event.date}T00:00:00Z`);
+            const date = new Date(`${event.date}T05:00:00Z`);
             const formatter = new Intl.DateTimeFormat('en-US', {
                 timeZone: 'America/New_York',
                 weekday: 'long',
