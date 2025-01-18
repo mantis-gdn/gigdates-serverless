@@ -242,10 +242,10 @@ const newLocal_1 = module.exports = {
       "name": "Limp Ballz",
       "genre": "Rap Rock",
       "description": "Limp Ballz is a tribute band dedicated to recreating the iconic sound and swagger of Limp Bizkit. Their performances feature the explosive combination of rap vocals, hard-hitting guitars, and infectious beats that defined the rap rock era of the late '90s and early 2000s. With a loyal following in Rhode Island and beyond, Limp Ballz brings the energy and attitude of classic tracks like 'Rollin'' and 'My Way' to life on stage.",
-      "website": "https://www.limpballztribute.com/",
+      "website": "https://www.gotballzbands.com/limp-ballz",
       "socialMedia": {
         "facebook": "https://www.facebook.com/limpballzband",
-        "instagram": "https://www.instagram.com/limpballzband/"
+        "instagram": ""
       },
       "members": [
         {
@@ -275,10 +275,10 @@ const newLocal_1 = module.exports = {
       "name": "Beastie Ballz",
       "genre": "Hip Hop Rock",
       "description": "Beastie Ballz is a tribute band that pays homage to the legendary Beastie Boys, blending hip hop and rock in an energetic, party-starting performance. Known for their crowd-engaging antics and faithful renditions of classics like 'Sabotage' and 'Intergalactic,' Beastie Ballz captures the rebellious spirit and genre-defying sound that made the Beastie Boys icons. They perform regularly at venues throughout Rhode Island, delivering unforgettable shows that bring the old-school hip hop vibe to life.",
-      "website": "https://www.beastieballztribute.com/",
+      "website": "https://www.gotballzbands.com/beastie-ballz",
       "socialMedia": {
-        "facebook": "https://www.facebook.com/beastieballzband",
-        "instagram": "https://www.instagram.com/beastieballzband/"
+        "facebook": "https://www.facebook.com/beastieboystribute/",
+        "instagram": ""
       },
       "members": [
         {
