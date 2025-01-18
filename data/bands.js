@@ -213,10 +213,10 @@ const newLocal_1 = module.exports = {
       "name": "Korn Ballz",
       "genre": "Nu-Metal",
       "description": "Korn Ballz is a high-energy nu-metal tribute band that channels the raw, emotional power of Korn's iconic sound. Known for their intense stage presence and hard-hitting performances, Korn Ballz delivers authentic renditions of classic nu-metal tracks with heavy riffs, dynamic vocals, and an electrifying atmosphere. They have performed at various venues across New England, drawing fans of the genre into a visceral, unforgettable live music experience.",
-      "website": "https://www.kornballztribute.com/",
+      "website": "https://www.gotballzbands.com/kornballz",
       "socialMedia": {
-        "facebook": "https://www.facebook.com/kornballzband",
-        "instagram": "https://www.instagram.com/kornballzband/"
+        "facebook": "https://www.facebook.com/profile.php/?id=100063701887308",
+        "instagram": ""
       },
       "members": [
         {
