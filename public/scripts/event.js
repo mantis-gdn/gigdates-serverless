@@ -89,15 +89,15 @@ async function fetchEventDetails() {
             const bands = await fetchBandDetails(event.bandIds);
             bandListHTML = `
                 <p><strong>Bands Performing:</strong></p>
-                <ul>
+                <ul class="band-list">
                     ${bands.map(band => `
                         <li>
-                            <a href="/band/${band.id}" style="color: #4a90e2;">${band.name}</a>
+                            <a href="/band/${band.id}">${band.name}</a>
                         </li>
                     `).join('')}
                 </ul>
             `;
-        }
+        }        
 
         // Render Event Details
         eventContainer.innerHTML = `
@@ -108,14 +108,14 @@ async function fetchEventDetails() {
                 </a>
             </h2>
             <p>
-                <strong>Date:</strong> 
-                ${isToday ? '<span class="today-badge" style="color: red; font-weight: bold;">TODAY</span>' : ''} 
+                ${isToday ? '<span class="today-badge" style="color: red; font-weight: bold;">TODAY</span><br />' : ''} 
                 ${formattedDate}
             </p>
-            <p><strong>Doors Open:</strong> ${event.doors || 'No Time Provided'}</p>
-            <p><strong>Show Starts:</strong> ${event.show || 'No Time Provided'}</p>
+            <p><strong>Doors:</strong> ${event.doors || 'No Time Provided'}</p>
+            <p><strong>Show:</strong> ${event.show || 'No Time Provided'}</p>
             ${bandListHTML}
-            <p><strong>Preview: </strong> ${event.preview || 'No Preview Available'}</p>
+            <h2>Event Preview</h2>
+            <p>${event.preview || 'No Preview Available'}</p>
         `;
 
     } catch (error) {
