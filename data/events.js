@@ -212,7 +212,8 @@ module.exports = { events: [
       "korn_ballz",
       "limp_ballz",
       "beastie_ballz"
-  ]
+  ],
+  "preview": "Get ready for a night of epic tribute performances as Korn Ballz, Limp Ballz, and Beastie Ballz take the stage! Experience the raw energy and iconic hits like never before."
 },
 {
   "id": 17,

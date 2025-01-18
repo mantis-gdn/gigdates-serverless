@@ -35,7 +35,8 @@ exports.handler = async (event) => {
                 show: eventData.schedule?.show || 'No Time Provided',
                 venue: eventData.venue || 'Unknown Venue',
                 venueId: eventData.venueId || 'Unknown Venue ID',
-                bandIds: eventData.bandIds || [] // Include bandIds explicitly
+                bandIds: eventData.bandIds || [], // Include bandIds explicitly
+                preview: eventData.preview || 'No Preview Available',
             }),
         };
     } catch (error) {

@@ -115,6 +115,7 @@ async function fetchEventDetails() {
             <p><strong>Doors Open:</strong> ${event.doors || 'No Time Provided'}</p>
             <p><strong>Show Starts:</strong> ${event.show || 'No Time Provided'}</p>
             ${bandListHTML}
+            <p><strong>Preview: </strong> ${event.preview || 'No Preview Available'}</p>
         `;
 
     } catch (error) {
