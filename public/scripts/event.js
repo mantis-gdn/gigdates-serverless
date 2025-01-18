@@ -54,14 +54,16 @@ async function fetchEventDetails() {
         // Format the date if it exists
         let formattedDate = 'No Date Provided';
         if (event.date) {
-            const date = new Date(event.date);
-            formattedDate = date.toLocaleDateString('en-US', {
+            const date = new Date(`${event.date}T05:00:00Z`); // Force UTC midnight
+            const formatter = new Intl.DateTimeFormat('en-US', {
+                timeZone: 'America/New_York', // Specify Eastern Time Zone
                 weekday: 'long',
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
             });
-        }
+            formattedDate = formatter.format(date);
+        }        
 
         // Set Dynamic Page Title
         document.title = `${event.title || 'Unnamed Event'} - Gigdates.net`;
