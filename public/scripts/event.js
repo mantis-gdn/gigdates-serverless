@@ -116,6 +116,8 @@ async function fetchEventDetails() {
             ${bandListHTML}
             <h2>Event Preview</h2>
             <p>${event.preview || 'No Preview Available'}</p>
+            <h2>Event Review</h2>
+            <p>${event.review || 'No Review Available'}</p>
         `;
 
     } catch (error) {

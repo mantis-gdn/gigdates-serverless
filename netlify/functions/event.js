@@ -37,6 +37,7 @@ exports.handler = async (event) => {
                 venueId: eventData.venueId || 'Unknown Venue ID',
                 bandIds: eventData.bandIds || [], // Include bandIds explicitly
                 preview: eventData.preview || 'No Preview Available',
+                review: eventData.review || 'No Review Available',
             }),
         };
     } catch (error) {
