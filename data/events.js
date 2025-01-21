@@ -232,21 +232,6 @@ module.exports = { events: [
   "review": "BallzNight Live at The Met RI on January 18, 2025, was an unforgettable experience featuring tribute performances by Korn Ballz, Limp Ballz, and Beastie Ballz. The show kicked off with palpable energy as Limp Ballz wrapped up their sound check. After paying the $20 cover charge, I reconnected with Missy, one of the venue’s managers, who remembered me from our previous Facebook messages. I also introduced myself to the house sound engineer, handing him a business card for gigdates.net during a brief chat. Limp Ballz brought incredible energy to the stage, with their performance of ‘Take A Look Around’ standing out. The breakdown and drop pulled me in completely, and I found myself moving to the music, walking and jumping in front of the stage, even clutching my glasses to keep them secure. Despite being almost in my senior years, I felt like the one-man mosh pit, drawing attention as the singer gave me a fist bump mid-performance. Representing gigdates.net as “Mantis,” I believe I made a lasting impression. The intensity of the night eventually led me to step away halfway through the show, but the raw energy and connection I felt will stay with me for years to come."
 },
 {
-  "id": 17,
-  "genre": "Tribute Rock",
-  "title": "Dead Meat - Grateful Dead Tribute",
-  "schedule": {
-      "date": "2025-02-01",
-      "doors": "7:30 PM",
-      "show": "8:30 PM"
-  },
-  "venueId": "met_ri",
-  "venue": "The Met RI",
-  "bandIds": [
-      "dead_meat"
-  ]
-},
-{
   "id": 18,
   "genre": "Rock",
   "title": "Shoegaze vs Screamo Battle",
@@ -297,5 +282,124 @@ module.exports = { events: [
   "venueId": "as220",
   "venue": "AS220",
   "bandIds": []
+},
+{
+  "id": 22,
+  "genre": "Rock",
+  "title": "2 DAY MAX CREEK CREEKEND – Night 1",
+  "schedule": {
+      "date": "2025-01-24",
+      "doors": "8:00 PM",
+      "show": "9:00 PM"
+  },
+  "venueId": "met_ri",
+  "venue": "The Met RI",
+  "bandIds": ["max_creek"],
+  "preview": "Get ready for an unforgettable night as Max Creek takes the stage for their highly anticipated Creekend at The Met RI! A cornerstone of the jam band scene, Max Creek is renowned for their genre-blurring blend of rock, blues, reggae, and country, delivering electrifying performances filled with spontaneity and improvisation. Fans can expect soulful vocals, masterful guitar solos, and a rhythm section that keeps the energy flowing all night long. With decades of experience and a deeply devoted fanbase, Max Creek’s shows are more than concerts—they’re a celebration of music, connection, and community. Whether you're a longtime fan or new to their sound, this two-night event promises to be an extraordinary experience, packed with vibrant jams, heartfelt melodies, and the timeless spirit of live music. Don't miss your chance to be part of this legendary Creekend!"
+},
+{
+  "id": 23,
+  "genre": "Rock",
+  "title": "2 DAY MAX CREEK CREEKEND – Night 2",
+  "schedule": {
+      "date": "2025-01-25",
+      "doors": "8:00 PM",
+      "show": "9:00 PM"
+  },
+  "venueId": "met_ri",
+  "venue": "The Met RI",
+  "bandIds": ["max_creek"],
+  "preview": "Get ready for an unforgettable night as Max Creek takes the stage for their highly anticipated Creekend at The Met RI! A cornerstone of the jam band scene, Max Creek is renowned for their genre-blurring blend of rock, blues, reggae, and country, delivering electrifying performances filled with spontaneity and improvisation. Fans can expect soulful vocals, masterful guitar solos, and a rhythm section that keeps the energy flowing all night long. With decades of experience and a deeply devoted fanbase, Max Creek’s shows are more than concerts—they’re a celebration of music, connection, and community. Whether you're a longtime fan or new to their sound, this two-night event promises to be an extraordinary experience, packed with vibrant jams, heartfelt melodies, and the timeless spirit of live music. Don't miss your chance to be part of this legendary Creekend!"
+},
+{
+  "id": 24,
+  "genre": "Blues Rock",
+  "title": "JIM BELUSHI performing with the JAMES MONTGOMERY BAND with opener MYSTIC DEAD",
+  "schedule": {
+      "date": "2025-01-31",
+      "doors": "7:00 PM",
+      "show": "8:00 PM"
+  },
+  "venueId": "met_ri",
+  "venue": "The Met RI",
+  "bandIds": ["jim_belushi", "james_montgomery_band", "mystic_dead"]
+},
+{
+  "id": 25,
+  "genre": "Tribute Rock",
+  "title": "Dead Meat - An Electrifying Tribute to The Grateful Dead",
+  "schedule": {
+      "date": "2025-02-01",
+      "doors": "7:30 PM",
+      "show": "8:30 PM"
+  },
+  "venueId": "met_ri",
+  "venue": "The Met RI",
+  "bandIds": ["dead_meat"]
+},
+{
+  "id": 26,
+  "genre": "Blues",
+  "title": "The 15th Annual NE WINTER BLUES FESTIVAL",
+  "schedule": {
+      "date": "2025-02-02",
+      "doors": "4:00 PM",
+      "show": "5:00 PM"
+  },
+  "venueId": "met_ri",
+  "venue": "The Met RI",
+  "bandIds": ["rick_estrin", "jerry_portnoy", "jason_ricci", "sugar_ray_norcia", "nick_david"]
+},
+{
+  "id": 27,
+  "genre": "Reggae Rock",
+  "title": "JOE SAMBA with JOEY HARKUM, Dale and the ZDubs, Aqua Cherry",
+  "schedule": {
+      "date": "2025-02-07",
+      "doors": "6:30 PM",
+      "show": "7:15 PM"
+  },
+  "venueId": "met_ri",
+  "venue": "The Met RI",
+  "bandIds": ["joe_samba", "joey_harkum", "dale_and_the_zdubs", "aqua_cherry"]
+},
+{
+  "id": 28,
+  "genre": "Tribute Rock",
+  "title": "OPIATE Performing TOOL with Alice playing Alice In Chains",
+  "schedule": {
+      "date": "2025-02-08",
+      "doors": "7:30 PM",
+      "show": "8:30 PM"
+  },
+  "venueId": "met_ri",
+  "venue": "The Met RI",
+  "bandIds": ["opiate", "alice"]
+},
+{
+  "id": 29,
+  "genre": "Folk Rock",
+  "title": "Big Yellow Taxi - A Tribute to Joni Mitchell",
+  "schedule": {
+      "date": "2025-02-14",
+      "doors": "7:00 PM",
+      "show": "8:00 PM"
+  },
+  "venueId": "met_ri",
+  "venue": "The Met RI",
+  "bandIds": ["big_yellow_taxi"]
+},
+{
+  "id": 30,
+  "genre": "Tribute Rock",
+  "title": "JUST (ABOUT) A GIRL! feat. Subliminal Doubt: No Doubt Tribute & Nirvani – Nirvana Tribute",
+  "schedule": {
+      "date": "2025-02-15",
+      "doors": "7:00 PM",
+      "show": "8:00 PM"
+  },
+  "venueId": "met_ri",
+  "venue": "The Met RI",
+  "bandIds": ["subliminal_doubt", "nirvani"]
 }
 ] };

@@ -308,7 +308,7 @@ const newLocal_1 = module.exports = {
       "name": "Dead Meat",
       "genre": "Jam Band Rock",
       "description": "Dead Meat is a tribute band dedicated to celebrating the music of The Grateful Dead. Known for their authentic recreations of the band's iconic live performances, Dead Meat blends psychedelic improvisation, soulful melodies, and a timeless sense of community. They bring the energy of The Grateful Dead's legendary concerts to life, delivering performances that transport audiences back to the golden age of jam band rock. Regularly performing in venues across Rhode Island and New England, Dead Meat invites fans to join them on a journey through the music that defined a generation.",
-      "website": "https://www.deadmeattribute.com/",
+      "website": "http://www.deadmeatband.com/",
       "socialMedia": {
         "facebook": "https://www.facebook.com/deadmeatband",
         "instagram": "https://www.instagram.com/deadmeatband/"
@@ -454,7 +454,524 @@ const newLocal_1 = module.exports = {
           "role": "Tenor Saxophone"
         }
       ]
-    }        
+    },
+    {
+      "id": "max_creek",
+      "name": "Max Creek",
+      "genre": "Jam Band Rock",
+      "description": "Max Creek is a legendary jam band known for their electrifying live performances and a genre-defying mix of rock, blues, reggae, and country. With a career spanning decades, they have cultivated a devoted fanbase and a reputation for musical spontaneity and improvisation. Renowned for their dynamic energy and heartfelt connection with audiences, Max Creek delivers concerts that feel both nostalgic and refreshingly unique. Performing at venues and festivals across the Northeast, they remain a cornerstone of the jam band scene, celebrating the spirit of musical exploration.",
+      "website": "https://www.maxcreek.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/maxcreek",
+        "instagram": "https://www.instagram.com/max_creek"
+      },
+      "members": [
+        {
+          "name": "Scott Murawski",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Mark Mercier",
+          "role": "Keyboards, Vocals"
+        },
+        {
+          "name": "John Rider",
+          "role": "Bass, Vocals"
+        },
+        {
+          "name": "Bill Carbone",
+          "role": "Drums, Percussion"
+        },
+        {
+          "name": "Jamemurrell Stanley",
+          "role": "Percussion"
+        }
+      ]
+    },
+    {
+      "id": "jim_belushi",
+      "name": "Jim Belushi",
+      "genre": "Blues Rock",
+      "description": "Jim Belushi, a renowned actor, comedian, and musician, brings his dynamic stage presence and deep love for blues rock to life through unforgettable live performances. As a passionate frontman, he channels his comedic timing and storytelling prowess into every song, creating a unique blend of humor and heartfelt music. Backed by talented musicians and steeped in the rich traditions of the blues, Jim Belushi's shows are a celebration of raw emotion, soulful melodies, and high-energy entertainment. Whether performing timeless classics or original tracks, his performances leave audiences captivated and inspired.",
+      "website": "https://belushisfarm.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/officialjamesbelushi/",
+        "instagram": "https://www.instagram.com/jim_belushi/"
+      },
+      "members": [
+        {
+          "name": "Jim Belushi",
+          "role": "Vocals, Harmonica"
+        }
+      ]
+    },
+    {
+      "id": "james_montgomery_band",
+      "name": "James Montgomery Band",
+      "genre": "Blues",
+      "description": "The James Montgomery Band, led by the legendary blues harmonica virtuoso James Montgomery, delivers electrifying performances that capture the soul and essence of traditional and modern blues. With decades of experience, Montgomery has shared the stage with music icons like B.B. King, Muddy Waters, and Aerosmith, making him a revered figure in the blues scene. Backed by a powerhouse ensemble of talented musicians, the band brings raw emotion, exceptional musicianship, and infectious energy to every show, creating unforgettable moments for audiences who crave authentic blues music.",
+      "website": "https://jamesmontgomerybluesband.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/OfficialJamesMontgomery",
+        "instagram": ""
+      },
+      "members": [
+        {
+          "name": "James Montgomery",
+          "role": "Vocals, Harmonica"
+        },
+        {
+          "name": "David Hull",
+          "role": "Bass"
+        },
+        {
+          "name": "George McCann",
+          "role": "Guitar"
+        },
+        {
+          "name": "Seth Pappas",
+          "role": "Drums"
+        }
+      ]
+    },
+    {
+      "id": "mystic_dead",
+      "name": "Mystic Dead",
+      "genre": "Psychedelic Rock",
+      "description": "Mystic Dead is a captivating tribute band dedicated to recreating the magic and spirit of The Grateful Dead. With their authentic sound and mesmerizing performances, Mystic Dead delivers a journey through the psychedelic rock era, blending intricate improvisations with soulful melodies. The band’s passionate homage to the iconic music of The Grateful Dead has garnered them a loyal following, making every show a communal celebration of music, culture, and nostalgia.",
+      "website": "https://www.mysticdeadband.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/mysticterrapin/",
+        "instagram": "https://www.instagram.com/Mystic__Dead/"
+      },
+      "members": [
+        {
+          "name": "Tom Rivers",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Alan Burns",
+          "role": "Bass"
+        },
+        {
+          "name": "Mark Harper",
+          "role": "Drums"
+        },
+        {
+          "name": "Lisa Kendall",
+          "role": "Keyboards"
+        }
+      ]
+    },
+    {
+      "id": "rick_estrin",
+      "name": "Rick Estrin & The Nightcats",
+      "genre": "Blues",
+      "description": "Rick Estrin & The Nightcats deliver a captivating mix of blues, roots, and rock 'n' roll with a touch of humor and showmanship. Fronted by the charismatic Rick Estrin, known for his witty songwriting, harmonica prowess, and engaging stage presence, the band has garnered critical acclaim and a devoted fanbase. With their infectious grooves and sharp musicianship, Rick Estrin & The Nightcats create a live music experience that’s equal parts heartfelt blues and high-energy entertainment. Regularly touring across the U.S. and beyond, they’ve become a staple in the modern blues scene.",
+      "website": "https://rickestrin.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/RickEstrin/",
+        "instagram": "https://www.instagram.com/rick_estrin_and_the_nightcats/"
+      },
+      "members": [
+        {
+          "name": "Rick Estrin",
+          "role": "Vocals, Harmonica"
+        },
+        {
+          "name": "Kid Andersen",
+          "role": "Guitar"
+        },
+        {
+          "name": "Lorenzo Farrell",
+          "role": "Keyboards, Bass"
+        },
+        {
+          "name": "Derrick 'D'Mar' Martin",
+          "role": "Drums"
+        }
+      ]
+    },
+    {
+      "id": "jerry_portnoy",
+      "name": "Jerry Portnoy & The Streamliners",
+      "genre": "Blues",
+      "description": "Jerry Portnoy & The Streamliners bring the authentic sound of Chicago blues to life with a masterful blend of tradition and innovation. Led by legendary harmonica virtuoso Jerry Portnoy, who gained worldwide fame as a member of Muddy Waters' band and Eric Clapton's Blues Band, the group delivers deeply emotional performances filled with soulful grooves and electrifying energy. Known for his expressive playing and heartfelt storytelling, Portnoy continues to define the blues experience with his extraordinary talent. Touring globally, Jerry Portnoy & The Streamliners remain a powerful force in keeping the blues alive.",
+      "website": "https://www.jerryportnoy.com/",
+      "socialMedia": {
+        "facebook": "",
+        "instagram": ""
+      },
+      "members": [
+        {
+          "name": "Jerry Portnoy",
+          "role": "Vocals, Harmonica"
+        },
+        {
+          "name": "Michael 'Mudcat' Ward",
+          "role": "Bass"
+        },
+        {
+          "name": "David Maxwell",
+          "role": "Keyboards"
+        },
+        {
+          "name": "Per Hanson",
+          "role": "Drums"
+        },
+        {
+          "name": "Ricky 'King' Russell",
+          "role": "Guitar"
+        }
+      ]
+    },
+    {
+      "id": "jason_ricci",
+      "name": "Jason Ricci & The Bad Kind",
+      "genre": "Blues, Rock, Funk",
+      "description": "Jason Ricci & The Bad Kind are redefining the boundaries of blues with their electrifying fusion of rock, funk, and soul. Led by the Grammy-winning harmonica powerhouse Jason Ricci, the band delivers a dynamic live experience filled with blistering solos, heartfelt vocals, and a raw, energetic edge. Known for his innovative approach and technical mastery, Ricci has become a trailblazer in modern blues, captivating audiences around the world. Backed by The Bad Kind's stellar musicianship, the band’s performances are a celebration of passion, creativity, and the enduring spirit of the blues.",
+      "website": "https://www.jasonricci.net/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/TheBadKind/",
+        "instagram": "https://www.instagram.com/jasonricci93/"
+      },
+      "members": [
+        {
+          "name": "Jason Ricci",
+          "role": "Vocals, Harmonica"
+        },
+        {
+          "name": "Sam Hotchkiss",
+          "role": "Guitar"
+        },
+        {
+          "name": "Andy Kurz",
+          "role": "Bass"
+        },
+        {
+          "name": "Adam Baumol",
+          "role": "Drums"
+        },
+        {
+          "name": "John Lisi",
+          "role": "Guitar"
+        }
+      ]
+    },
+    {
+      "id": "sugar_ray_norcia",
+      "name": "Sugar Ray & The Bluetones",
+      "genre": "Blues",
+      "description": "Sugar Ray & The Bluetones are a cornerstone of the contemporary blues scene, delivering a timeless mix of soulful vocals, electrifying harmonica, and masterful musicianship. Fronted by Grammy-nominated vocalist and harmonica player Sugar Ray Norcia, the band has been captivating audiences for decades with their authentic sound and heartfelt performances. Known for their impeccable groove and deep respect for blues traditions, Sugar Ray & The Bluetones have released numerous critically acclaimed albums and continue to set the standard for blues excellence. Their live shows are a journey through the heart of the blues, blending passion, energy, and undeniable talent.",
+      "website": "https://www.sugarrayandthebluetones.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/SugarRayAndTheBluetones/",
+        "instagram": ""
+      },
+      "members": [
+        {
+          "name": "Sugar Ray Norcia",
+          "role": "Vocals, Harmonica"
+        },
+        {
+          "name": "Little Charlie Baty",
+          "role": "Guitar"
+        },
+        {
+          "name": "Michael 'Mudcat' Ward",
+          "role": "Bass"
+        },
+        {
+          "name": "Anthony Geraci",
+          "role": "Keyboards"
+        },
+        {
+          "name": "Neil Gouvin",
+          "role": "Drums"
+        }
+      ]
+    },
+    {
+      "id": "nick_david",
+      "name": "Nick David - The Wicked Lo-Down",
+      "genre": "Blues, Roots",
+      "description": "Nick David - The Wicked Lo-Down is a blues and roots powerhouse, known for their raw energy and soulful authenticity. Led by Nick David, a harmonica master and expressive vocalist, the band crafts performances that are deeply rooted in traditional blues while embracing modern influences. Their music resonates with gritty emotion, infectious rhythms, and a magnetic stage presence that captivates audiences. With a reputation for high-energy live shows and a commitment to keeping the blues alive, Nick David - The Wicked Lo-Down continues to make waves in the contemporary blues scene.",
+      "website": "https://www.wickedld.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/thewickedlodown",
+        "instagram": "https://www.instagram.com/the_wicked_lo_down"
+      },
+      "members": [
+        {
+          "name": "Nick David",
+          "role": "Vocals, Harmonica"
+        },
+        {
+          "name": "Jake Simmons",
+          "role": "Guitar"
+        },
+        {
+          "name": "Brian 'Bones' Walker",
+          "role": "Bass"
+        },
+        {
+          "name": "Tyler Johnson",
+          "role": "Drums"
+        },
+        {
+          "name": "Emily Carter",
+          "role": "Keyboards"
+        }
+      ]
+    },
+    {
+      "id": "joe_samba",
+      "name": "Joe Samba",
+      "genre": "Roots Reggae Rock",
+      "description": "Joe Samba is redefining the sound of Roots Reggae Rock with their infectious grooves, heartfelt lyrics, and high-energy performances. Combining traditional reggae rhythms with rock influences and a modern twist, Joe Samba delivers music that resonates with positivity and soul. Fronted by the charismatic Joe Samba, the band has quickly risen in the reggae rock scene, captivating audiences with their tight instrumentation and uplifting message. Whether performing on stage or in the studio, Joe Samba creates an atmosphere of connection and joy, making them a must-see act for fans of reggae and rock alike.",
+      "website": "https://joesamba.com/",
+      "socialMedia": {
+        "facebook": "",
+        "instagram": "https://www.instagram.com/joesambamusic/"
+      },
+      "members": [
+        {
+          "name": "Joe Samba",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Ethan Boyd",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Matt Carey",
+          "role": "Bass"
+        },
+        {
+          "name": "James Alvarez",
+          "role": "Drums"
+        },
+        {
+          "name": "Chris Martins",
+          "role": "Keyboards"
+        }
+      ]
+    },
+    {
+      "id": "joey_harkum",
+      "name": "Joey Harkum",
+      "genre": "Acoustic, Folk, Rock",
+      "description": "Joey Harkum captivates audiences with his heartfelt songwriting and soulful performances, blending acoustic, folk, and rock elements into a sound that’s uniquely his own. Known for his deeply personal lyrics and raw emotional delivery, Joey’s music explores themes of love, loss, and personal growth, resonating with listeners on a profound level. Whether performing solo or with his talented backing band, Joey Harkum creates an intimate connection with his audience, turning every show into an unforgettable experience. Touring extensively across the U.S., Joey continues to build a loyal following and leave a lasting impact on the music world.",
+      "website": "http://www.joeyharkum.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/joeyharkum",
+        "instagram": "https://www.instagram.com/joeyharkum/"
+      },
+      "members": [
+        {
+          "name": "Joey Harkum",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Josh Jaber",
+          "role": "Bass"
+        },
+        {
+          "name": "Will Herrington",
+          "role": "Drums"
+        },
+        {
+          "name": "Paul Jansen",
+          "role": "Keys"
+        }
+      ]
+    },
+    {
+      "id": "dale_and_the_zdubs",
+      "name": "Dale and the ZDubs",
+      "genre": "Reggae Rock, Funk, Ska",
+      "description": "Dale and the ZDubs are a high-energy band that blends reggae rock, funk, and ska into a unique and electrifying sound. With catchy melodies, groovy rhythms, and soulful lyrics, the band has carved out a reputation for delivering unforgettable live performances. Fronted by the charismatic Dale Rodman, whose powerful vocals and dynamic stage presence captivate audiences, the band’s music offers an uplifting and playful escape while also exploring themes of love, growth, and resilience. Touring extensively across the U.S., Dale and the ZDubs have become a staple in the reggae rock scene, winning over fans with their infectious energy and undeniable talent.",
+      "website": "https://www.daleandthezdubs.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/daleandthezdubs",
+        "instagram": "https://www.instagram.com/daleandthezdubs/"
+      },
+      "members": [
+        {
+          "name": "Dale Rodman",
+          "role": "Vocals"
+        },
+        {
+          "name": "Nick Gaynier",
+          "role": "Guitar"
+        },
+        {
+          "name": "Eddie Whelan",
+          "role": "Bass"
+        },
+        {
+          "name": "John Soares",
+          "role": "Drums"
+        },
+        {
+          "name": "Cameron Wimbish",
+          "role": "Keys, Saxophone"
+        }
+      ]
+    },
+    {
+      "id": "opiate",
+      "name": "Opiate - A Tool Tribute Band",
+      "genre": "Progressive Rock, Alternative Metal",
+      "description": "Opiate is a premier tribute band dedicated to recreating the raw power and intricate artistry of TOOL's iconic music. With a commitment to authenticity, Opiate captures the intense energy, complex rhythms, and haunting melodies that have defined Tool's legendary sound. Fronted by a dynamic vocalist and backed by masterful musicians, the band delivers a live experience that pays homage to Tool's visionary performances, transporting fans into the immersive world of their music. From the early anthems to the most epic compositions, Opiate Performing Tool celebrates the spirit and genius of one of rock's most influential bands.",
+      "website": "",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/opiatetooltribute.RI",
+        "instagram": "https://www.instagram.com/opiatetooltribute/"
+      },
+      "members": [
+        {
+          "name": "Chris Vaughn",
+          "role": "Vocals"
+        },
+        {
+          "name": "Matt Reynolds",
+          "role": "Guitar"
+        },
+        {
+          "name": "Steve Miller",
+          "role": "Bass"
+        },
+        {
+          "name": "Jason Harper",
+          "role": "Drums"
+        }
+      ]
+    },
+    {
+      "id": "alice",
+      "name": "Alice - A Tribute to the Layne Staley Era",
+      "genre": "Grunge, Alternative Rock",
+      "description": "Alice - A Tribute to the Layne Staley Era is a heartfelt homage to the iconic sound and soul of Alice in Chains during their legendary years with Layne Staley. The band captures the haunting vocals, heavy riffs, and raw emotion that defined Alice in Chains' music, paying tribute to one of the most influential voices of the grunge era. With a commitment to authenticity and passion, Alice recreates the dark, brooding energy of the Layne Staley era, taking fans on a journey through the music that left an indelible mark on rock history. From powerful anthems to deeply moving ballads, Alice delivers a live experience that honors the spirit of a rock legend.",
+      "website": "",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/aliceinchainstribute.RI",
+        "instagram": ""
+      },
+      "members": [
+        {
+          "name": "Mark Evans",
+          "role": "Vocals"
+        },
+        {
+          "name": "Ryan Carter",
+          "role": "Guitar"
+        },
+        {
+          "name": "Elliot Sanders",
+          "role": "Bass"
+        },
+        {
+          "name": "Derek Porter",
+          "role": "Drums"
+        }
+      ]
+    },
+    {
+      "id": "big_yellow_taxi",
+      "name": "Big Yellow Taxi - A Tribute to Joni Mitchell",
+      "genre": "Folk, Pop, Jazz",
+      "description": "Big Yellow Taxi is New England's premier Joni Mitchell tribute band, dedicated to bringing Joni's diverse musical catalog to life. From her early folk roots and pop masterpieces to her jazz-influenced compositions, the band delivers performances that immerse audiences in an intimate journey through many of Joni's best-loved and most powerful songs. Fronted by the expressive and soaring voice of Teresa Lorenço, Big Yellow Taxi pays homage to Joni's sweet, husky, and bell-like vocals, delivering an emotional experience that delves into Joni’s musical intensity and genius.",
+      "website": "https://www.bigyellowtaxitheband.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/profile.php?id=100063152955116",
+        "instagram": "https://www.instagram.com/bigyellowtaxitheband/"
+      },
+      "members": [
+        {
+          "name": "Teresa Lorenço",
+          "role": "Vocals, Percussion"
+        },
+        {
+          "name": "John Cabán",
+          "role": "Guitar, Vocals"
+        },
+        {
+          "name": "Rich Cahillane",
+          "role": "Bass, Guitar, Dulcimer, Vocals"
+        },
+        {
+          "name": "Joe FitzPatrick",
+          "role": "Drums"
+        },
+        {
+          "name": "Robert Sherwood",
+          "role": "Piano, Keyboards, Bass, Vocals"
+        },
+        {
+          "name": "Candy Green",
+          "role": "Vocals, Percussion"
+        }
+      ]
+    },
+    {
+      "id": "subliminal_doubt",
+      "name": "Subliminal Doubt",
+      "genre": "Alternative Rock, Ska, Pop",
+      "description": "Subliminal Doubt is Central Florida’s premier tribute to No Doubt and Gwen Stefani, delivering high-energy performances that transport audiences back to the vibrant 90s and early 2000s. Fronted by Monica Edwards, who embodies the charisma and vocal prowess of Gwen Stefani, the band faithfully recreates the eclectic mix of ska, punk, and pop that defined No Doubt's iconic sound. With a dynamic lineup of seasoned musicians, Subliminal Doubt captivates fans with renditions of hits like 'Just a Girl,' 'Don't Speak,' and 'Hella Good,' ensuring an authentic and unforgettable concert experience.",
+      "website": "https://subdoubt.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/subdoubt",
+        "instagram": "https://www.instagram.com/subliminaldoubt/"
+      },
+      "members": [
+        {
+          "name": "Monica Edwards",
+          "role": "Vocals"
+        },
+        {
+          "name": "Sean Ghannam",
+          "role": "Guitar"
+        },
+        {
+          "name": "Jonathan Leamy",
+          "role": "Bass"
+        },
+        {
+          "name": "Lucas Scarpelli",
+          "role": "Drums"
+        },
+        {
+          "name": "Abel Avalos",
+          "role": "Keyboards"
+        }
+      ]
+    },
+    {
+      "id": "nirvani",
+      "name": "Nirvani",
+      "genre": "Grunge, Alternative Rock",
+      "description": "Nirvani is a premier tribute band dedicated to honoring the raw energy and revolutionary sound of Nirvana. Capturing the essence of the iconic grunge pioneers, Nirvani recreates the unforgettable live performances that defined a generation. Fronted by Jon O'Connor, whose vocals and stage presence embody the spirit of Kurt Cobain, the band delivers faithful renditions of Nirvana's classic hits, including 'Smells Like Teen Spirit,' 'Come As You Are,' and 'Lithium.' With their passion and attention to detail, Nirvani offers fans an authentic and powerful experience that celebrates the legacy of one of rock’s most influential bands.",
+      "website": "https://thenirvanatribute.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/nirvanitributeband",
+        "instagram": "https://www.instagram.com/nirvanitributebandnc/"
+      },
+      "members": [
+        {
+          "name": "Jon O'Connor",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Chris Robertson",
+          "role": "Bass, Backing Vocals"
+        },
+        {
+          "name": "Dan Johnson",
+          "role": "Drums"
+        }
+      ]
+    }    
   ]
 };
 const newLocal = newLocal_1;
