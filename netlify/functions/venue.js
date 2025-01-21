@@ -50,6 +50,20 @@ exports.handler = async (event) => {
                 bandIds: event.bandIds || [] // Include bandIds in the response
             }));
 
+            const venuePastEvents = events
+            .filter(event => event.venueId === venueId && event.schedule?.date < today) // Filter future events
+            .sort((a, b) => new Date(a.schedule?.date) - new Date(b.schedule?.date)) // Sort by date ascending
+            .map(event => ({
+                id: event.id,
+                title: event.title || 'Unnamed Event',
+                date: event.schedule?.date || 'No Date Provided',
+                doors: event.schedule?.doors || 'No Doors Time Provided',
+                show: event.schedule?.show || 'No Show Time Provided',
+                venueName: event.venue || 'Unknown Venue',
+                venueId: event.venueId || null,
+                bandIds: event.bandIds || [] // Include bandIds in the response
+            }));
+
         return {
             statusCode: 200,
             headers: { "Content-Type": "application/json" },
@@ -70,7 +84,8 @@ exports.handler = async (event) => {
                         website: venue.socialMedia?.website || '#',
                     }
                 },
-                events: venueEvents
+                events: venueEvents,
+                pastEvents: venuePastEvents
             }),
         };
     } catch (error) {

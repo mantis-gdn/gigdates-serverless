@@ -173,6 +173,58 @@ async function fetchVenueData() {
                 eventsContainer.innerHTML = '<p>No upcoming events available for this venue.</p>';
             }
         }
+
+        // Render Past Events
+        const pastEventsContainer = document.getElementById('venue-past-events');
+        if (pastEventsContainer && data.pastEvents && data.pastEvents.length > 0) {
+            const today = getTodayDateEastern();
+
+            const pastEvents = data.pastEvents.filter(event => event.date < today);
+
+            if (pastEvents.length > 0) {
+                pastEventsContainer.innerHTML = await Promise.all(pastEvents.map(async (event) => {
+                    const isToday = event.date === today;
+                    const dayOfWeek = getDayOfWeek(event.date);
+                    const dayBadge = getDayBadge(dayOfWeek);
+
+                    // Fetch band details if bandIds exist
+                    let bandListHTML = '';
+                    if (event.bandIds && event.bandIds.length > 0) {
+                        const bands = await fetchBandDetails(event.bandIds);
+                        bandListHTML = `
+                            <p><strong>Bands:</strong> 
+                                ${bands.map(band => `<a href="/band/${band.id}" style="color: #4a90e2;">${band.name}</a>`).join(', ')}
+                            </p>
+                        `;
+                    }
+
+                    return `
+                        <div class="event-card">
+                            <h3>
+                                <a href="/event/${event.id}">
+                                    ${event.title || 'Unnamed Event'}
+                                </a>
+                            </h3>
+                            <p>
+                                <strong>Date:</strong> 
+                                ${isToday ? '<span class="today-badge">TODAY</span>' : ''} 
+                                ${dayBadge} 
+                                ${formatDate(event.date)}
+                            </p>
+                            <p><strong>Doors:</strong> ${event.doors || 'No Doors Time Provided'}</p>
+                           <p><strong>Venue:</strong> 
+                                <a href="/venue/${event.venueId}">
+                                    ${event.venueName || 'Unknown Venue'}
+                                </a>
+                            </p>
+                            ${bandListHTML}
+                        </div>
+                    `;
+                })).then(eventCards => eventCards.join(''));
+            } else {
+                pastEventsContainer.innerHTML = '<p>No past events available for this venue.</p>';
+            }
+        }
     } catch (error) {
         console.error('Error fetching venue data:', error.message);
         document.getElementById('venue-name').innerText = 'Error fetching venue details.';
