@@ -259,7 +259,7 @@ module.exports = { events: [
 },
 {
   "id": 20,
-  "genre": "Rock",
+  "genre": "Ska Punk",
   "title": "PWRUP + Threat Level Burgundy + Palmslow + So Many Dangers",
   "schedule": {
       "date": "2025-01-24",
@@ -268,7 +268,8 @@ module.exports = { events: [
   },
   "venueId": "as220",
   "venue": "AS220",
-  "bandIds": []
+  "bandIds": ["pwrup", "threat_level_burgundy", "palmslow", "so_many_dangers"],
+  "preview": "Get ready for a night of high-energy ska punk as PWRUP, Threat Level Burgundy, Palmslow, and So Many Dangers take the stage at AS220! These four powerhouse bands are known forGet ready for an unforgettable night of Ska Punk at AS220 on January 24th! Doors open at 8:00 PM, setting the stage for an electrifying lineup featuring PWRUP, Threat Level Burgundy, Palmslow, and So Many Dangers. Each band brings their unique energy to the stage, from the high-octane ska-core of PWRUP to the eclectic punk stylings of Threat Level Burgundy, the dynamic soundscapes of Palmslow, and the captivating ska-adjacent grooves of So Many Dangers. Whether you're a die-hard fan or new to the scene, this event promises an evening of nonstop music, infectious rhythms, and an unparalleled vibe in the heart of Providence. Don’t miss it!"
 },
 {
   "id": 21,

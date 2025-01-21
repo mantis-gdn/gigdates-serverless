@@ -971,7 +971,75 @@ const newLocal_1 = module.exports = {
           "role": "Drums"
         }
       ]
-    }    
+    },
+    {
+      "id": "pwrup",
+      "name": "PWRUP",
+      "genre": "Ska-Core, Punk, Hardcore",
+      "description": "PWRUP is a high-energy ska-core band from Agawam, Massachusetts, blending punk, hardcore, and ska influences to create a dynamic and electrifying sound. Known for their captivating live performances and socially conscious themes, PWRUP has made waves with their debut album 'Just Devils' and follow-up remix EP 'Unjust: The Devils Remix.' With thought-provoking lyrics and a unique style, the band continues to push the boundaries of ska and punk music, collaborating with artists like Dissidente, The Best of the Worst, and Death By Stereo. Their music offers an exhilarating experience for fans of alternative genres.",
+      "website": "https://pwrup.bandcamp.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/pwrupband",
+        "instagram": "https://www.instagram.com/pwrupband",
+        "twitter": "https://twitter.com/pwrupband",
+        "tiktok": "https://www.tiktok.com/@pwrupband"
+      },
+      "members": [
+        {
+          "name": "Justin Belden",
+          "role": "Vocals, Trombone"
+        },
+        {
+          "name": "Gary Dionne",
+          "role": "Bass, Vocals"
+        },
+        {
+          "name": "Aaron Hibbert",
+          "role": "Guitar, Vocals"
+        },
+        {
+          "name": "Jeff Sabola",
+          "role": "Guitar, Vocals"
+        },
+        {
+          "name": "Brian Westbrook",
+          "role": "Drums, Vocals"
+        }
+      ]
+    },
+    {
+      "id": "threat_level_burgundy",
+      "name": "Threat Level Burgundy",
+      "genre": "Ska/Punk",
+      "description": "Threat Level Burgundy is a ska/punk band from Massachusetts, known for their energetic performances and eclectic songwriting that covers topics from cartoons to zombies. Since their formation in 2008, they've shared stages with notable acts like Big D & The Kids Table and Bomb The Music Industry!. Their EP 'GOLD,' released in August 2020, features tracks such as 'Half-Life 3 Confirmed' and 'Scene.' Beyond music, the band engages with fans through gaming content on their YouTube channel.",
+      "website": "https://threatlevelburgundy.bandcamp.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/ThreatLevelBurgundy/",
+        "instagram": "https://www.instagram.com/threatlevelburgundy/"
+      },
+      "members": []
+    },
+    {
+      "id": "palmslow",
+      "name": "Palmslow",
+      "genre": "Alternative Rock",
+      "description": "Palmslow is an alternative rock band based in Providence, Rhode Island. Known for their dynamic sound and engaging live performances, they have shared stages with various acts in the local music scene. Describing their style as 'sweet boy fight music,' Palmslow brings a unique energy to their shows.",
+      "website": "",
+      "socialMedia": {},
+      "members": []
+    },
+    {
+      "id": "so_many_dangers",
+      "name": "So Many Dangers",
+      "genre": "Ska-Adjacent",
+      "description": "So Many Dangers is a ska-adjacent band based in Rhode Island, known for their energetic performances and dynamic sound. They have played at various venues, including the Pioneer Valley Ska Fest at Hawks & Reed Performing Arts Center in Greenfield, MA. Their music is available on Bandcamp, and they actively engage with fans through social media platforms.",
+      "website": "https://somanydangers.bandcamp.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/profile.php?id=61568880370062",
+        "instagram": ""
+      },
+      "members": []
+    }                
   ]
 };
 const newLocal = newLocal_1;
