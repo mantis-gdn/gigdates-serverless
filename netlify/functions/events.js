@@ -27,7 +27,7 @@ exports.handler = async () => {
                     genre: event.genre,
                     title: event.title,
                     date: event.schedule?.date || 'No Date Provided',
-                    time: event.schedule?.show || 'No Time Provided',
+                    time: event.schedule?.doors || 'No Time Provided',
                     venueName: event.venue,
                     venueId: event.venueId,
                     bandIds: event.bandIds || [] // Ensure bandIds are included, defaulting to an empty array
