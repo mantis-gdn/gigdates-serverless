@@ -152,7 +152,7 @@ async function fetchBandData() {
                             ${dayBadge}
                             ${formatDate(event.date)}
                         </p>
-                        <p><strong>Time:</strong> ${event.time || 'No Time Provided'}</p>
+                        <p><strong>Doors:</strong> ${event.time || 'No Time Provided'}</p>
                            <p><strong>Venue:</strong> 
                                 <a href="/venue/${event.venueId}">
                                     ${event.venue || 'Unknown Venue'}

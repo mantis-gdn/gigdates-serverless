@@ -66,7 +66,7 @@ exports.handler = async (event) => {
                 id: event.id,
                 title: event.title || 'Unnamed Event',
                 date: event.schedule?.date || 'No Date Provided',
-                time: event.schedule?.show || 'No Time Provided',
+                time: event.schedule?.doors || 'No Time Provided',
                 venue: event.venue || 'Unknown Venue',
                 venueId: event.venueId || null,
                 bandIds: event.bandIds || []
