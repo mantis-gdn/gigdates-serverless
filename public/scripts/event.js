@@ -101,7 +101,8 @@ async function fetchEventDetails() {
 
         // Render Event Details
         eventContainer.innerHTML = `
-            <h1>${event.title || 'Unnamed Event'}</h1>
+            <h1>${event.title || 'Unnamed Event'}</h1>    
+            <p><span id="band-genre">${event.genre || 'No Genre Provided'}</span></p>
             <h2>
                 <a href="/venue/${event.venueId}" style="color: #4a90e2;">
                     ${event.venue || 'Unknown Venue'}

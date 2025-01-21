@@ -30,6 +30,7 @@ exports.handler = async (event) => {
             body: JSON.stringify({
                 id: eventData.id,
                 title: eventData.title,
+                genre: eventData.genre || 'No Genre Provided',
                 date: eventData.schedule?.date || 'No Date Provided',
                 doors: eventData.schedule?.doors || 'No Time Provided',
                 show: eventData.schedule?.show || 'No Time Provided',
