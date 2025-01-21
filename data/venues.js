@@ -10,8 +10,8 @@ module.exports = { venues: [
     "parking": "Offers convenient and free parking options to ensure a hassle-free experience for its guests. There are three designated parking lots available: one located directly across from Hope Artiste Village on Main Street, another on Dudley Street just a block away, and a larger lot situated at the back of the building on Dudley Street. All parking areas are well-lit and easily accessible, providing ample space for patrons attending events at the venue. These facilities make it easy for guests to focus on enjoying the show without worrying about parking logistics.",
     "eventsLink": "https://themetri.com/events",
     "socialMedia": {
-      "facebook": "https://www.facebook.com/TheMetRI",
-      "instagram": "https://www.instagram.com/TheMetRI"
+      "facebook": "https://www.facebook.com/themetri",
+      "instagram": "https://www.instagram.com/the_met/"
     }
   },
   {
