@@ -37,11 +37,29 @@ exports.handler = async (event) => {
 
         const today = getTodayDateEastern();
 
-        const bandEvents = events
+        // Separate events into past and future/today categories
+        const pastEvents = events
             .filter(event => 
                 event.bandIds && 
                 event.bandIds.includes(bandId) && 
-                event.schedule?.date >= today // Filter for future or current events
+                event.schedule?.date < today // Past events
+            )
+            .sort((a, b) => new Date(b.schedule?.date) - new Date(a.schedule?.date)) // Sort by date descending
+            .map(event => ({
+                id: event.id,
+                title: event.title || 'Unnamed Event',
+                date: event.schedule?.date || 'No Date Provided',
+                time: event.schedule?.show || 'No Time Provided',
+                venue: event.venue || 'Unknown Venue',
+                venueId: event.venueId || null,
+                bandIds: event.bandIds || []
+            }));
+
+        const futureEvents = events
+            .filter(event => 
+                event.bandIds && 
+                event.bandIds.includes(bandId) && 
+                event.schedule?.date >= today // Today or future events
             )
             .sort((a, b) => new Date(a.schedule?.date) - new Date(b.schedule?.date)) // Sort by date ascending
             .map(event => ({
@@ -55,13 +73,14 @@ exports.handler = async (event) => {
             }));
 
         // Fetch band names for each event
-        const eventsWithBands = bandEvents.map(event => {
-            const eventBands = event.bandIds.map(bandId => {
-                const foundBand = bands.find(b => b.id === bandId);
-                return foundBand ? foundBand.name : `Unknown Band (${bandId})`;
+        const enrichEventsWithBands = (events) => 
+            events.map(event => {
+                const eventBands = event.bandIds.map(bandId => {
+                    const foundBand = bands.find(b => b.id === bandId);
+                    return foundBand ? foundBand.name : `Unknown Band (${bandId})`;
+                });
+                return { ...event, bands: eventBands };
             });
-            return { ...event, bands: eventBands };
-        });
 
         return {
             statusCode: 200,
@@ -79,7 +98,10 @@ exports.handler = async (event) => {
                     },
                     members: band.members || []
                 },
-                events: eventsWithBands
+                events: {
+                    past: enrichEventsWithBands(pastEvents),
+                    future: enrichEventsWithBands(futureEvents)
+                }
             }),
         };
     } catch (error) {
