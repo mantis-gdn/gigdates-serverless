@@ -1,5 +1,20 @@
 module.exports = { events: [
   {
+    "id": 1,
+    "title": "Brothers All Band – An Allman Brothers Experience",
+    "schedule": {
+        "date": "2024-12-28",
+        "doors": "7:00 PM",
+        "show": "8:00 PM"
+    },
+    "venueId": "met_ri",
+    "venue": "The Met RI",
+    "bandIds": [
+      "brothers_all_band"
+    ],
+    "review": "As the lights dimmed at The Met RI, anticipation buzzed through the crowd, and the stage—set with vintage amplifiers and warm lighting—evoked the golden era of Southern Rock. From the opening riff of 'Statesboro Blues,' Brothers All Band proved they were more than a tribute act; they embodied the spirit of The Allman Brothers Band. Soulful organ harmonies intertwined with electrifying guitar solos, transporting the audience back to the legendary 1973 New Year’s Eve concert. The crowd exhaled collectively during a funk-infused 'Midnight Rider,' while a fan named Sam lit up the dance floor with infectious energy. The second half soared with a fiery rendition of 'Ramblin’ Man,' sparking the audience to dance, sway, and sing along to the tight rhythms and powerful crescendos. During a break, I spoke with Russ Lema, whose passion for preserving the Allman Brothers’ legacy was palpable, hinting at more shows and a potential future interview with Gigdates.net. By the end of the set, the room buzzed with applause and cheers as Brothers All Band delivered not just music but an experience—a blend of nostalgia and fresh flair that united and inspired. Verdict: A soulful, energetic tribute to one of the greatest Southern Rock bands of all time."
+  },
+  {
     "id": 4,
     "genre": "Tribute Rock",
     "title": "The DMB Project – Dave Matthews Tribute – Dave’s Birthday Bash",
