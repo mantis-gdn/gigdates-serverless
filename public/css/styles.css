@@ -512,3 +512,39 @@ a:hover {
     color: #8b0000; /* Dark red for the icon */
     font-size: 1.2em;
 }
+
+/* Style for the "Band" title */
+.band-header h1:first-of-type {
+    font-size: 24px;
+    font-weight: bold;
+    color: #707070; /* Primary blue color */
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #707070; /* Optional underline effect */
+    padding-bottom: 5px;
+}
+
+/* Style for the "Venue" title */
+.venue-header h1:first-of-type {
+    font-size: 24px;
+    font-weight: bold;
+    color: #707070; /* Primary blue color */
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #707070; /* Optional underline effect */
+    padding-bottom: 5px;
+}
+
+/* Style for the "Event" title */
+.event-header h1:first-of-type {
+    font-size: 24px;
+    font-weight: bold;
+    color: #707070; /* Primary blue color */
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #707070; /* Optional underline effect */
+    padding-bottom: 5px;
+}
