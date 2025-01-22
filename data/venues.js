@@ -1,5 +1,35 @@
 module.exports = { venues: [
   {
+    "id": "ralphs_rock_diner",
+    "name": "Ralph's Rock Diner",
+    "address": "148 Grove St, Worcester, MA 01605",
+    "phone": "508-753-9543",
+    "website": "",
+    "description": "Ralph’s Rock Diner is a historic and eclectic venue located at 148 Grove Street in Worcester, Massachusetts. Originally built in 1930 as a diner, it has evolved into a unique space combining a classic diner experience with a vibrant live music venue. Adorned with antiques, neon signs, and murals, Ralph’s offers a curated, carnival-like atmosphere that attracts locals and travelers alike. It is known for hosting a wide range of events, from live music performances and poetry readings to vintage car shows and private parties.",
+    "seating": "The seating at Ralph’s Rock Diner is as diverse as its ambiance. The venue features a cozy diner-style setup with retro booths and tables, creating an intimate dining atmosphere. In the music and event area, seating is flexible to accommodate both standing-room-only events and seated performances. Additionally, the outdoor patio offers a casual and relaxed space where guests can enjoy their food or watch movies and video games projected on an outdoor screen.",
+    "parking": "Parking at Ralph’s Rock Diner is convenient and accessible. The venue offers a dedicated parking lot adjacent to the building, ensuring that guests can easily find a spot. For larger events, additional street parking is available nearby. Guests are advised to arrive early during popular events to secure a closer parking space.",
+    "eventsLink": "",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/ralphsrockdiner/",
+      "instagram": "https://www.instagram.com/ralphs_rock_diner/"
+    }
+  },
+  {
+    "id": "thirsty_first",
+    "name": "Thirsty First",
+    "address": "103 Market St, Lowell, MA 01852",
+    "phone": "351-500-8000",
+    "website": "https://www.thirstyfirstlounge.com/",
+    "description": "Thirsty First is a lively sports bar and grill located at 103 Market Street in Lowell, Massachusetts. Renowned for its welcoming atmosphere, the venue offers a diverse menu featuring signature dishes like the Thirsty First Burger and Buffalo Chicken Pizza. It's a go-to spot for live music, DJ sets, and weekly events, making it a hub for both casual dining and entertainment in the heart of the city.",
+    "seating": "Thirsty First offers a range of seating options to accommodate both small and large groups. Inside, bar stools and tables provide a comfortable setting with clear views of multiple large-screen TVs for sports viewing. For those who prefer the outdoors, an inviting patio area is available, perfect for open-air dining and socializing.",
+    "parking": "Parking options near Thirsty First include convenient street parking along Market Street and nearby areas. Additionally, there are several public parking garages within walking distance, ensuring easy access for guests. Visitors are advised to check for parking restrictions or time limits, especially during busy hours or special events.",
+    "eventsLink": "https://www.thirstyfirstlounge.com/events",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/thirstyfirstlounge/",
+      "instagram": "https://www.instagram.com/thirsty_first/"
+    }
+  },
+  {
     "id": "met_ri",
     "name": "The Met RI",
     "address": "1005 Main Street, Pawtucket, RI 02860",

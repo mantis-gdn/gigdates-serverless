@@ -402,5 +402,32 @@ module.exports = { events: [
   "venueId": "met_ri",
   "venue": "The Met RI",
   "bandIds": ["subliminal_doubt", "nirvani"]
+},
+{
+  "id": 31,
+  "genre": "Ska-punk, Thrash",
+  "title": "Cheap City Final Worchester Show",
+  "schedule": {
+      "date": "2025-03-28",
+      "doors": "8:00 PM",
+      "show": "8:30 PM"
+  },
+  "venueId": "ralphs_rock_diner",
+  "venue": "Ralph's Rock Diner",
+  "bandIds": ["pwrup", "cheap_city", "knock_over_city"],
+  "preview": "Don't miss the final Worcester show of Cheap City, the ska-punk band that's been tearing up the scene with their high-energy performances and infectious grooves. Joining them for this epic night are PWRUP and Knock Over City, two powerhouse bands that will keep the energy flowing all night long. From the ska-punk stylings of PWRUP to the thrash-infused sound of Knock Over City, this show promises to be a nonstop party that you won't want to miss. Grab your tickets now and get ready to dance, sing, and rock out to some of the best live music Worcester has to offer!"
+},
+{
+  "id": 32,
+  "genre": "Ska-punk, Thrash",
+  "title": "Knock Over City and PWRUP with Special Guests",
+  "schedule": {
+      "date": "2025-04-06",
+      "doors": "2:00 PM",
+      "show": "2:00 PM"
+  },
+  "venueId": "thirsty_first",
+  "venue": "Thirsty First",
+  "bandIds": ["pwrup","knock_over_city"]
 }
 ] };

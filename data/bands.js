@@ -1,6 +1,60 @@
 const newLocal_1 = module.exports = {
   bands: [
     {
+      "id": "cheap_city",
+      "name": "Cheap City",
+      "genre": "Punk Rock",
+      "description": "Cheap City is a boundary-pushing band from Holyoke, Massachusetts, blending punk energy, indie quirkiness, and a hint of danceable chaos into a sound that defies expectations. Known for their sharp storytelling and fearless exploration of themes like identity and gentrification, their music is as thought-provoking as it is electrifying. With dynamic performances and a DIY ethos, Cheap City invites their audience into a world of raw creativity and community spirit. Whether you’re captivated by their genre-bending compositions or their unapologetic lyrics, one thing is clear: Cheap City isn’t just a band—they’re a movement.",
+      "website": "https://www.cheapcity.org/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/cheapcitytheband/",
+        "instagram": "https://www.instagram.com/cheap_city_forever/"
+      },
+      "members": [
+        {
+          "name": "Greg Nahabedian",
+          "role": "Vocals & Keyboard"
+        },
+        {
+          "name": "Paul Schmelz",
+          "role": "Guitar"
+        },
+        {
+          "name": "Brendan Blendell",
+          "role": "Bass"
+        },
+        {
+          "name": "Cody Gagen",
+          "role": "Drums"
+        }
+      ]
+    },
+    {
+      "id": "knock_over_city",
+      "name": "Knock Over City",
+      "genre": "Post-Hardcore",
+      "description": "Knock Over City is the heart and soul of Lowell’s indie rock scene—a band that grabs you by the ears and doesn’t let go! Their raw, unapologetic energy fuses with introspective lyrics, creating a sound that feels like a late-night drive through a city that’s as alive as you are. Whether it's the searing riffs, the pounding drums, or the violin that adds an unexpected yet perfect touch, every performance is an emotional rollercoaster. They’re the kind of band that makes you feel like you’re part of something bigger, like their songs were written just for you. If you haven’t seen Knock Over City live, you’re seriously missing out on one of the most electrifying acts around.",
+      "website": "https://linktr.ee/Knockovercity",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/KnockOverCity/",
+        "instagram": "https://www.instagram.com/knockovercity/"
+      },
+      "members": [
+        {
+          "name": "Nunziantte DiBenedetto",
+          "role": "Guitar"
+        },
+        {
+          "name": "Joseph Campbell",
+          "role": "Drums"
+        },
+        {
+          "name": "Tracy Putnam",
+          "role": "Bass"
+        }
+      ]
+    },
+    {
       "id": "dmb_project",
       "name": "The DMB Project - Dave Matthews Tribute",
       "genre": "Tribute Band",
@@ -185,28 +239,28 @@ const newLocal_1 = module.exports = {
         "facebook": "https://www.facebook.com/lightningboltband",
         "instagram": "https://www.instagram.com/lightningboltband/"
       },
-"members": [
-    {
-        "name": "Ari El",
-        "role": "Guitar, vocals"
-    },
-    {
-        "name": "Jason Ferguson",
-        "role": "Drums"
-    },
-    {
-        "name": "Brian O'Connell",
-        "role": "Bass, vocals"
-    },
-    {
-        "name": "Geoffrey Williams",
-        "role": "Percussion"
-    },
-    {
-        "name": "Parker McQueeney",
-        "role": "Keyboards, vocals"
-    }
-]
+      "members": [
+        {
+          "name": "Ari El",
+          "role": "Guitar, vocals"
+        },
+        {
+          "name": "Jason Ferguson",
+          "role": "Drums"
+        },
+        {
+          "name": "Brian O'Connell",
+          "role": "Bass, vocals"
+        },
+        {
+          "name": "Geoffrey Williams",
+          "role": "Percussion"
+        },
+        {
+          "name": "Parker McQueeney",
+          "role": "Keyboards, vocals"
+        }
+      ]
     },
     {
       "id": "korn_ballz",
@@ -977,12 +1031,10 @@ const newLocal_1 = module.exports = {
       "name": "PWRUP",
       "genre": "Ska-Core, Punk, Hardcore",
       "description": "PWRUP is a high-energy ska-core band from Agawam, Massachusetts, blending punk, hardcore, and ska influences to create a dynamic and electrifying sound. Known for their captivating live performances and socially conscious themes, PWRUP has made waves with their debut album 'Just Devils' and follow-up remix EP 'Unjust: The Devils Remix.' With thought-provoking lyrics and a unique style, the band continues to push the boundaries of ska and punk music, collaborating with artists like Dissidente, The Best of the Worst, and Death By Stereo. Their music offers an exhilarating experience for fans of alternative genres.",
-      "website": "https://pwrup.bandcamp.com/",
+      "website": "https://linktr.ee/pwrupband",
       "socialMedia": {
         "facebook": "https://www.facebook.com/pwrupband",
-        "instagram": "https://www.instagram.com/pwrupband",
-        "twitter": "https://twitter.com/pwrupband",
-        "tiktok": "https://www.tiktok.com/@pwrupband"
+        "instagram": "https://www.instagram.com/pwrupband"
       },
       "members": [
         {
@@ -1039,7 +1091,7 @@ const newLocal_1 = module.exports = {
         "instagram": ""
       },
       "members": []
-    }                
+    }
   ]
 };
 const newLocal = newLocal_1;
