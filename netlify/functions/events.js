@@ -15,8 +15,14 @@ exports.handler = async () => {
 
         // Filter out past events and sort by date
         const filteredAndSortedEvents = events
-            .filter(event => event.schedule?.date >= today) // Only future or today's events
-            .sort((a, b) => new Date(a.schedule?.date) - new Date(b.schedule?.date)); // Sort by date ascending
+        .filter(event => {
+            const eventDate = new Date(event.schedule?.date); // Convert event date to a Date object
+            const todayDate = new Date(today); // Ensure 'today' is a Date object
+            const fourteenDaysFromToday = new Date(today);
+            fourteenDaysFromToday.setDate(todayDate.getDate() + 14); // Add 14 days to today's date            
+            return eventDate > todayDate && eventDate < fourteenDaysFromToday;
+        }) // Only events greater than today but less than 14 days ahead
+                    .sort((a, b) => new Date(a.schedule?.date) - new Date(b.schedule?.date)); // Sort by date ascending
 
         return {
             statusCode: 200,
