@@ -1,6 +1,39 @@
 const newLocal_1 = module.exports = {
   bands: [
     {
+      "id": "oh_the_humanity",
+      "name": "Oh The Humanity!",
+      "genre": "Skate Punk, Melodic Hardcore, Technical Punk",
+      "description": "Oh The Humanity! is a Massachusetts-based band blending skate punk, melodic hardcore, and technical punk. Their sound features high-speed melodic riffs, shredding metal elements, and singalong punk anthems, drawing influence from bands like A Wilhelm Scream, Strike Anywhere, Propagandhi, and Strung Out.",
+      "website": "https://www.hellmindedrecords.com/ohthehumanity",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/ohthehumanityMA",
+        "instagram": "https://www.instagram.com/ohthehumanityma/"
+      },
+      "members": [
+        {
+          "name": "Matt",
+          "role": "Vocals"
+        },
+        {
+          "name": "Mike",
+          "role": "Guitar"
+        },
+        {
+          "name": "Jeff",
+          "role": "Guitar"
+        },
+        {
+          "name": "Chad",
+          "role": "Bass"
+        },
+        {
+          "name": "Patrick",
+          "role": "Drums"
+        }
+      ]
+    },    
+    {
       "id": "cheap_city",
       "name": "Cheap City",
       "genre": "Punk Rock",

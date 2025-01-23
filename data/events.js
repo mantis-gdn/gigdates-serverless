@@ -428,6 +428,6 @@ module.exports = { events: [
   },
   "venueId": "thirsty_first",
   "venue": "Thirsty First",
-  "bandIds": ["pwrup","knock_over_city"]
+  "bandIds": ["pwrup", "knock_over_city", "oh_the_humanity"]
 }
 ] };
