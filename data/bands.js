@@ -1090,7 +1090,24 @@ const newLocal_1 = module.exports = {
         "facebook": "https://www.facebook.com/profile.php?id=61568880370062",
         "instagram": ""
       },
-      "members": []
+      "members": [
+        {
+          "name": "Greg Nahabedian",
+          "role": "Vocals & Keyboard"
+        },
+        {
+          "name": "Paul Schmelz",
+          "role": "Guitar"
+        },
+        {
+          "name": "Brendan Blendell",
+          "role": "Bass"
+        },
+        {
+          "name": "Cody Gagen",
+          "role": "Drums"
+        }
+      ]
     }
   ]
 };
