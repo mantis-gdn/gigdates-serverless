@@ -109,7 +109,7 @@ async function fetchEventDetails() {
                 </a>
             </h2>
             <p>
-                ${isToday ? '<span class="today-badge" style="color: red; font-weight: bold;">TODAY</span><br />' : ''} 
+                ${isToday ? '<span class="today-badge"; font-weight: bold;">TODAY</span><br />' : ''} 
                 ${formattedDate}
             </p>
             <p><strong>Doors:</strong> ${event.doors || 'No Time Provided'}</p>
