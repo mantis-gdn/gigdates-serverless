@@ -1212,20 +1212,8 @@ const newLocal_1 = module.exports = {
       },
       "members": [
         {
-          "name": "Greg Nahabedian",
-          "role": "Vocals & Keyboard"
-        },
-        {
-          "name": "Paul Schmelz",
-          "role": "Guitar"
-        },
-        {
-          "name": "Brendan Blendell",
-          "role": "Bass"
-        },
-        {
-          "name": "Cody Gagen",
-          "role": "Drums"
+          "name": "Kyria Abrahams",
+          "role": "Vocals"
         }
       ]
     }
