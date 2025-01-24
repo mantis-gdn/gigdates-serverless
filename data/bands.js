@@ -1208,7 +1208,7 @@ const newLocal_1 = module.exports = {
       "website": "https://somanydangers.bandcamp.com/",
       "socialMedia": {
         "facebook": "https://www.facebook.com/profile.php?id=61568880370062",
-        "instagram": ""
+        "instagram": "https://www.instagram.com/so_many_dangers/"
       },
       "members": [
         {
