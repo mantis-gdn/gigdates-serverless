@@ -20,7 +20,7 @@ exports.handler = async () => {
             const todayDate = new Date(today); // Ensure 'today' is a Date object
             const fourteenDaysFromToday = new Date(today);
             fourteenDaysFromToday.setDate(todayDate.getDate() + 14); // Add 14 days to today's date            
-            return eventDate > todayDate && eventDate < fourteenDaysFromToday;
+            return eventDate >= todayDate && eventDate < fourteenDaysFromToday;
         }) // Only events greater than today but less than 14 days ahead
                     .sort((a, b) => new Date(a.schedule?.date) - new Date(b.schedule?.date)); // Sort by date ascending
 

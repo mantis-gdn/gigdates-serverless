@@ -83,7 +83,7 @@ async function fetchBandDetails(bandIds) {
         const today = getTodayDateEastern();
 
         if (data.events && data.events.length > 0) {
-            const upcomingEvents = data.events.filter(event => event.date >= today);
+            const upcomingEvents = data.events.filter(event => event.date);
 
             if (upcomingEvents.length > 0) {
                 eventsContainer.innerHTML = await Promise.all(upcomingEvents.map(async (event) => {
