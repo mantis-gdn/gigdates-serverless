@@ -263,7 +263,7 @@ module.exports = { events: [
   "title": "PWRUP + Threat Level Burgundy + Palmslow + So Many Dangers",
   "schedule": {
       "date": "2025-01-24",
-      "doors": "8:00 PM",
+      "doors": "7:00 PM",
       "show": "8:00 PM"
   },
   "venueId": "as220",
