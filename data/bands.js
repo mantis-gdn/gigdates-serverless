@@ -8,7 +8,7 @@ const newLocal_1 = module.exports = {
       "website": "https://linktr.ee/thebandenergy", // Replace with actual website if available
       "socialMedia": {
         "facebook": "https://www.facebook.com/thebandenergy/", // Replace with actual link
-        "instagram": "" // Replace with actual link
+        "instagram": "https://www.instagram.com/thebandenergy" // Replace with actual link
       },
       "members": [
         {
