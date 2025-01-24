@@ -282,7 +282,7 @@ module.exports = { events: [
   },
   "venueId": "as220",
   "venue": "AS220",
-  "bandIds": []
+  "bandIds": ["energy", "court_date", "different_day"]
 },
 {
   "id": 22,

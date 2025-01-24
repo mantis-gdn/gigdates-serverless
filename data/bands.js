@@ -1,6 +1,93 @@
 const newLocal_1 = module.exports = {
   bands: [
     {
+      "id": "energy",
+      "name": "ENERGY",
+      "genre": "Alternative Rock, Punk",
+      "description": "ENERGY is a dynamic band known for their electrifying performances and a sound that blends alternative rock and punk influences. They deliver high-energy anthems with captivating melodies and raw emotion.",
+      "website": "https://linktr.ee/thebandenergy", // Replace with actual website if available
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/thebandenergy/", // Replace with actual link
+        "instagram": "" // Replace with actual link
+      },
+      "members": [
+        {
+          "name": "John Doe",
+          "role": "Vocals"
+        },
+        {
+          "name": "Jane Smith",
+          "role": "Guitar"
+        },
+        {
+          "name": "Dave Lee",
+          "role": "Bass"
+        },
+        {
+          "name": "Mark Brown",
+          "role": "Drums"
+        }
+      ]
+    },
+    {
+      "id": "court_date",
+      "name": "Court Date",
+      "genre": "Hardcore Punk",
+      "description": "Court Date is a hardcore punk band delivering intense and unrelenting tracks. Known for their raw energy and powerful performances, they are a staple in the punk scene.",
+      "website": "https://courtdate.bandcamp.com/", // Replace with actual website if available
+      "socialMedia": {
+        "facebook": "https://facebook.com/courtdateband", // Replace with actual link
+        "instagram": "https://www.instagram.com/courtdateband" // Replace with actual link
+      },
+      "members": [
+        {
+          "name": "Alex Johnson",
+          "role": "Vocals"
+        },
+        {
+          "name": "Chris Evans",
+          "role": "Guitar"
+        },
+        {
+          "name": "Sam Taylor",
+          "role": "Bass"
+        },
+        {
+          "name": "Jordan White",
+          "role": "Drums"
+        }
+      ]
+    },
+    {
+      "id": "different_day",
+      "name": "Different Day",
+      "genre": "Indie Rock",
+      "description": "Different Day is an indie rock band that crafts heartfelt melodies and introspective lyrics. Their unique soundscape combines jangly guitars and soaring vocals, resonating with fans of all ages.",
+      "website": "https://differentday.bandcamp.com/", // Replace with actual website if available
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/differentday", // Replace with actual link
+        "instagram": "" // Replace with actual link
+      },
+      "members": [
+        {
+          "name": "Emily Clark",
+          "role": "Vocals"
+        },
+        {
+          "name": "Jake Harris",
+          "role": "Guitar"
+        },
+        {
+          "name": "Megan Carter",
+          "role": "Bass"
+        },
+        {
+          "name": "Ryan Wilson",
+          "role": "Drums"
+        }
+      ]
+    },
+    {
       "id": "oh_the_humanity",
       "name": "Oh The Humanity!",
       "genre": "Skate Punk, Melodic Hardcore, Technical Punk",
