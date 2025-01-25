@@ -1203,7 +1203,7 @@ const newLocal_1 = module.exports = {
     {
       "id": "so_many_dangers",
       "name": "So Many Dangers",
-      "genre": "Ska-Adjacent",
+      "genre": "Progressive Post Skacore",
       "description": "So Many Dangers is a ska-adjacent band based in Rhode Island, known for their energetic performances and dynamic sound. They have played at various venues, including the Pioneer Valley Ska Fest at Hawks & Reed Performing Arts Center in Greenfield, MA. Their music is available on Bandcamp, and they actively engage with fans through social media platforms.",
       "interview": "",
       "website": "https://somanydangers.bandcamp.com/",
