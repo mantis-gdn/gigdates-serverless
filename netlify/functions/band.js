@@ -92,6 +92,7 @@ exports.handler = async (event) => {
                     genre: band.genre || 'No Genre Provided',
                     description: band.description || 'No description available',
                     website: band.website || '#',
+                    interview: band.interview || 'No interview available',
                     socialMedia: {
                         facebook: band.socialMedia?.facebook || '#',
                         instagram: band.socialMedia?.instagram || '#',

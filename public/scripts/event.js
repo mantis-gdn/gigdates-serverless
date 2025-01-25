@@ -115,10 +115,13 @@ async function fetchEventDetails() {
             <p><strong>Doors:</strong> ${event.doors || 'No Time Provided'}</p>
             <p><strong>Show:</strong> ${event.show || 'No Time Provided'}</p>
             ${bandListHTML}
+            <hr />
             <h2>Event Preview</h2>
             <p>${event.preview || 'No Preview Available'}</p>
-            <h2>Event Review</h2>
+            <hr />
+            <h2>Event Review by Mantis</h2>
             <p>${event.review || 'No Review Available'}</p>
+            <hr />
         `;
 
     } catch (error) {

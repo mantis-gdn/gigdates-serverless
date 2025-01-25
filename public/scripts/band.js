@@ -102,6 +102,7 @@ async function fetchBandData() {
         document.getElementById('band-name').innerText = band.name || 'No Name Provided';
         document.getElementById('band-genre').innerText = band.genre || 'No Genre Provided';
         document.getElementById('band-description').innerText = band.description || 'No Description Provided';
+        document.getElementById('band-interview').innerText = band.interview || 'No Interview Available';
 
         // ✅ Populate Band Members
         const membersList = document.getElementById('band-members-list');
