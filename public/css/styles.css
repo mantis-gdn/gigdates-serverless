@@ -410,6 +410,11 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 1.5rem;
+    color: #d39d5d;
+}
+
 p {
     font-size: 1.5rem;
 }
