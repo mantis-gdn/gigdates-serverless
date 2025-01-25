@@ -1,5 +1,20 @@
 module.exports = { venues: [
   {
+    "id": "the_parlour",
+    "name": "The Parlour",
+    "address": "1119 N Main St, Providence, RI 02904",
+    "phone": "401-383-5858",
+    "website": "https://www.theparlourri.com/",
+    "description": "The Parlour Providence is a vibrant and eclectic bar and music venue located at 1119 N Main Street in Providence, Rhode Island. Known for its welcoming atmosphere, diverse entertainment offerings, and extensive drink selection, The Parlour has become a beloved destination for locals and visitors alike. The venue hosts a variety of events, including live music performances, DJ nights, trivia competitions, and more, making it a hub for entertainment and socializing in the city.",
+    "seating": "The Parlour Providence offers a mix of seating options to accommodate different preferences. Inside, guests can choose from bar stools, tables, and booths, creating a cozy and intimate setting for dining and socializing. The venue also features an outdoor patio area, perfect for enjoying drinks and live music in the open air. With its flexible seating arrangements, The Parlour provides a comfortable and inviting space for patrons to relax and enjoy the entertainment.",
+    "parking": "Parking near The Parlour Providence is available on the street and in nearby public lots, providing convenient access for guests. While street parking may be limited during peak hours, there are several parking garages within walking distance of the venue, ensuring ample parking options for visitors. Guests are encouraged to arrive early or consider carpooling to secure a parking spot during busy events.",
+    "eventsLink": "https://www.theparlourri.com/events",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/parlourri",
+      "instagram": "https://www.instagram.com/parlourprovidence"
+    }
+  },
+  {
     "id": "ralphs_rock_diner",
     "name": "Ralph's Rock Diner",
     "address": "148 Grove St, Worcester, MA 01605",
