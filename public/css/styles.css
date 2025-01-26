@@ -485,6 +485,104 @@ a:hover {
     margin-top: 0;
 }
 
+/* === Venues Page === */
+.venues-header {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px 0;
+    color: #f0f6fc;
+}
+
+.venues-header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #f0f6fc;
+    margin-bottom: 10px;
+}
+
+.venues-header p {
+    font-size: 1.2em;
+    color: #8b949e;
+    margin-top: 0;
+}
+
+/* === Venues Grid === */
+#venues-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* === Venue Card === */
+.venue {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.venue:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-color: #58a6ff;
+}
+
+.venue h2 {
+    font-size: 1.5em;
+    color: #f0f6fc;
+    margin-bottom: 10px;
+}
+
+.venue p {
+    font-size: 1em;
+    color: #8b949e;
+    margin: 5px 0;
+}
+
+/* === Venue Links === */
+.venue a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.venue a:hover {
+    color: #d39d5d;
+}
+
+/* === Address and Contact Details === */
+.venue-address {
+    font-size: 1em;
+    font-weight: bold;
+    color: #f0f6fc;
+    margin-top: 10px;
+}
+
+.venue-contact {
+    font-size: 0.9em;
+    color: #8b949e;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+    #venues-container {
+        grid-template-columns: 1fr;
+    }
+
+    .venue {
+        padding: 1rem;
+    }
+}
+
+
 /* === Bands Page === */
 .bands-header {
     text-align: center;

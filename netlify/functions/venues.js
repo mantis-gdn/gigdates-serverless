@@ -1,4 +1,4 @@
-const { bands } = require("../../data/bands");
+const { venues } = require("../../data/venues");
 
 exports.handler = async () => {
     try {
@@ -6,14 +6,14 @@ exports.handler = async () => {
             statusCode: 200,
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-                bands: bands.map(band => ({
-                    id: band.id,
-                    name: band.name
+                venues: venues.map(venue => ({
+                    id: venue.id,
+                    name: venue.name
                 }))
             }),
         };
     } catch (error) {
-        console.error('Error fetching bands:', error);
+        console.error('Error fetching venues:', error);
         return {
             statusCode: 500,
             headers: { "Content-Type": "application/json" },
