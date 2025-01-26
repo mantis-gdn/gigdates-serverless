@@ -338,7 +338,8 @@ module.exports = {
       },
       "venueId": "met_ri",
       "venue": "The Met RI",
-      "bandIds": ["dead_meat"]
+      "bandIds": ["dead_meat"],
+      "preview": "Get ready for an unforgettable night at The Met RI as Dead Meat brings their electrifying tribute to The Grateful Dead on Saturday, February 1, 2025! Known for their high-energy performances, tight vocal harmonies, and mind-blowing improvisational jams, Dead Meat captures the spirit and essence of the legendary band while adding their unique flair. Doors open at 7:30 PM, and the show kicks off at 8:30 PM, promising a dynamic setlist of iconic Grateful Dead favorites and deep cuts that will keep both longtime Deadheads and new fans grooving all night long. Don’t miss this incredible tribute experience—mark your calendars and prepare to dance, sing, and celebrate the timeless music of the Grateful Dead!"
     },
     {
       "id": 26,
@@ -444,6 +445,20 @@ module.exports = {
       "venueId": "the_parlour",
       "venue": "The Parlour",
       "bandIds": ["so_many_dangers"]
+    },
+    {
+      "id": 34,
+      "genre": "Tribute Rock",
+      "title": "Dead Meat - An Electrifying Tribute to The Grateful Dead",
+      "schedule": {
+        "date": "2025-02-21",
+        "doors": "7:00 PM",
+        "show": "8:00 PM"
+      },
+      "venueId": "garcias_at_the_cap",
+      "venue": "Garcia's at The Capitol Theatre",
+      "bandIds": ["dead_meat"],
+      "preview": "Experience an unforgettable evening at Garcia's at The Capitol Theatre on Friday, February 21, 2025, as Dead Meat takes the stage to deliver an electrifying tribute to The Grateful Dead. Known for their dynamic performances, intricate harmonies, and high-energy jams, Dead Meat masterfully recreates the magic of the Grateful Dead’s legendary catalog. Whether you’re a lifelong Deadhead or a casual fan, this show promises a captivating journey through timeless classics and deep cuts. Doors open at 7:00 PM—don’t miss this chance to celebrate the enduring legacy of The Grateful Dead in an intimate and iconic venue!"
     }
   ]
 };

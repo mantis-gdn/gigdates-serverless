@@ -163,5 +163,20 @@ module.exports = { venues: [
       "facebook": "https://www.facebook.com/AS22O/",
       "instagram": "https://www.instagram.com/as220providence/"
     }
+  },
+  {
+    "id": "garcias_at_the_cap",
+    "name": "Garcia's at The Capitol Theatre",
+    "address": "149 Westchester Ave, Port Chester, NY 10573",
+    "phone": "914-937-4126",
+    "website": "https://www.thecapitoltheatre.com/garcias",
+    "description": "Garcia's at The Capitol Theatre is a renowned live music venue located in Port Chester, New York. Named after the legendary Grateful Dead guitarist Jerry Garcia, the intimate space offers a unique concert experience for music lovers. The venue hosts a diverse lineup of artists and bands, spanning various genres from rock and blues to folk and funk. With its rich history and commitment to quality entertainment, Garcia's has become a beloved destination for both local and touring musicians.",
+    "seating": "Garcia's at The Capitol Theatre features a mix of seating options to accommodate different preferences. The venue offers general admission standing room for most concerts, allowing guests to move around and dance during performances. For those seeking a more relaxed experience, limited reserved seating is available on a first-come, first-served basis, providing a designated area to enjoy the show. The intimate setting and excellent sightlines ensure an engaging and immersive concert experience for all attendees.",
+    "parking": "Parking near Garcia's at The Capitol Theatre is available in several nearby lots and garages, providing convenient access for guests. The venue is easily accessible by car, with ample parking options within walking distance. Guests are encouraged to arrive early to secure a parking spot, especially during popular events or sold-out shows.",
+    "eventsLink": "https://www.thecapitoltheatre.com/garcias",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/garciasatthecap/",
+      "instagram": "https://www.instagram.com/garciasatthecap/"
+    }
   }
 ] };

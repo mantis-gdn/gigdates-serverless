@@ -487,28 +487,7 @@ const newLocal_1 = module.exports = {
         "facebook": "https://www.facebook.com/deadmeatband",
         "instagram": "https://www.instagram.com/deadmeatband/"
       },
-      "members": [
-        {
-          "name": "James Hunter",
-          "role": "Vocals, Guitar"
-        },
-        {
-          "name": "Alan Cooper",
-          "role": "Bass"
-        },
-        {
-          "name": "Mark Rivers",
-          "role": "Drums"
-        },
-        {
-          "name": "Steve Larson",
-          "role": "Keyboards"
-        },
-        {
-          "name": "Chris Bennett",
-          "role": "Percussion"
-        }
-      ]
+      "members": []
     },
     {
       "id": "red_eft",
