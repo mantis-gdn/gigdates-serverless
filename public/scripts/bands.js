@@ -13,6 +13,7 @@ async function fetchAndDisplayBands() {
             bandsContainer.innerHTML = data.bands.map(band => `
                 <div class="band">
                     <h2><a href="/band/${band.id}">${band.name}</a></h2>
+                    <p>${band.genre}</p>
                 </div>
             `).join('');
         } else {

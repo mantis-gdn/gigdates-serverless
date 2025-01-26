@@ -8,7 +8,8 @@ exports.handler = async () => {
             body: JSON.stringify({
                 bands: bands.map(band => ({
                     id: band.id,
-                    name: band.name
+                    name: band.name,
+                    genre: band.genre
                 }))
             }),
         };
