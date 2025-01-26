@@ -1192,7 +1192,7 @@ const newLocal_1 = module.exports = {
       },
       "members": [
         {
-          "name": "Kyria Abrahams",
+          "name": "Kyria",
           "role": "Vocals"
         },
         {
@@ -1205,7 +1205,11 @@ const newLocal_1 = module.exports = {
         },
         {
           "name": "Colby",
-          "role": "Guitar"
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Sebastian",
+          "role": "Rhythm Guitar"
         }
       ]
     }
