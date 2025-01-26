@@ -485,6 +485,78 @@ a:hover {
     margin-top: 0;
 }
 
+/* === Bands Page === */
+.bands-header {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px 0;
+    color: #f0f6fc;
+}
+
+.bands-header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #f0f6fc;
+    margin-bottom: 10px;
+}
+
+.bands-header p {
+    font-size: 1.2em;
+    color: #8b949e;
+    margin-top: 0;
+}
+
+/* === Bands Grid === */
+#bands-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* === Band Card === */
+.band {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.band:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-color: #58a6ff;
+}
+
+.band h2 {
+    font-size: 1.5em;
+    color: #f0f6fc;
+    margin-bottom: 10px;
+}
+
+.band p {
+    font-size: 1em;
+    color: #8b949e;
+    margin-bottom: 0;
+}
+
+/* === Band Links === */
+.band a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.band a:hover {
+    color: #d39d5d;
+}
+
+
 /* General styles for the band list */
 .band-list {
     margin: 20px 0;
