@@ -1194,6 +1194,18 @@ const newLocal_1 = module.exports = {
         {
           "name": "Kyria Abrahams",
           "role": "Vocals"
+        },
+        {
+          "name": "Jim",
+          "role": "Trombone"
+        },
+        {
+          "name": "Jessie",
+          "role": "Bass Guitar"
+        },
+        {
+          "name": "Colby",
+          "role": "Guitar"
         }
       ]
     }
