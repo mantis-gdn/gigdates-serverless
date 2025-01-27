@@ -144,7 +144,6 @@ nav a:hover {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
     justify-content: center;
-    margin-top: 20px;
 }
 
 /* === Event Card === */
@@ -152,9 +151,9 @@ nav a:hover {
     background: #161b22;
     border: 1px solid #30363d;
     border-radius: 8px;
-    padding: 0rem;
+    padding: 1rem;
     text-align: left;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Horizontal, vertical, blur, color */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
