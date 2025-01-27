@@ -55,24 +55,7 @@ const newLocal_1 = module.exports = {
         "facebook": "https://www.facebook.com/differentday", // Replace with actual link
         "instagram": "" // Replace with actual link
       },
-      "members": [
-        {
-          "name": "Emily Clark",
-          "role": "Vocals"
-        },
-        {
-          "name": "Jake Harris",
-          "role": "Guitar"
-        },
-        {
-          "name": "Megan Carter",
-          "role": "Bass"
-        },
-        {
-          "name": "Ryan Wilson",
-          "role": "Drums"
-        }
-      ]
+      "members": []
     },
     {
       "id": "oh_the_humanity",
@@ -86,23 +69,23 @@ const newLocal_1 = module.exports = {
       },
       "members": [
         {
-          "name": "Matt",
+          "name": "Kevin Athas",
           "role": "Vocals"
         },
         {
-          "name": "Mike",
+          "name": "Jim Silvio",
           "role": "Guitar"
         },
         {
-          "name": "Jeff",
+          "name": "Chris DiIeso",
           "role": "Guitar"
         },
         {
-          "name": "Chad",
+          "name": "Andy Hakansson",
           "role": "Bass"
         },
         {
-          "name": "Patrick",
+          "name": "Chris Santoro",
           "role": "Drums"
         }
       ]
@@ -117,24 +100,7 @@ const newLocal_1 = module.exports = {
         "facebook": "https://www.facebook.com/cheapcitytheband/",
         "instagram": "https://www.instagram.com/cheap_city_forever/"
       },
-      "members": [
-        {
-          "name": "Greg Nahabedian",
-          "role": "Vocals & Keyboard"
-        },
-        {
-          "name": "Paul Schmelz",
-          "role": "Guitar"
-        },
-        {
-          "name": "Brendan Blendell",
-          "role": "Bass"
-        },
-        {
-          "name": "Cody Gagen",
-          "role": "Drums"
-        }
-      ]
+      "members": []
     },
     {
       "id": "knock_over_city",
@@ -146,20 +112,7 @@ const newLocal_1 = module.exports = {
         "facebook": "https://www.facebook.com/KnockOverCity/",
         "instagram": "https://www.instagram.com/knockovercity/"
       },
-      "members": [
-        {
-          "name": "Nunziantte DiBenedetto",
-          "role": "Guitar"
-        },
-        {
-          "name": "Joseph Campbell",
-          "role": "Drums"
-        },
-        {
-          "name": "Tracy Putnam",
-          "role": "Bass"
-        }
-      ]
+      "members": []
     },
     {
       "id": "dmb_project",
@@ -173,24 +126,28 @@ const newLocal_1 = module.exports = {
       },
       "members": [
         {
-          "name": "Dave",
-          "role": "Lead Vocals & Guitar"
+          "name": "Dave Bigler",
+          "role": "Vocals/Guitar"
         },
         {
-          "name": "Boyd",
-          "role": "Violin"
+          "name": "Kyle Flynn",
+          "role": "Drums/Percussion"
         },
         {
-          "name": "Stefan",
-          "role": "Bass"
+          "name": "Al Caldarone",
+          "role": "Bass Guitar"
         },
         {
-          "name": "Carter",
-          "role": "Drums"
-        },
-        {
-          "name": "Tim",
+          "name": "Bobby Brierly",
           "role": "Lead Guitar"
+        },
+        {
+          "name": "Jason Frost",
+          "role": "Saxophone"
+        },
+        {
+          "name": "Matt Cherewka",
+          "role": "Violin"
         }
       ]
     },
@@ -232,9 +189,9 @@ const newLocal_1 = module.exports = {
       "name": "Hollywood Undead",
       "genre": "Rock",
       "description": "Hollywood Undead is an American rap rock band from Los Angeles, California, formed in 2005. Known for their unique blend of hip-hop, rock, and metal elements, the band gained popularity with their debut album, Swan Songs, released in 2008. They are recognized for performing under pseudonyms and wearing distinctive masks, adding a theatrical element to their performances.",
-      "website": "https://www.brothersallband.com/",
+      "website": "",
       "socialMedia": {
-        "facebook": "https://www.facebook.com/The-Brothers-All-Band-561693917338946/",
+        "facebook": "",
         "instagram": ""
       },
       "members": [
