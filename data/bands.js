@@ -10,24 +10,7 @@ const newLocal_1 = module.exports = {
         "facebook": "https://www.facebook.com/thebandenergy/", // Replace with actual link
         "instagram": "https://www.instagram.com/thebandenergy" // Replace with actual link
       },
-      "members": [
-        {
-          "name": "John Doe",
-          "role": "Vocals"
-        },
-        {
-          "name": "Jane Smith",
-          "role": "Guitar"
-        },
-        {
-          "name": "Dave Lee",
-          "role": "Bass"
-        },
-        {
-          "name": "Mark Brown",
-          "role": "Drums"
-        }
-      ]
+      "members": []
     },
     {
       "id": "court_date",
@@ -41,19 +24,23 @@ const newLocal_1 = module.exports = {
       },
       "members": [
         {
-          "name": "Alex Johnson",
+          "name": "Gabby",
           "role": "Vocals"
         },
         {
-          "name": "Chris Evans",
-          "role": "Guitar"
+          "name": "Aaron",
+          "role": "Lead Guitar"
         },
         {
-          "name": "Sam Taylor",
+          "name": "Alex",
+          "role": "Rhythm Guitar"
+        },
+        {
+          "name": "Preston",
           "role": "Bass"
         },
         {
-          "name": "Jordan White",
+          "name": "Adam",
           "role": "Drums"
         }
       ]
