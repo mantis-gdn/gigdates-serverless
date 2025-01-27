@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #001840;
+    background: linear-gradient(135deg, #001840, #004080); /* Gradient background */
     color: #e6edf3;
 }
 
