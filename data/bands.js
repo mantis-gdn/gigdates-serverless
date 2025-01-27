@@ -1199,6 +1199,17 @@ const newLocal_1 = module.exports = {
           "role": "Rhythm Guitar"
         }
       ]
+    },
+    {
+      "id": "aqua_cherry",
+      "name": "Aqua Cherry",
+      "genre": "Funk, Rock, Reggae",
+      "description": "Aqua Cherry is a vibrant reggae-rock band hailing from New York, known for blending uplifting reggae grooves with a rebellious rock edge. Their infectious sound creates an immersive experience that transcends genres, encouraging listeners to dance and let go of labels or limitations. Over the years, Aqua Cherry has shared the stage with renowned acts like Everlast, The Spin Doctors, and BadFish, showcasing their dynamic presence in the live music scene. With multiple albums and singles, including 'So Pretty' and 'Drowning in the Shallow End,' the band continues to release fresh, genre-defying music. Their captivating performances and diverse musical influences make Aqua Cherry a standout in the reggae and alternative music landscapes.",
+      "website": "https://aquacherryband.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/AquaCherry/",
+        "instagram": "https://www.instagram.com/aquacherry"
+      }
     }
   ]
 };
