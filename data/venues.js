@@ -178,5 +178,20 @@ module.exports = { venues: [
       "facebook": "https://www.facebook.com/garciasatthecap/",
       "instagram": "https://www.instagram.com/garciasatthecap/"
     }
+  },
+  {
+    "id": "the_news_cafe",
+    "name": "The News Cafe",
+    "address": "43 Broad St, Pawtucket, RI 02860",
+    "phone": "401-728-6475",
+    "website": "https://newscaferhodeisland.wordpress.com/",
+    "description": "The News Cafe is a historic bar and music venue located in Pawtucket, Rhode Island. Established in 1938, the venue has a rich history of hosting live music performances, open mic nights, and other cultural events. Known for its welcoming atmosphere and diverse entertainment offerings, The News Cafe has become a beloved gathering place for artists, musicians, and patrons of the arts.",
+    "seating": "The News Cafe offers a mix of seating options to accommodate different preferences. Inside, guests can choose from bar stools, tables, and booths, creating a cozy and intimate setting for dining and socializing. The venue also features an outdoor patio area, perfect for enjoying drinks and live music in the open air. With its flexible seating arrangements, The News Cafe provides a comfortable and inviting space for patrons to relax and enjoy the entertainment.",
+    "parking": "Parking near The News Cafe is available on the street and in nearby public lots, providing convenient access for guests. While street parking may be limited during peak hours, there are several parking garages within walking distance of the venue, ensuring ample parking options for visitors. Guests are encouraged to arrive early or consider carpooling to secure a parking spot during busy events.",
+    "eventsLink": "",
+    "socialMedia": {
+      "facebook": "",
+      "instagram": "https://www.instagram.com/thenewscaferi/"
+    }
   }
 ] };

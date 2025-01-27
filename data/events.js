@@ -459,6 +459,20 @@ module.exports = {
       "venue": "Garcia's at The Capitol Theatre",
       "bandIds": ["dead_meat"],
       "preview": "Experience an unforgettable evening at Garcia's at The Capitol Theatre on Friday, February 21, 2025, as Dead Meat takes the stage to deliver an electrifying tribute to The Grateful Dead. Known for their dynamic performances, intricate harmonies, and high-energy jams, Dead Meat masterfully recreates the magic of the Grateful Dead’s legendary catalog. Whether you’re a lifelong Deadhead or a casual fan, this show promises a captivating journey through timeless classics and deep cuts. Doors open at 7:00 PM—don’t miss this chance to celebrate the enduring legacy of The Grateful Dead in an intimate and iconic venue!"
+    },
+    {
+      "id": 35,
+      "genre": "Ska, Punk, Alternative Rock",
+      "title": "Moonsault + Palmslow + Follow Thru + Scaffolding",
+      "schedule": {
+        "date": "2025-01-30",
+        "doors": "8:00 PM",
+        "show": "9:00 PM"
+      },
+      "venueId": "the_news_cafe",
+      "venue": "The News Cafe",
+      "bandIds": ["palmslow"],
+      "preview": "Get ready for a night of high-energy music at The News Cafe on January 30th! Doors open at 8:00 PM, with the show starting at 9:00 PM. The lineup features Moonsault, Palmslow, Follow Thru, and Scaffolding, promising an eclectic mix of ska, punk, and alternative rock that will keep you dancing all night long. Whether you're a fan of high-octane ska or gritty punk rock, this event has something for everyone. Don't miss out on this unforgettable night of live music in the heart of Providence!"
     }
   ]
 };

@@ -1116,11 +1116,13 @@ const newLocal_1 = module.exports = {
     },
     {
       "id": "palmslow",
-      "name": "Palmslow",
-      "genre": "Alternative Rock",
+      "name": "palmslow",
+      "genre": "Ska, Punk, Alternative Rock",
       "description": "Palmslow is an alternative rock band based in Providence, Rhode Island. Known for their dynamic sound and engaging live performances, they have shared stages with various acts in the local music scene. Describing their style as 'sweet boy fight music,' Palmslow brings a unique energy to their shows.",
       "website": "",
-      "socialMedia": {},
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/palmslowpvd/"
+      },
       "members": []
     },
     {
