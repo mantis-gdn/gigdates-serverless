@@ -150,6 +150,7 @@ nav a:hover {
 .event-card {
     background: #161b22;
     border: 1px solid #30363d;
+    padding: 1rem;
     border-radius: 8px;
     text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Horizontal, vertical, blur, color */
