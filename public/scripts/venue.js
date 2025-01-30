@@ -106,7 +106,7 @@ async function fetchVenueData() {
         }
 
         // Update Page Title Dynamically
-        document.title = `${data.venue.name} - Gigdates.net`;
+        document.title = `${data.venue.name} - Venue - Gigdates.net`;
 
         // Update Venue Details on the Page
         document.getElementById('venue-name').innerText = data.venue.name || 'Unknown Venue';

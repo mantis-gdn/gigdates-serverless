@@ -81,7 +81,7 @@ async function fetchEventDetails() {
         }
 
         // Set Dynamic Page Title
-        document.title = `${event.title || 'Unnamed Event'} - Gigdates.net`;
+        document.title = `${event.title || 'Unnamed Event'} - Event - Gigdates.net`;
 
         // Fetch and display bands
         let bandListHTML = '';

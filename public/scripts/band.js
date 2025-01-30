@@ -96,7 +96,7 @@ async function fetchBandData() {
         const pastEvents = data.events.past;
 
         // ✅ Set Dynamic Page Title
-        document.title = `${band.name || 'Unnamed Band'} - Gigdates.net`;
+        document.title = `${band.name || 'Unnamed Band'} - Band - Gigdates.net`;
 
         // ✅ Populate Band Details
         document.getElementById('band-name').innerText = band.name || 'No Name Provided';
