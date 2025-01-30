@@ -435,7 +435,7 @@ module.exports = {
     },
     {
       "id": 33,
-      "genre": "Rock",
+      "genre": "Ska, Punk, Alternative Rock",
       "title": "Ska She Can",
       "schedule": {
         "date": "2025-03-01",
