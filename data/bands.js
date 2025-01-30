@@ -1169,6 +1169,57 @@ const newLocal_1 = module.exports = {
         "facebook": "https://www.facebook.com/AquaCherry/",
         "instagram": "https://www.instagram.com/aquacherry"
       }
+    },
+    {
+      "id": "pink_slip",
+      "name": "Pink Slip",
+      "genre": "Ska, Punk",
+      "description": "Pink Slip is a ska-punk band from Boston, Massachusetts, known for their energetic live performances and catchy, upbeat songs. With influences ranging from ska and punk to reggae and rock, Pink Slip brings a unique and dynamic sound to the stage. Their music is characterized by infectious melodies, driving rhythms, and socially conscious lyrics, creating an engaging and high-energy experience for audiences. Whether performing at local venues or larger festivals, Pink Slip delivers a memorable and entertaining show that keeps fans dancing and singing along.",
+      "website": "https://pinkslip.bandcamp.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/pinkslipband",
+        "instagram": "https://www.instagram.com/pinkslipska"
+      },
+    },
+    {
+      "id": "futon_lasagna",
+      "name": "Futon Lasagna",
+      "genre": "Ska, Punk, Reggae",
+      "description": "Futon Lasagna is a ska-punk band from Boston, Massachusetts, known for their high-energy performances and eclectic sound. Blending elements of ska, punk, reggae, and rock, the band creates a dynamic and engaging live experience that keeps audiences dancing and singing along. With a mix of original songs and covers, Futon Lasagna delivers a fun and lively show that appeals to fans of alternative and ska music. Whether playing at local venues or larger festivals, the band's infectious energy and catchy tunes make them a standout in the ska-punk scene.",
+      "website": "https://futonlasagna.bandcamp.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/futonlasagna",
+        "instagram": "https://www.instagram.com/futon.lasagna"
+      },
+      "members": [
+        {
+          "name": "Heather Meloy Gorr",
+          "role": "Vocals"
+        },
+        {
+          "name": "Matthew Gorr",
+          "role": "Guitar"
+        },
+        {
+          "name": "Connell D'Souza",
+          "role": "Bass"
+        },
+        {
+          "name": "Chase McGrace",
+          "role": "Drums"
+        }
+      ]
+    },
+    {
+      "id": "the_lousekateers",
+      "name": "The Lousekateers",
+      "genre": "Ska, Punk, Reggae",
+      "description": "The Lousekateers are a ska-punk band from New York, known for their energetic live performances and infectious sound. Blending elements of ska, punk, and reggae, the band creates a dynamic and engaging experience that keeps audiences dancing and singing along. With a mix of original songs and covers, The Lousekateers deliver a fun and lively show that appeals to fans of alternative and ska music. Whether playing at local venues or larger festivals, the band's high-energy stage presence and catchy tunes make them a standout in the ska-punk scene.",
+      "website": "https://thelousekateers.bandcamp.com/",
+      "socialMedia": {
+        "facebook": "http://www.facebook.com/thelousekateers",
+        "instagram": "http://www.instagram.com/thelousekateers"
+      }
     }
   ]
 };

@@ -444,7 +444,7 @@ module.exports = {
       },
       "venueId": "the_parlour",
       "venue": "The Parlour",
-      "bandIds": ["so_many_dangers"]
+      "bandIds": ["the_lousekateers", "pink_slip", "futon_lasagna", "so_many_dangers"]
     },
     {
       "id": 34,
