@@ -1220,6 +1220,17 @@ const newLocal_1 = module.exports = {
         "facebook": "http://www.facebook.com/thelousekateers",
         "instagram": "http://www.instagram.com/thelousekateers"
       }
+    },
+    {
+      "id": "brunt_of_it",
+      "name": "Brunt of It",
+      "genre": "Ska, Punk",
+      "description": "Brunt of It is a ska-punk band from Boston, Massachusetts, known for their high-energy performances and infectious sound. Blending elements of ska, punk, and reggae, the band creates a dynamic and engaging live experience that keeps audiences dancing and singing along. With a mix of original songs and covers, Brunt of It delivers a fun and lively show that appeals to fans of alternative and ska music. Whether playing at local venues or larger festivals, the band's energetic stage presence and catchy tunes make them a standout in the ska-punk scene.",
+      "website": "https://bruntofit.bandcamp.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/bruntofit",
+        "instagram": "https://www.instagram.com/brunt_of_it/"
+      }
     }
   ]
 };

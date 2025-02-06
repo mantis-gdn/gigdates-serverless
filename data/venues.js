@@ -193,5 +193,20 @@ module.exports = { venues: [
       "facebook": "",
       "instagram": "https://www.instagram.com/thenewscaferi/"
     }
+  },
+  {
+    "id": "alchemy",
+    "name": "Alchemy",
+    "address": "71 Richmond St, Providence, RI 02903",
+    "phone": "401-383-6336",
+    "website": "https://alchemyri.net/",
+    "description": "Alchemy is a unique bar and restaurant located in the heart of downtown Providence, Rhode Island. Known for its creative cocktails, eclectic menu, and vibrant atmosphere, Alchemy offers a one-of-a-kind dining and entertainment experience. The venue features live music, DJ sets, and special events, making it a popular destination for locals and visitors alike.",
+    "seating": "Alchemy provides a variety of seating options to suit different preferences. Inside, guests can choose from bar seating, high-top tables, and cozy booths, creating an intimate and inviting setting for dining and socializing. The venue also offers an outdoor patio area, perfect for enjoying drinks and live music in the open air. With its flexible seating arrangements, Alchemy caters to both small groups and larger parties, ensuring a comfortable and enjoyable experience for all patrons.",
+    "parking": "Parking near Alchemy is available on the street and in nearby public lots, providing convenient access for guests. While street parking may be limited during peak hours, there are several parking garages within walking distance of the venue, ensuring ample parking options for visitors. Guests are encouraged to arrive early or consider carpooling to secure a parking spot during busy events.",
+    "eventsLink": "https://alchemyri.net/providence-alchemy-events",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/AlchemyProvidence/",
+      "instagram": "https://www.instagram.com/alchemy_providence/"
+    }
   }
 ] };

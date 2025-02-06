@@ -473,6 +473,20 @@ module.exports = {
       "venue": "The News Cafe",
       "bandIds": ["palmslow"],
       "preview": "Get ready for a night of high-energy music at The News Cafe on January 30th! Doors open at 8:00 PM, with the show starting at 9:00 PM. The lineup features Moonsault, Palmslow, Follow Thru, and Scaffolding, promising an eclectic mix of ska, punk, and alternative rock that will keep you dancing all night long. Whether you're a fan of high-octane ska or gritty punk rock, this event has something for everyone. Don't miss out on this unforgettable night of live music in the heart of Providence!"
+    },
+    {
+      "id": 36,
+      "genre": "Skacore, Punk",
+      "title": "Brunt of it All - Album Release Show",
+      "schedule": {
+        "date": "2025-04-24",
+        "doors": "7:00 PM",
+        "show": "7:00 PM"
+      },
+      "venueId": "alchemy",
+      "venue": "Alchemy",
+      "bandIds": ["brunt_of_it", "so_many_dangers"],
+      "preview": "Join us for an unforgettable night of skacore and punk at Alchemy on April 24th! Doors open at 7:00 PM, with Brunt of it All taking the stage for their highly anticipated album release show. Special guests So Many Dangers will also be performing, promising a night of high-energy music that will keep you dancing all night long. Whether you're a fan of skacore, punk, or just great live music, this event is not to be missed. Get your tickets now and get ready for an evening of nonstop energy and unforgettable performances!"
     }
   ]
 };
