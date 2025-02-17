@@ -487,6 +487,19 @@ module.exports = {
       "venue": "Alchemy",
       "bandIds": ["brunt_of_it", "so_many_dangers"],
       "preview": "Join us for an unforgettable night of skacore and punk at Alchemy on April 24th! Doors open at 7:00 PM, with Brunt of it All taking the stage for their highly anticipated album release show. Special guests So Many Dangers will also be performing, promising a night of high-energy music that will keep you dancing all night long. Whether you're a fan of skacore, punk, or just great live music, this event is not to be missed. Get your tickets now and get ready for an evening of nonstop energy and unforgettable performances!"
+    },
+    {
+      "id": 37,
+      "genre": "Tribute Rock",
+      "title": "Brothers All Band – An Allman Brothers Experience",
+      "schedule": {
+        "date": "2025-02-23",
+        "doors": "4:00 PM",
+        "show": "5:00 PM"
+      },
+      "venueId": "the_met_ri",
+      "venue": "The Met RI",
+      "bandIds": ["brothers_all_band"],
     }
   ]
 };
