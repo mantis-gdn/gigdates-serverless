@@ -1231,6 +1231,28 @@ const newLocal_1 = module.exports = {
         "facebook": "https://www.facebook.com/bruntofit",
         "instagram": "https://www.instagram.com/brunt_of_it/"
       }
+    },
+    {
+      "id": "dred_buffalo",
+      "name": "Dred Buffalo",
+      "genre": "Rock ’n’ Roll",
+      "description": "Dred Buffalo is a New England rock ’n’ roll band formed in 2022, known for gritty, groove-laden riffs, blues-rock swagger, and the magnetic vocals of frontwoman Alerisa Rose. Their live shows bring raw energy and old-school rock spirit, blending classic rock, blues, and a dash of psychedelia to stir up something fresh yet familiar.",
+      "website": "https://www.dredbuffalo.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/DredBuffalo/",
+        "instagram": "https://www.instagram.com/dredbuffalo/"
+      }
+    },
+    {
+      "id": "socially_problematic_children",
+      "name": "Socially Problematic Children",
+      "genre": "Rock / Alternative Rock",
+      "description": "Socially Problematic Children (SPC) are a South Shore, Massachusetts-based rock/alternative rock band — raw, riff-heavy, and gritty, with a sound that blends aggressive rock energy and dark melodic undercurrents. Their 2020 self-titled release showcases a range from nu-metal-tinged grooves (\"Rot With Me\") to heavy-hitting alt-rock tracks (\"First Love\", \"Obey\"). SPC bring intensity, attitude, and a no-bullshit approach to their live shows and recordings.",
+      "website": "https://sociallyproblematicchildren.com/",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/sociallyproblematicchildren/",
+        "instagram": "https://www.instagram.com/sociallyproblematicchildren/"
+      }
     }
   ]
 };

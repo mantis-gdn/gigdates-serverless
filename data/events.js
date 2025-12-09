@@ -500,6 +500,19 @@ module.exports = {
       "venueId": "the_met_ri",
       "venue": "The Met RI",
       "bandIds": ["brothers_all_band"],
+    },
+    {
+      "id": 38,
+      "genre": "Mixed / Benefit Show",
+      "title": "Toys & Noise – Dred Buffalo & Socially Problematic Children",
+      "schedule": {
+        "date": "2025-12-20",
+        "doors": "6:00 PM",
+        "show": "6:00 PM"
+      },
+      "venueId": "the_industrial",
+      "venue": "The Industrial",
+      "bandIds": ["dred_buffalo", "socially_problematic_children"]
     }
   ]
 };
