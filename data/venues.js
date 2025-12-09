@@ -208,5 +208,20 @@ module.exports = { venues: [
       "facebook": "https://www.facebook.com/AlchemyProvidence/",
       "instagram": "https://www.instagram.com/alchemy_providence/"
     }
+  },
+  {
+    "id": "the_industrial",
+    "name": "The Industrial",
+    "address": "173 Coyle Ave, Pawtucket, RI 02860",
+    "phone": "401-523-3070",
+    "website": "https://www.atriumsevents.com/contact",
+    "description": "The Industrial is a modern multi-purpose event hall and live music venue in Pawtucket, Rhode Island. Operated through Atrium Events, the venue features a dedicated stage room equipped with a full PA system, making it ideal for concerts, DJ nights, private events, and multi-genre showcases. Its open layout, strong sound system, and flexible room configuration make it a rising hotspot for local and regional artists.",
+    "seating": "The Industrial offers adaptable seating arrangements depending on the event. The venue includes 10 round 60-inch banquet tables, 6 rectangular 8-foot tables, 4 hightop tables with stools, and 50 black banquet-style chairs. Seating is reconfigurable for concerts, parties, conferences, and private rentals.",
+    "parking": "Parking is available directly around the venue with additional on-street parking along Coyle Ave and the surrounding neighborhood. Guests are encouraged to arrive early for larger events as spaces can fill quickly.",
+    "eventsLink": "",
+    "socialMedia": {
+      "facebook": "",
+      "instagram": ""
+    }
   }
 ] };
