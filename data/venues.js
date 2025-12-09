@@ -215,9 +215,9 @@ module.exports = { venues: [
     "address": "173 Coyle Ave, Pawtucket, RI 02860",
     "phone": "401-523-3070",
     "website": "https://www.atriumsevents.com/contact",
-    "description": "The Industrial is a modern multi-purpose event hall and live music venue in Pawtucket, Rhode Island. Operated through Atrium Events, the venue features a dedicated stage room equipped with a full PA system, making it ideal for concerts, DJ nights, private events, and multi-genre showcases. Its open layout, strong sound system, and flexible room configuration make it a rising hotspot for local and regional artists.",
-    "seating": "The Industrial offers adaptable seating arrangements depending on the event. The venue includes 10 round 60-inch banquet tables, 6 rectangular 8-foot tables, 4 hightop tables with stools, and 50 black banquet-style chairs. Seating is reconfigurable for concerts, parties, conferences, and private rentals.",
-    "parking": "Parking is available directly around the venue with additional on-street parking along Coyle Ave and the surrounding neighborhood. Guests are encouraged to arrive early for larger events as spaces can fill quickly.",
+    "description": "The Industrial is a modern multi-purpose event hall and live music venue in Pawtucket, Rhode Island. Operated through Atrium Events, the venue features a dedicated stage room equipped with a full PA system, making it ideal for concerts, DJ nights, art shows, and private rentals. The space supports rock, metal, indie, hip-hop, electronic, singer-songwriter nights, and multi-genre showcases. Bands are welcome to bring their own gear, and sound check is available prior to doors.",
+    "seating": "The venue offers flexible seating and stage configuration, including 10 round 60-inch banquet tables, 6 rectangular 8-foot tables, 4 hightop tables (2 round and 2 square) each with 2 stools, and 50 black banquet-style chairs. The room can shift between seated, mixed, or standing-room layouts depending on the event.",
+    "parking": "Parking is available on Coyle Ave and surrounding neighborhood streets. Additional parking may be available in nearby public or overflow areas. Guests and performers are encouraged to arrive early for larger events.",
     "eventsLink": "",
     "socialMedia": {
       "facebook": "",
